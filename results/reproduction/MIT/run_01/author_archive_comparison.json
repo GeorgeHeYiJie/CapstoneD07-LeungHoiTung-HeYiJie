@@ -1,0 +1,357 @@
+{
+  "source": "results/Ours/MIT results.zip",
+  "aggregation": "Metrics recomputed per run across all saved samples, then averaged over ten runs; standard ground-truth-denominator MAPE.",
+  "runs": [
+    {
+      "experiment": 1,
+      "samples": 14170,
+      "MAE": 0.006013063248246908,
+      "MAPE_percent": 0.6348553113639355,
+      "RMSE": 0.008077957659754132,
+      "MSE": 6.525339995278046e-05
+    },
+    {
+      "experiment": 2,
+      "samples": 14170,
+      "MAE": 0.0057499282993376255,
+      "MAPE_percent": 0.6076610181480646,
+      "RMSE": 0.007880373321432196,
+      "MSE": 6.210028368514031e-05
+    },
+    {
+      "experiment": 3,
+      "samples": 14170,
+      "MAE": 0.005891780368983746,
+      "MAPE_percent": 0.6222455762326717,
+      "RMSE": 0.00805184102145541,
+      "MSE": 6.483214383479208e-05
+    },
+    {
+      "experiment": 4,
+      "samples": 14170,
+      "MAE": 0.006178261246532202,
+      "MAPE_percent": 0.6526450160890818,
+      "RMSE": 0.008430262601622428,
+      "MSE": 7.106932753231376e-05
+    },
+    {
+      "experiment": 5,
+      "samples": 14170,
+      "MAE": 0.006525199860334396,
+      "MAPE_percent": 0.6892319768667221,
+      "RMSE": 0.009074445201282111,
+      "MSE": 8.234555571107194e-05
+    },
+    {
+      "experiment": 6,
+      "samples": 14170,
+      "MAE": 0.0061751543544232845,
+      "MAPE_percent": 0.6521825678646564,
+      "RMSE": 0.00839858559197889,
+      "MSE": 7.053623994579539e-05
+    },
+    {
+      "experiment": 7,
+      "samples": 14170,
+      "MAE": 0.0058315107598900795,
+      "MAPE_percent": 0.6161185447126627,
+      "RMSE": 0.00801541970927278,
+      "MSE": 6.424695311579853e-05
+    },
+    {
+      "experiment": 8,
+      "samples": 14170,
+      "MAE": 0.0058457087725400925,
+      "MAPE_percent": 0.6175122689455748,
+      "RMSE": 0.008059427563217671,
+      "MSE": 6.495437264675274e-05
+    },
+    {
+      "experiment": 9,
+      "samples": 14170,
+      "MAE": 0.005964283365756273,
+      "MAPE_percent": 0.6299462169408798,
+      "RMSE": 0.008203691614824968,
+      "MSE": 6.730055611114949e-05
+    },
+    {
+      "experiment": 10,
+      "samples": 14170,
+      "MAE": 0.006002969108521938,
+      "MAPE_percent": 0.6350294686853886,
+      "RMSE": 0.008569728232367764,
+      "MSE": 7.344024197664112e-05
+    }
+  ],
+  "summary": {
+    "MAE": {
+      "mean": 0.006017785938456655,
+      "std": 0.00022681968120840147,
+      "min": 0.0057499282993376255,
+      "max": 0.006525199860334396
+    },
+    "MAPE_percent": {
+      "mean": 0.6357427965849638,
+      "std": 0.023898314562523636,
+      "min": 0.6076610181480646,
+      "max": 0.6892319768667221
+    },
+    "RMSE": {
+      "mean": 0.008276173251720835,
+      "std": 0.0003541245209812213,
+      "min": 0.007880373321432196,
+      "max": 0.009074445201282111
+    },
+    "MSE": {
+      "mean": 6.860790745122358e-05,
+      "std": 5.998010568668944e-06,
+      "min": 6.210028368514031e-05,
+      "max": 8.234555571107194e-05
+    }
+  },
+  "archived_configurations": [
+    {
+      "experiment": 1,
+      "settings": [
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \tdata:MIT",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \tbatch_size:512",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \tnormalization_method:min-max",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \tepochs:200",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \tearly_stop:20",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \twarmup_epochs:30",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \twarmup_lr:0.002",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \tlr:0.01",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \tfinal_lr:0.0002",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \tlr_F:0.001",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \tu_layers_num:3",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \tu_hidden_dim:60",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \tF_layers_num:3",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \tF_hidden_dim:60",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \talpha:1",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \tbeta:50",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \tlog_dir:logging.txt",
+        "2023-07-07 20:22 - function:_save_args - CRITICAL - \tsave_folder:results/MIT results/Experiment1"
+      ]
+    },
+    {
+      "experiment": 2,
+      "settings": [
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \tdata:MIT",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \tbatch_size:512",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \tnormalization_method:min-max",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \tepochs:200",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \tearly_stop:20",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \twarmup_epochs:30",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \twarmup_lr:0.002",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \tlr:0.01",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \tfinal_lr:0.0002",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \tlr_F:0.001",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \tu_layers_num:3",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \tu_hidden_dim:60",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \tF_layers_num:3",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \tF_hidden_dim:60",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \talpha:1",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \tbeta:50",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \tlog_dir:logging.txt",
+        "2023-07-07 21:29 - function:_save_args - CRITICAL - \tsave_folder:results/MIT results/Experiment2"
+      ]
+    },
+    {
+      "experiment": 3,
+      "settings": [
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \tdata:MIT",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \tbatch_size:512",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \tnormalization_method:min-max",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \tepochs:200",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \tearly_stop:20",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \twarmup_epochs:30",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \twarmup_lr:0.002",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \tlr:0.01",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \tfinal_lr:0.0002",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \tlr_F:0.001",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \tu_layers_num:3",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \tu_hidden_dim:60",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \tF_layers_num:3",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \tF_hidden_dim:60",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \talpha:1",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \tbeta:50",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \tlog_dir:logging.txt",
+        "2023-07-07 21:37 - function:_save_args - CRITICAL - \tsave_folder:results/MIT results/Experiment3"
+      ]
+    },
+    {
+      "experiment": 4,
+      "settings": [
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \tdata:MIT",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \tbatch_size:512",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \tnormalization_method:min-max",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \tepochs:200",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \tearly_stop:20",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \twarmup_epochs:30",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \twarmup_lr:0.002",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \tlr:0.01",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \tfinal_lr:0.0002",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \tlr_F:0.001",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \tu_layers_num:3",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \tu_hidden_dim:60",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \tF_layers_num:3",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \tF_hidden_dim:60",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \talpha:1",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \tbeta:50",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \tlog_dir:logging.txt",
+        "2023-07-07 20:38 - function:_save_args - CRITICAL - \tsave_folder:results/MIT results/Experiment4"
+      ]
+    },
+    {
+      "experiment": 5,
+      "settings": [
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \tdata:MIT",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \tbatch_size:512",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \tnormalization_method:min-max",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \tepochs:200",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \tearly_stop:20",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \twarmup_epochs:30",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \twarmup_lr:0.002",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \tlr:0.01",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \tfinal_lr:0.0002",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \tlr_F:0.001",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \tu_layers_num:3",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \tu_hidden_dim:60",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \tF_layers_num:3",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \tF_hidden_dim:60",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \talpha:1",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \tbeta:50",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \tlog_dir:logging.txt",
+        "2023-07-07 20:45 - function:_save_args - CRITICAL - \tsave_folder:results/MIT results/Experiment5"
+      ]
+    },
+    {
+      "experiment": 6,
+      "settings": [
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \tdata:MIT",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \tbatch_size:512",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \tnormalization_method:min-max",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \tepochs:200",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \tearly_stop:20",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \twarmup_epochs:30",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \twarmup_lr:0.002",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \tlr:0.01",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \tfinal_lr:0.0002",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \tlr_F:0.001",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \tu_layers_num:3",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \tu_hidden_dim:60",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \tF_layers_num:3",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \tF_hidden_dim:60",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \talpha:1",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \tbeta:50",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \tlog_dir:logging.txt",
+        "2023-07-07 20:49 - function:_save_args - CRITICAL - \tsave_folder:results/MIT results/Experiment6"
+      ]
+    },
+    {
+      "experiment": 7,
+      "settings": [
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \tdata:MIT",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \tbatch_size:512",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \tnormalization_method:min-max",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \tepochs:200",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \tearly_stop:20",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \twarmup_epochs:30",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \twarmup_lr:0.002",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \tlr:0.01",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \tfinal_lr:0.0002",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \tlr_F:0.001",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \tu_layers_num:3",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \tu_hidden_dim:60",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \tF_layers_num:3",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \tF_hidden_dim:60",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \talpha:1",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \tbeta:50",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \tlog_dir:logging.txt",
+        "2023-07-07 20:56 - function:_save_args - CRITICAL - \tsave_folder:results/MIT results/Experiment7"
+      ]
+    },
+    {
+      "experiment": 8,
+      "settings": [
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \tdata:MIT",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \tbatch_size:512",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \tnormalization_method:min-max",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \tepochs:200",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \tearly_stop:20",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \twarmup_epochs:30",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \twarmup_lr:0.002",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \tlr:0.01",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \tfinal_lr:0.0002",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \tlr_F:0.001",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \tu_layers_num:3",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \tu_hidden_dim:60",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \tF_layers_num:3",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \tF_hidden_dim:60",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \talpha:1",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \tbeta:50",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \tlog_dir:logging.txt",
+        "2023-07-07 21:04 - function:_save_args - CRITICAL - \tsave_folder:results/MIT results/Experiment8"
+      ]
+    },
+    {
+      "experiment": 9,
+      "settings": [
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \tdata:MIT",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \tbatch_size:512",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \tnormalization_method:min-max",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \tepochs:200",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \tearly_stop:20",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \twarmup_epochs:30",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \twarmup_lr:0.002",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \tlr:0.01",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \tfinal_lr:0.0002",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \tlr_F:0.001",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \tu_layers_num:3",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \tu_hidden_dim:60",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \tF_layers_num:3",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \tF_hidden_dim:60",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \talpha:1",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \tbeta:50",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \tlog_dir:logging.txt",
+        "2023-07-07 21:44 - function:_save_args - CRITICAL - \tsave_folder:results/MIT results/Experiment9"
+      ]
+    },
+    {
+      "experiment": 10,
+      "settings": [
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \tdata:MIT",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \tbatch_size:512",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \tnormalization_method:min-max",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \tepochs:200",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \tearly_stop:20",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \twarmup_epochs:30",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \twarmup_lr:0.002",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \tlr:0.01",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \tfinal_lr:0.0002",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \tlr_F:0.001",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \tu_layers_num:3",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \tu_hidden_dim:60",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \tF_layers_num:3",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \tF_hidden_dim:60",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \talpha:1",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \tbeta:50",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \tlog_dir:logging.txt",
+        "2023-07-07 21:15 - function:_save_args - CRITICAL - \tsave_folder:results/MIT results/Experiment10"
+      ]
+    }
+  ],
+  "protocol_checks": {
+    "ordered_train_files_match_archive_experiment1": true,
+    "ordered_test_files_match_archive_experiment1": true,
+    "true_labels_bitwise_equal_archive_experiment1": true,
+    "all_ten_archive_logs_loss_weights": {
+      "alpha": 1,
+      "beta": 50
+    },
+    "current_run_loss_weights": {
+      "alpha": 0.5,
+      "beta": 0.01
+    }
+  }
+}

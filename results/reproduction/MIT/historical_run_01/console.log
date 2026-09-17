@@ -1,0 +1,2122 @@
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0      -1.000000
+1      -0.997629
+2      -0.996443
+3      -0.995258
+4      -0.994072
+          ...   
+1655    0.981031
+1656    0.985774
+1657    0.989330
+1658    0.992887
+1659    1.000000
+Name: cycle index, Length: 1660, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997582
+2     -0.995163
+3     -0.992745
+4     -0.990326
+         ...   
+817    0.987908
+818    0.990326
+819    0.992745
+820    0.995163
+821    1.000000
+Name: cycle index, Length: 822, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997163
+2     -0.994326
+3     -0.991489
+4     -0.988652
+         ...   
+696    0.985816
+697    0.988652
+698    0.994326
+699    0.997163
+700    1.000000
+Name: cycle index, Length: 701, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997579
+2     -0.995157
+3     -0.992736
+4     -0.990315
+         ...   
+818    0.985472
+819    0.987893
+820    0.990315
+821    0.992736
+822    1.000000
+Name: cycle index, Length: 823, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997573
+2     -0.995146
+3     -0.992718
+4     -0.990291
+         ...   
+813    0.980583
+814    0.983010
+815    0.985437
+816    0.987864
+817    1.000000
+Name: cycle index, Length: 818, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.996880
+2     -0.990640
+3     -0.987520
+4     -0.984399
+         ...   
+630    0.975039
+631    0.978159
+632    0.981279
+633    0.987520
+634    1.000000
+Name: cycle index, Length: 635, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997439
+2     -0.994878
+3     -0.992318
+4     -0.989757
+         ...   
+775    0.987196
+776    0.989757
+777    0.992318
+778    0.997439
+779    1.000000
+Name: cycle index, Length: 780, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997433
+2     -0.994865
+3     -0.992298
+4     -0.989730
+         ...   
+772    0.984596
+773    0.989730
+774    0.994865
+775    0.997433
+776    1.000000
+Name: cycle index, Length: 777, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.993528
+2     -0.990291
+3     -0.987055
+4     -0.983819
+         ...   
+611    0.987055
+612    0.990291
+613    0.993528
+614    0.996764
+615    1.000000
+Name: cycle index, Length: 616, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0      -1.000000
+1      -0.998980
+2      -0.997960
+3      -0.996940
+4      -0.995920
+          ...   
+1933    0.994901
+1934    0.995920
+1935    0.996940
+1936    0.998980
+1937    1.000000
+Name: cycle index, Length: 1938, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995851
+2     -0.991701
+3     -0.987552
+4     -0.983402
+         ...   
+472    0.966805
+473    0.970954
+474    0.979253
+475    0.987552
+476    1.000000
+Name: cycle index, Length: 477, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.996032
+2     -0.992063
+3     -0.988095
+4     -0.984127
+         ...   
+497    0.972222
+498    0.976190
+499    0.988095
+500    0.992063
+501    1.000000
+Name: cycle index, Length: 502, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995181
+2     -0.992771
+3     -0.990361
+4     -0.987952
+         ...   
+813    0.966265
+814    0.968675
+815    0.971084
+816    0.973494
+817    1.000000
+Name: cycle index, Length: 818, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995614
+2     -0.993421
+3     -0.991228
+4     -0.989035
+         ...   
+903    0.986842
+904    0.989035
+905    0.991228
+906    0.995614
+907    1.000000
+Name: cycle index, Length: 908, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997406
+2     -0.994812
+3     -0.992218
+4     -0.989624
+         ...   
+766    0.989624
+767    0.992218
+768    0.994812
+769    0.997406
+770    1.000000
+Name: cycle index, Length: 771, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997491
+2     -0.994981
+3     -0.992472
+4     -0.989962
+         ...   
+785    0.977415
+786    0.979925
+787    0.982434
+788    0.984944
+789    1.000000
+Name: cycle index, Length: 790, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997399
+2     -0.994798
+3     -0.992198
+4     -0.989597
+         ...   
+761    0.981795
+762    0.984395
+763    0.986996
+764    0.994798
+765    1.000000
+Name: cycle index, Length: 766, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997396
+2     -0.994792
+3     -0.992188
+4     -0.989583
+         ...   
+763    0.989583
+764    0.992188
+765    0.994792
+766    0.997396
+767    1.000000
+Name: cycle index, Length: 768, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0      -1.000000
+1      -0.999030
+2      -0.998059
+3      -0.997089
+4      -0.996118
+          ...   
+2036    0.986414
+2037    0.987385
+2038    0.989326
+2039    0.997089
+2040    1.000000
+Name: cycle index, Length: 2041, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.996894
+2     -0.993789
+3     -0.990683
+4     -0.987578
+         ...   
+637    0.987578
+638    0.990683
+639    0.993789
+640    0.996894
+641    1.000000
+Name: cycle index, Length: 642, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997497
+2     -0.994994
+3     -0.992491
+4     -0.989987
+         ...   
+793    0.984981
+794    0.987484
+795    0.989987
+796    0.997497
+797    1.000000
+Name: cycle index, Length: 798, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.996956
+2     -0.993912
+3     -0.990868
+4     -0.987823
+         ...   
+652    0.987823
+653    0.990868
+654    0.993912
+655    0.996956
+656    1.000000
+Name: cycle index, Length: 657, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997033
+2     -0.994065
+3     -0.991098
+4     -0.988131
+         ...   
+666    0.976261
+667    0.979228
+668    0.982196
+669    0.997033
+670    1.000000
+Name: cycle index, Length: 671, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.996845
+2     -0.993691
+3     -0.990536
+4     -0.987382
+         ...   
+628    0.981073
+629    0.984227
+630    0.987382
+631    0.993691
+632    1.000000
+Name: cycle index, Length: 633, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.996840
+2     -0.993681
+3     -0.990521
+4     -0.987362
+         ...   
+627    0.984202
+628    0.987362
+629    0.990521
+630    0.993681
+631    1.000000
+Name: cycle index, Length: 632, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.996575
+2     -0.993151
+3     -0.989726
+4     -0.986301
+         ...   
+579    0.986301
+580    0.989726
+581    0.993151
+582    0.996575
+583    1.000000
+Name: cycle index, Length: 584, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.996283
+2     -0.992565
+3     -0.988848
+4     -0.985130
+         ...   
+532    0.985130
+533    0.988848
+534    0.992565
+535    0.996283
+536    1.000000
+Name: cycle index, Length: 537, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0      -1.000000
+1      -0.998224
+2      -0.996448
+3      -0.994671
+4      -0.992895
+          ...   
+1108    0.978686
+1109    0.980462
+1110    0.985790
+1111    0.994671
+1112    1.000000
+Name: cycle index, Length: 1113, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995181
+2     -0.992771
+3     -0.990361
+4     -0.987952
+         ...   
+822    0.990361
+823    0.992771
+824    0.995181
+825    0.997590
+826    1.000000
+Name: cycle index, Length: 827, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997824
+2     -0.993471
+3     -0.991295
+4     -0.986942
+         ...   
+905    0.986942
+906    0.989119
+907    0.991295
+908    0.993471
+909    1.000000
+Name: cycle index, Length: 910, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.996711
+2     -0.993421
+3     -0.990132
+4     -0.986842
+         ...   
+597    0.973684
+598    0.976974
+599    0.980263
+600    0.986842
+601    1.000000
+Name: cycle index, Length: 602, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.996466
+2     -0.992933
+3     -0.989399
+4     -0.985866
+         ...   
+561    0.985866
+562    0.989399
+563    0.992933
+564    0.996466
+565    1.000000
+Name: cycle index, Length: 566, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.991031
+2     -0.986547
+3     -0.982063
+4     -0.977578
+         ...   
+436    0.964126
+437    0.968610
+438    0.973094
+439    0.986547
+440    1.000000
+Name: cycle index, Length: 441, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0      -1.000000
+1      -0.998095
+2      -0.996190
+3      -0.994286
+4      -0.992381
+          ...   
+1034    0.979048
+1035    0.986667
+1036    0.988571
+1037    0.992381
+1038    1.000000
+Name: cycle index, Length: 1039, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.996466
+2     -0.989399
+3     -0.985866
+4     -0.982332
+         ...   
+554    0.982332
+555    0.989399
+556    0.992933
+557    0.996466
+558    1.000000
+Name: cycle index, Length: 559, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997478
+2     -0.994956
+3     -0.992434
+4     -0.989912
+         ...   
+784    0.982346
+785    0.984868
+786    0.989912
+787    0.992434
+788    1.000000
+Name: cycle index, Length: 789, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997519
+2     -0.995037
+3     -0.992556
+4     -0.990074
+         ...   
+793    0.977667
+794    0.980149
+795    0.985112
+796    0.995037
+797    1.000000
+Name: cycle index, Length: 798, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.992481
+2     -0.984962
+3     -0.977444
+4     -0.969925
+         ...   
+262    0.969925
+263    0.977444
+264    0.984962
+265    0.992481
+266    1.000000
+Name: cycle index, Length: 267, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0    -1.000000
+1    -0.939394
+2    -0.878788
+3    -0.818182
+4    -0.757576
+5    -0.696970
+6    -0.636364
+7    -0.575758
+8    -0.515152
+9    -0.454545
+10   -0.393939
+11   -0.333333
+12   -0.272727
+13   -0.212121
+14   -0.151515
+15   -0.090909
+16   -0.030303
+17    0.030303
+18    0.090909
+19    0.151515
+20    0.212121
+21    0.272727
+22    0.333333
+23    0.393939
+24    0.454545
+25    0.515152
+26    0.575758
+27    0.636364
+28    0.696970
+29    0.757576
+30    0.818182
+31    0.878788
+32    0.939394
+33    1.000000
+Name: cycle index, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995455
+2     -0.990909
+3     -0.986364
+4     -0.981818
+         ...   
+432    0.963636
+433    0.968182
+434    0.986364
+435    0.990909
+436    1.000000
+Name: cycle index, Length: 437, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.00000
+1     -0.99511
+2     -0.99022
+3     -0.98533
+4     -0.98044
+        ...   
+403    0.98044
+404    0.98533
+405    0.99022
+406    0.99511
+407    1.00000
+Name: cycle index, Length: 408, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.992063
+2     -0.984127
+3     -0.976190
+4     -0.968254
+         ...   
+243    0.968254
+244    0.976190
+245    0.984127
+246    0.992063
+247    1.000000
+Name: cycle index, Length: 248, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995595
+2     -0.991189
+3     -0.986784
+4     -0.982379
+         ...   
+441    0.969163
+442    0.973568
+443    0.982379
+444    0.995595
+445    1.000000
+Name: cycle index, Length: 446, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995485
+2     -0.990971
+3     -0.986456
+4     -0.981941
+         ...   
+420    0.968397
+421    0.977427
+422    0.981941
+423    0.995485
+424    1.000000
+Name: cycle index, Length: 425, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.983740
+2     -0.967480
+3     -0.951220
+4     -0.934959
+         ...   
+119    0.934959
+120    0.951220
+121    0.967480
+122    0.983740
+123    1.000000
+Name: cycle index, Length: 124, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995662
+2     -0.991323
+3     -0.986985
+4     -0.982646
+         ...   
+455    0.978308
+456    0.982646
+457    0.986985
+458    0.995662
+459    1.000000
+Name: cycle index, Length: 460, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995575
+2     -0.991150
+3     -0.986726
+4     -0.982301
+         ...   
+431    0.911504
+432    0.915929
+433    0.924779
+434    0.929204
+435    1.000000
+Name: cycle index, Length: 436, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995745
+2     -0.991489
+3     -0.987234
+4     -0.982979
+         ...   
+465    0.978723
+466    0.982979
+467    0.987234
+468    0.991489
+469    1.000000
+Name: cycle index, Length: 470, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995859
+2     -0.991718
+3     -0.987578
+4     -0.983437
+         ...   
+475    0.979296
+476    0.987578
+477    0.991718
+478    0.995859
+479    1.000000
+Name: cycle index, Length: 480, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.986207
+2     -0.972414
+3     -0.944828
+4     -0.931034
+         ...   
+140    0.944828
+141    0.958621
+142    0.972414
+143    0.986207
+144    1.000000
+Name: cycle index, Length: 145, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.977528
+2     -0.966292
+3     -0.955056
+4     -0.943820
+         ...   
+172    0.943820
+173    0.955056
+174    0.966292
+175    0.988764
+176    1.000000
+Name: cycle index, Length: 177, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995338
+2     -0.990676
+3     -0.986014
+4     -0.981352
+         ...   
+413    0.976690
+414    0.981352
+415    0.990676
+416    0.995338
+417    1.000000
+Name: cycle index, Length: 418, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995772
+2     -0.991543
+3     -0.987315
+4     -0.983087
+         ...   
+456    0.970402
+457    0.974630
+458    0.978858
+459    0.987315
+460    1.000000
+Name: cycle index, Length: 461, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995012
+2     -0.990025
+3     -0.985037
+4     -0.980050
+         ...   
+380    0.910224
+381    0.945137
+382    0.975062
+383    0.990025
+384    1.000000
+Name: cycle index, Length: 385, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995402
+2     -0.990805
+3     -0.986207
+4     -0.981609
+         ...   
+411    0.889655
+412    0.894253
+413    0.898851
+414    0.903448
+415    1.000000
+Name: cycle index, Length: 416, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995585
+2     -0.991170
+3     -0.986755
+4     -0.982340
+         ...   
+448    0.977925
+449    0.982340
+450    0.986755
+451    0.991170
+452    1.000000
+Name: cycle index, Length: 453, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995807
+2     -0.991614
+3     -0.987421
+4     -0.983229
+         ...   
+473    0.983229
+474    0.987421
+475    0.991614
+476    0.995807
+477    1.000000
+Name: cycle index, Length: 478, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995798
+2     -0.991597
+3     -0.987395
+4     -0.983193
+         ...   
+471    0.978992
+472    0.983193
+473    0.987395
+474    0.991597
+475    1.000000
+Name: cycle index, Length: 476, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995338
+2     -0.990676
+3     -0.986014
+4     -0.981352
+         ...   
+398    0.878788
+399    0.892774
+400    0.916084
+401    0.986014
+402    1.000000
+Name: cycle index, Length: 403, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995902
+2     -0.991803
+3     -0.987705
+4     -0.983607
+         ...   
+480    0.975410
+481    0.979508
+482    0.987705
+483    0.995902
+484    1.000000
+Name: cycle index, Length: 485, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995444
+2     -0.990888
+3     -0.986333
+4     -0.981777
+         ...   
+433    0.977221
+434    0.981777
+435    0.986333
+436    0.995444
+437    1.000000
+Name: cycle index, Length: 438, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995316
+2     -0.990632
+3     -0.985948
+4     -0.981265
+         ...   
+408    0.911007
+409    0.915691
+410    0.920375
+411    0.948478
+412    1.000000
+Name: cycle index, Length: 413, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.993056
+2     -0.986111
+3     -0.979167
+4     -0.972222
+         ...   
+284    0.972222
+285    0.979167
+286    0.986111
+287    0.993056
+288    1.000000
+Name: cycle index, Length: 289, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995565
+2     -0.991131
+3     -0.986696
+4     -0.982262
+         ...   
+445    0.982262
+446    0.986696
+447    0.991131
+448    0.995565
+449    1.000000
+Name: cycle index, Length: 450, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.994937
+2     -0.989873
+3     -0.984810
+4     -0.979747
+         ...   
+377    0.908861
+378    0.918987
+379    0.929114
+380    0.984810
+381    1.000000
+Name: cycle index, Length: 382, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995181
+2     -0.990361
+3     -0.985542
+4     -0.980723
+         ...   
+409    0.980723
+410    0.985542
+411    0.990361
+412    0.995181
+413    1.000000
+Name: cycle index, Length: 414, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.00000
+1     -0.99511
+2     -0.99022
+3     -0.98533
+4     -0.98044
+        ...   
+404    0.98044
+405    0.98533
+406    0.99022
+407    0.99511
+408    1.00000
+Name: cycle index, Length: 409, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995475
+2     -0.990950
+3     -0.986425
+4     -0.981900
+         ...   
+421    0.963801
+422    0.968326
+423    0.981900
+424    0.986425
+425    1.000000
+Name: cycle index, Length: 426, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.994819
+2     -0.989637
+3     -0.984456
+4     -0.979275
+         ...   
+380    0.974093
+381    0.979275
+382    0.984456
+383    0.989637
+384    1.000000
+Name: cycle index, Length: 385, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.00000
+1     -0.99687
+2     -0.99374
+3     -0.99061
+4     -0.98748
+        ...   
+629    0.98748
+630    0.99061
+631    0.99374
+632    0.99687
+633    1.00000
+Name: cycle index, Length: 634, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995485
+2     -0.990971
+3     -0.986456
+4     -0.981941
+         ...   
+429    0.972912
+430    0.977427
+431    0.986456
+432    0.995485
+433    1.000000
+Name: cycle index, Length: 434, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995624
+2     -0.991247
+3     -0.986871
+4     -0.982495
+         ...   
+452    0.982495
+453    0.986871
+454    0.991247
+455    0.995624
+456    1.000000
+Name: cycle index, Length: 457, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997807
+2     -0.993421
+3     -0.991228
+4     -0.989035
+         ...   
+904    0.991228
+905    0.993421
+906    0.995614
+907    0.997807
+908    1.000000
+Name: cycle index, Length: 909, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.983051
+2     -0.966102
+3     -0.949153
+4     -0.932203
+         ...   
+112    0.932203
+113    0.949153
+114    0.966102
+115    0.983051
+116    1.000000
+Name: cycle index, Length: 117, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997283
+2     -0.994565
+3     -0.991848
+4     -0.989130
+         ...   
+729    0.983696
+730    0.986413
+731    0.989130
+732    0.994565
+733    1.000000
+Name: cycle index, Length: 734, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.996860
+2     -0.993721
+3     -0.990581
+4     -0.987441
+         ...   
+630    0.981162
+631    0.984301
+632    0.987441
+633    0.996860
+634    1.000000
+Name: cycle index, Length: 635, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997475
+2     -0.994949
+3     -0.992424
+4     -0.989899
+         ...   
+785    0.987374
+786    0.989899
+787    0.992424
+788    0.994949
+789    1.000000
+Name: cycle index, Length: 790, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0      -1.000000
+1      -0.998307
+2      -0.996613
+3      -0.994920
+4      -0.993226
+          ...   
+1161    0.974598
+1162    0.976291
+1163    0.993226
+1164    0.994920
+1165    1.000000
+Name: cycle index, Length: 1166, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.993277
+2     -0.983193
+3     -0.979832
+4     -0.973109
+         ...   
+578    0.969748
+579    0.976471
+580    0.979832
+581    0.989916
+582    1.000000
+Name: cycle index, Length: 583, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997859
+2     -0.995717
+3     -0.993576
+4     -0.985011
+         ...   
+922    0.991435
+923    0.993576
+924    0.995717
+925    0.997859
+926    1.000000
+Name: cycle index, Length: 927, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997222
+2     -0.994444
+3     -0.991667
+4     -0.988889
+         ...   
+711    0.988889
+712    0.991667
+713    0.994444
+714    0.997222
+715    1.000000
+Name: cycle index, Length: 716, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997114
+2     -0.994228
+3     -0.991342
+4     -0.979798
+         ...   
+683    0.988456
+684    0.991342
+685    0.994228
+686    0.997114
+687    1.000000
+Name: cycle index, Length: 688, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0      -1.000000
+1      -0.989749
+2      -0.988724
+3      -0.987699
+4      -0.970272
+          ...   
+1830    0.980523
+1831    0.981548
+1832    0.984623
+1833    0.987699
+1834    1.000000
+Name: cycle index, Length: 1835, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.983607
+2     -0.967213
+3     -0.950820
+4     -0.934426
+         ...   
+118    0.934426
+119    0.950820
+120    0.967213
+121    0.983607
+122    1.000000
+Name: cycle index, Length: 123, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997819
+2     -0.995638
+3     -0.993457
+4     -0.991276
+         ...   
+903    0.980371
+904    0.984733
+905    0.989095
+906    0.995638
+907    1.000000
+Name: cycle index, Length: 908, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995816
+2     -0.991632
+3     -0.987448
+4     -0.983264
+         ...   
+474    0.983264
+475    0.987448
+476    0.991632
+477    0.995816
+478    1.000000
+Name: cycle index, Length: 479, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.991770
+2     -0.983539
+3     -0.975309
+4     -0.967078
+         ...   
+238    0.967078
+239    0.975309
+240    0.983539
+241    0.991770
+242    1.000000
+Name: cycle index, Length: 243, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0      -1.000000
+1      -0.995272
+2      -0.994326
+3      -0.993381
+4      -0.992435
+          ...   
+2090    0.994326
+2091    0.996217
+2092    0.997163
+2093    0.998109
+2094    1.000000
+Name: cycle index, Length: 2095, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0      -1.000000
+1      -0.998283
+2      -0.996567
+3      -0.994850
+4      -0.993133
+          ...   
+1159    0.991416
+1160    0.993133
+1161    0.994850
+1162    0.996567
+1163    1.000000
+Name: cycle index, Length: 1164, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.985537
+2     -0.983471
+3     -0.979339
+4     -0.977273
+         ...   
+945    0.973140
+946    0.979339
+947    0.985537
+948    0.989669
+949    1.000000
+Name: cycle index, Length: 950, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997449
+2     -0.994898
+3     -0.992347
+4     -0.989796
+         ...   
+778    0.984694
+779    0.987245
+780    0.992347
+781    0.997449
+782    1.000000
+Name: cycle index, Length: 783, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0      -1.000000
+1      -0.998396
+2      -0.996792
+3      -0.995188
+4      -0.993585
+          ...   
+1225    0.987169
+1226    0.988773
+1227    0.993585
+1228    0.998396
+1229    1.000000
+Name: cycle index, Length: 1230, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0    -1.000000
+1    -0.975904
+2    -0.951807
+3    -0.927711
+4    -0.903614
+        ...   
+79    0.903614
+80    0.927711
+81    0.951807
+82    0.975904
+83    1.000000
+Name: cycle index, Length: 84, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997978
+2     -0.995956
+3     -0.993933
+4     -0.991911
+         ...   
+983    0.991911
+984    0.993933
+985    0.995956
+986    0.997978
+987    1.000000
+Name: cycle index, Length: 988, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.996880
+2     -0.987520
+3     -0.984399
+4     -0.981279
+         ...   
+633    0.987520
+634    0.990640
+635    0.993760
+636    0.996880
+637    1.000000
+Name: cycle index, Length: 638, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.992308
+2     -0.984615
+3     -0.976923
+4     -0.969231
+         ...   
+255    0.969231
+256    0.976923
+257    0.984615
+258    0.992308
+259    1.000000
+Name: cycle index, Length: 260, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.990991
+2     -0.981982
+3     -0.972973
+4     -0.963964
+         ...   
+215    0.954955
+216    0.963964
+217    0.972973
+218    0.981982
+219    1.000000
+Name: cycle index, Length: 220, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.996262
+2     -0.992523
+3     -0.988785
+4     -0.985047
+         ...   
+522    0.985047
+523    0.988785
+524    0.992523
+525    0.996262
+526    1.000000
+Name: cycle index, Length: 527, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0      -1.000000
+1      -0.998749
+2      -0.997498
+3      -0.996248
+4      -0.994997
+          ...   
+1567    0.993746
+1568    0.994997
+1569    0.997498
+1570    0.998749
+1571    1.000000
+Name: cycle index, Length: 1572, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997286
+2     -0.994573
+3     -0.991859
+4     -0.989145
+         ...   
+731    0.989145
+732    0.991859
+733    0.994573
+734    0.997286
+735    1.000000
+Name: cycle index, Length: 736, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0      -1.000000
+1      -0.993914
+2      -0.992696
+3      -0.991479
+4      -0.989044
+          ...   
+1595    0.973220
+1596    0.974437
+1597    0.975654
+1598    0.995131
+1599    1.000000
+Name: cycle index, Length: 1600, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0    -1.000000
+1    -0.979167
+2    -0.958333
+3    -0.937500
+4    -0.916667
+        ...   
+92    0.916667
+93    0.937500
+94    0.958333
+95    0.979167
+96    1.000000
+Name: cycle index, Length: 97, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997910
+2     -0.995820
+3     -0.993730
+4     -0.991641
+         ...   
+947    0.981191
+948    0.985371
+949    0.991641
+950    0.993730
+951    1.000000
+Name: cycle index, Length: 952, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997494
+2     -0.994987
+3     -0.992481
+4     -0.989975
+         ...   
+790    0.987469
+791    0.989975
+792    0.992481
+793    0.994987
+794    1.000000
+Name: cycle index, Length: 795, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997195
+2     -0.994390
+3     -0.991585
+4     -0.988780
+         ...   
+707    0.985975
+708    0.988780
+709    0.991585
+710    0.994390
+711    1.000000
+Name: cycle index, Length: 712, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997843
+2     -0.995685
+3     -0.993528
+4     -0.991370
+         ...   
+918    0.980583
+919    0.982740
+920    0.987055
+921    0.991370
+922    1.000000
+Name: cycle index, Length: 923, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997582
+2     -0.995163
+3     -0.992745
+4     -0.990326
+         ...   
+822    0.990326
+823    0.992745
+824    0.995163
+825    0.997582
+826    1.000000
+Name: cycle index, Length: 827, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.994048
+2     -0.991071
+3     -0.988095
+4     -0.985119
+         ...   
+664    0.979167
+665    0.982143
+666    0.988095
+667    0.994048
+668    1.000000
+Name: cycle index, Length: 669, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.996330
+2     -0.992661
+3     -0.988991
+4     -0.985321
+         ...   
+540    0.985321
+541    0.988991
+542    0.992661
+543    0.996330
+544    1.000000
+Name: cycle index, Length: 545, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995025
+2     -0.990050
+3     -0.985075
+4     -0.980100
+         ...   
+396    0.975124
+397    0.985075
+398    0.990050
+399    0.995025
+400    1.000000
+Name: cycle index, Length: 401, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0      -1.000000
+1      -0.998476
+2      -0.996951
+3      -0.995427
+4      -0.993902
+          ...   
+1252    0.954268
+1253    0.961890
+1254    0.964939
+1255    0.989329
+1256    1.000000
+Name: cycle index, Length: 1257, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995485
+2     -0.990971
+3     -0.986456
+4     -0.981941
+         ...   
+436    0.977427
+437    0.981941
+438    0.986456
+439    0.990971
+440    1.000000
+Name: cycle index, Length: 441, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995261
+2     -0.990521
+3     -0.985782
+4     -0.981043
+         ...   
+414    0.981043
+415    0.985782
+416    0.990521
+417    0.995261
+418    1.000000
+Name: cycle index, Length: 419, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.989899
+2     -0.979798
+3     -0.969697
+4     -0.959596
+         ...   
+194    0.959596
+195    0.969697
+196    0.979798
+197    0.989899
+198    1.000000
+Name: cycle index, Length: 199, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995465
+2     -0.990930
+3     -0.986395
+4     -0.981859
+         ...   
+435    0.981859
+436    0.986395
+437    0.990930
+438    0.995465
+439    1.000000
+Name: cycle index, Length: 440, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995633
+2     -0.991266
+3     -0.986900
+4     -0.982533
+         ...   
+443    0.965066
+444    0.969432
+445    0.973799
+446    0.978166
+447    1.000000
+Name: cycle index, Length: 448, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995283
+2     -0.990566
+3     -0.985849
+4     -0.981132
+         ...   
+412    0.971698
+413    0.976415
+414    0.981132
+415    0.985849
+416    1.000000
+Name: cycle index, Length: 417, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995122
+2     -0.990244
+3     -0.985366
+4     -0.980488
+         ...   
+403    0.980488
+404    0.985366
+405    0.990244
+406    0.995122
+407    1.000000
+Name: cycle index, Length: 408, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.995122
+2     -0.990244
+3     -0.985366
+4     -0.980488
+         ...   
+402    0.975610
+403    0.980488
+404    0.985366
+405    0.990244
+406    1.000000
+Name: cycle index, Length: 407, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997845
+2     -0.995690
+3     -0.993534
+4     -0.991379
+         ...   
+924    0.991379
+925    0.993534
+926    0.995690
+927    0.997845
+928    1.000000
+Name: cycle index, Length: 929, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997423
+2     -0.994845
+3     -0.992268
+4     -0.989691
+         ...   
+766    0.987113
+767    0.989691
+768    0.992268
+769    0.994845
+770    1.000000
+Name: cycle index, Length: 771, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997283
+2     -0.994565
+3     -0.991848
+4     -0.986413
+         ...   
+723    0.989130
+724    0.991848
+725    0.994565
+726    0.997283
+727    1.000000
+Name: cycle index, Length: 728, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.997409
+2     -0.994819
+3     -0.992228
+4     -0.989637
+         ...   
+764    0.987047
+765    0.989637
+766    0.994819
+767    0.997409
+768    1.000000
+Name: cycle index, Length: 769, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.994872
+2     -0.989744
+3     -0.984615
+4     -0.979487
+         ...   
+386    0.979487
+387    0.984615
+388    0.989744
+389    0.994872
+390    1.000000
+Name: cycle index, Length: 391, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\historical_reproduction\source\dataloader\dataloader.py:64: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '0     -1.000000
+1     -0.994186
+2     -0.988372
+3     -0.982558
+4     -0.976744
+         ...   
+340    0.976744
+341    0.982558
+342    0.988372
+343    0.994186
+344    1.000000
+Name: cycle index, Length: 345, dtype: float64' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  df.iloc[:,:-1] = f_df
+2026-09-17 19:38 - function:_save_args - INFO - Args:
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	data:MIT
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	batch_size:512
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	normalization_method:min-max
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	epochs:200
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	early_stop:20
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	warmup_epochs:30
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	warmup_lr:0.002
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	lr:0.01
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	final_lr:0.0002
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	lr_F:0.001
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	u_layers_num:3
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	u_hidden_dim:60
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	F_layers_num:3
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	F_hidden_dim:60
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	alpha:1
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	beta:50
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	log_dir:logging.txt
+2026-09-17 19:38 - function:_save_args - CRITICAL - 	save_folder:C:\Users\oscar\OneDrive\文件\ChatGPT\FYP AI for Battery\PINN4SOH\results\reproduction\MIT\historical_run_01
+[epoch:1 iter:50] data loss:0.019721, PDE loss:0.014406, physics loss:0.038131
+[epoch:1 iter:100] data loss:0.007073, PDE loss:0.006979, physics loss:0.038482
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:1, lr:0.002000, total loss:2.249697
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:1, MSE: 0.0024022122379392385
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00235436, MAE: 0.040684, MAPE: 0.041951, RMSE: 0.048522
+[epoch:2 iter:50] data loss:0.004776, PDE loss:0.004123, physics loss:0.040305
+[epoch:2 iter:100] data loss:0.002908, PDE loss:0.003027, physics loss:0.041191
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:2, lr:0.002276, total loss:2.163708
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:2, MSE: 0.0008270519901998341
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00078361, MAE: 0.023569, MAPE: 0.024300, RMSE: 0.027993
+[epoch:3 iter:50] data loss:0.001892, PDE loss:0.001890, physics loss:0.028652
+[epoch:3 iter:100] data loss:0.001527, PDE loss:0.001577, physics loss:0.057326
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:3, lr:0.002552, total loss:2.158782
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:3, MSE: 0.0006284184637479484
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00057555, MAE: 0.020545, MAPE: 0.021162, RMSE: 0.023991
+[epoch:4 iter:50] data loss:0.001154, PDE loss:0.001304, physics loss:0.174081
+[epoch:4 iter:100] data loss:0.001060, PDE loss:0.001120, physics loss:0.051947
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:4, lr:0.002828, total loss:2.157101
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:4, MSE: 0.00048313025035895407
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00043089, MAE: 0.017245, MAPE: 0.017839, RMSE: 0.020758
+[epoch:5 iter:50] data loss:0.000748, PDE loss:0.000878, physics loss:0.060405
+[epoch:5 iter:100] data loss:0.000701, PDE loss:0.000872, physics loss:0.025067
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:5, lr:0.003103, total loss:2.156334
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:5, MSE: 0.00046188055421225727
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00040735, MAE: 0.016765, MAPE: 0.017373, RMSE: 0.020183
+[epoch:6 iter:50] data loss:0.000593, PDE loss:0.000600, physics loss:0.049148
+[epoch:6 iter:100] data loss:0.000512, PDE loss:0.000575, physics loss:0.032630
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:6, lr:0.003379, total loss:2.155922
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:6, MSE: 0.0003656372136902064
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00032101, MAE: 0.013956, MAPE: 0.014528, RMSE: 0.017917
+[epoch:7 iter:50] data loss:0.000549, PDE loss:0.000497, physics loss:0.040047
+[epoch:7 iter:100] data loss:0.000443, PDE loss:0.000455, physics loss:0.046438
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:7, lr:0.003655, total loss:2.155635
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:7, MSE: 0.0003385257732588798
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00029962, MAE: 0.013264, MAPE: 0.013808, RMSE: 0.017309
+[epoch:8 iter:50] data loss:0.000380, PDE loss:0.000387, physics loss:0.032751
+[epoch:8 iter:100] data loss:0.000356, PDE loss:0.000345, physics loss:0.026079
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:8, lr:0.003931, total loss:2.155443
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:8, MSE: 0.00030252180295065045
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00026859, MAE: 0.011949, MAPE: 0.012480, RMSE: 0.016389
+[epoch:9 iter:50] data loss:0.000354, PDE loss:0.000295, physics loss:0.039972
+[epoch:9 iter:100] data loss:0.000304, PDE loss:0.000287, physics loss:0.064365
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:9, lr:0.004207, total loss:2.155305
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:9, MSE: 0.0002383663522778079
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00022054, MAE: 0.010405, MAPE: 0.010863, RMSE: 0.014851
+[epoch:10 iter:50] data loss:0.000251, PDE loss:0.000241, physics loss:0.051694
+[epoch:10 iter:100] data loss:0.000261, PDE loss:0.000201, physics loss:0.038061
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:10, lr:0.004483, total loss:2.155206
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:10, MSE: 0.00022551050642505288
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00021200, MAE: 0.009973, MAPE: 0.010419, RMSE: 0.014560
+[epoch:11 iter:50] data loss:0.000251, PDE loss:0.000182, physics loss:0.109613
+[epoch:11 iter:100] data loss:0.000233, PDE loss:0.000179, physics loss:0.032306
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:11, lr:0.004759, total loss:2.155123
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:11, MSE: 0.00020306177611928433
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00019442, MAE: 0.009297, MAPE: 0.009717, RMSE: 0.013944
+[epoch:12 iter:50] data loss:0.000212, PDE loss:0.000166, physics loss:0.025728
+[epoch:12 iter:100] data loss:0.000228, PDE loss:0.000150, physics loss:0.091051
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:12, lr:0.005034, total loss:2.155061
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:12, MSE: 0.00018907988851424307
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00018151, MAE: 0.008716, MAPE: 0.009130, RMSE: 0.013473
+[epoch:13 iter:50] data loss:0.000179, PDE loss:0.000129, physics loss:0.049694
+[epoch:13 iter:100] data loss:0.000173, PDE loss:0.000116, physics loss:0.083694
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:13, lr:0.005310, total loss:2.155015
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:13, MSE: 0.00014666232164017856
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00014791, MAE: 0.007524, MAPE: 0.007924, RMSE: 0.012162
+[epoch:14 iter:50] data loss:0.000161, PDE loss:0.000106, physics loss:0.067023
+[epoch:14 iter:100] data loss:0.000195, PDE loss:0.000108, physics loss:0.039209
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:14, lr:0.005586, total loss:2.154975
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:14, MSE: 0.00015550838725175709
+[epoch:15 iter:50] data loss:0.000166, PDE loss:0.000099, physics loss:0.058519
+[epoch:15 iter:100] data loss:0.000153, PDE loss:0.000095, physics loss:0.033839
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:15, lr:0.005862, total loss:2.154948
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:15, MSE: 0.0001369096280541271
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00014176, MAE: 0.007416, MAPE: 0.007814, RMSE: 0.011906
+[epoch:16 iter:50] data loss:0.000156, PDE loss:0.000085, physics loss:0.022567
+[epoch:16 iter:100] data loss:0.000154, PDE loss:0.000079, physics loss:0.073857
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:16, lr:0.006138, total loss:2.154925
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:16, MSE: 0.00015903142048045993
+[epoch:17 iter:50] data loss:0.000152, PDE loss:0.000073, physics loss:0.056133
+[epoch:17 iter:100] data loss:0.000129, PDE loss:0.000067, physics loss:0.032376
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:17, lr:0.006414, total loss:2.154909
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:17, MSE: 0.0001380905305268243
+[epoch:18 iter:50] data loss:0.000149, PDE loss:0.000062, physics loss:0.053322
+[epoch:18 iter:100] data loss:0.000159, PDE loss:0.000068, physics loss:0.043499
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:18, lr:0.006690, total loss:2.154895
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:18, MSE: 0.00012452786904759705
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00013491, MAE: 0.007418, MAPE: 0.007829, RMSE: 0.011615
+[epoch:19 iter:50] data loss:0.000174, PDE loss:0.000063, physics loss:0.042175
+[epoch:19 iter:100] data loss:0.000122, PDE loss:0.000051, physics loss:0.025683
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:19, lr:0.006966, total loss:2.154884
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:19, MSE: 0.00012959758169017732
+[epoch:20 iter:50] data loss:0.000143, PDE loss:0.000049, physics loss:0.059134
+[epoch:20 iter:100] data loss:0.000138, PDE loss:0.000048, physics loss:0.030208
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:20, lr:0.007241, total loss:2.154872
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:20, MSE: 0.00012252862507011741
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00013133, MAE: 0.007191, MAPE: 0.007577, RMSE: 0.011460
+[epoch:21 iter:50] data loss:0.000113, PDE loss:0.000040, physics loss:0.042867
+[epoch:21 iter:100] data loss:0.000127, PDE loss:0.000044, physics loss:0.031979
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:21, lr:0.007517, total loss:2.154864
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:21, MSE: 0.00011481338151497766
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00012562, MAE: 0.007060, MAPE: 0.007448, RMSE: 0.011208
+[epoch:22 iter:50] data loss:0.000144, PDE loss:0.000050, physics loss:0.047922
+[epoch:22 iter:100] data loss:0.000145, PDE loss:0.000036, physics loss:0.037514
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:22, lr:0.007793, total loss:2.154856
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:22, MSE: 0.00012550577230285853
+[epoch:23 iter:50] data loss:0.000116, PDE loss:0.000040, physics loss:0.064485
+[epoch:23 iter:100] data loss:0.000122, PDE loss:0.000038, physics loss:0.037215
+2026-09-17 19:38 - function:Train - INFO - [Train] epoch:23, lr:0.008069, total loss:2.154853
+2026-09-17 19:38 - function:Train - INFO - [Valid] epoch:23, MSE: 0.00011263658961979672
+2026-09-17 19:38 - function:Train - INFO - [Test] MSE: 0.00012612, MAE: 0.007279, MAPE: 0.007672, RMSE: 0.011230
+[epoch:24 iter:50] data loss:0.000141, PDE loss:0.000031, physics loss:0.033623
+[epoch:24 iter:100] data loss:0.000122, PDE loss:0.000045, physics loss:0.025144
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:24, lr:0.008345, total loss:2.154846
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:24, MSE: 0.00011489923053886741
+[epoch:25 iter:50] data loss:0.000106, PDE loss:0.000035, physics loss:0.028366
+[epoch:25 iter:100] data loss:0.000104, PDE loss:0.000030, physics loss:0.039834
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:25, lr:0.008621, total loss:2.154838
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:25, MSE: 0.0001167712252936326
+[epoch:26 iter:50] data loss:0.000096, PDE loss:0.000030, physics loss:0.043142
+[epoch:26 iter:100] data loss:0.000130, PDE loss:0.000029, physics loss:0.069026
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:26, lr:0.008897, total loss:2.154837
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:26, MSE: 0.00010704407031880692
+2026-09-17 19:39 - function:Train - INFO - [Test] MSE: 0.00012854, MAE: 0.007465, MAPE: 0.007860, RMSE: 0.011338
+[epoch:27 iter:50] data loss:0.000132, PDE loss:0.000030, physics loss:0.043536
+[epoch:27 iter:100] data loss:0.000121, PDE loss:0.000032, physics loss:0.031839
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:27, lr:0.009172, total loss:2.154832
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:27, MSE: 9.897488780552521e-05
+2026-09-17 19:39 - function:Train - INFO - [Test] MSE: 0.00011405, MAE: 0.007213, MAPE: 0.007627, RMSE: 0.010679
+[epoch:28 iter:50] data loss:0.000144, PDE loss:0.000024, physics loss:0.041632
+[epoch:28 iter:100] data loss:0.000107, PDE loss:0.000022, physics loss:0.056254
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:28, lr:0.009448, total loss:2.154825
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:28, MSE: 0.00013763517199549824
+[epoch:29 iter:50] data loss:0.000131, PDE loss:0.000027, physics loss:0.045860
+[epoch:29 iter:100] data loss:0.000151, PDE loss:0.000026, physics loss:0.048236
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:29, lr:0.009724, total loss:2.154825
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:29, MSE: 0.00010704932356020436
+[epoch:30 iter:50] data loss:0.000098, PDE loss:0.000021, physics loss:0.050637
+[epoch:30 iter:100] data loss:0.000100, PDE loss:0.000021, physics loss:0.024067
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:30, lr:0.010000, total loss:2.154820
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:30, MSE: 9.703463001642376e-05
+2026-09-17 19:39 - function:Train - INFO - [Test] MSE: 0.00010994, MAE: 0.006912, MAPE: 0.007300, RMSE: 0.010485
+[epoch:31 iter:50] data loss:0.000114, PDE loss:0.000028, physics loss:0.037590
+[epoch:31 iter:100] data loss:0.000104, PDE loss:0.000024, physics loss:0.022169
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:31, lr:0.010000, total loss:2.154818
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:31, MSE: 9.668637358117849e-05
+2026-09-17 19:39 - function:Train - INFO - [Test] MSE: 0.00011507, MAE: 0.006990, MAPE: 0.007377, RMSE: 0.010727
+[epoch:32 iter:50] data loss:0.000098, PDE loss:0.000025, physics loss:0.037247
+[epoch:32 iter:100] data loss:0.000121, PDE loss:0.000021, physics loss:0.038512
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:32, lr:0.009999, total loss:2.154819
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:32, MSE: 9.46837681112811e-05
+2026-09-17 19:39 - function:Train - INFO - [Test] MSE: 0.00011395, MAE: 0.007662, MAPE: 0.008101, RMSE: 0.010675
+[epoch:33 iter:50] data loss:0.000099, PDE loss:0.000032, physics loss:0.034536
+[epoch:33 iter:100] data loss:0.000112, PDE loss:0.000014, physics loss:0.038406
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:33, lr:0.009997, total loss:2.154814
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:33, MSE: 9.507500362815335e-05
+[epoch:34 iter:50] data loss:0.000123, PDE loss:0.000020, physics loss:0.033442
+[epoch:34 iter:100] data loss:0.000148, PDE loss:0.000018, physics loss:0.034628
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:34, lr:0.009992, total loss:2.154813
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:34, MSE: 0.00014080933760851622
+[epoch:35 iter:50] data loss:0.000098, PDE loss:0.000017, physics loss:0.027376
+[epoch:35 iter:100] data loss:0.000115, PDE loss:0.000018, physics loss:0.046012
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:35, lr:0.009987, total loss:2.154814
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:35, MSE: 9.666481491876766e-05
+[epoch:36 iter:50] data loss:0.000134, PDE loss:0.000017, physics loss:0.029794
+[epoch:36 iter:100] data loss:0.000188, PDE loss:0.000018, physics loss:0.052940
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:36, lr:0.009979, total loss:2.154815
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:36, MSE: 0.00010300867143087089
+[epoch:37 iter:50] data loss:0.000106, PDE loss:0.000012, physics loss:0.034232
+[epoch:37 iter:100] data loss:0.000123, PDE loss:0.000017, physics loss:0.041741
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:37, lr:0.009970, total loss:2.154810
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:37, MSE: 9.174126898869872e-05
+2026-09-17 19:39 - function:Train - INFO - [Test] MSE: 0.00009991, MAE: 0.006592, MAPE: 0.006967, RMSE: 0.009996
+[epoch:38 iter:50] data loss:0.000094, PDE loss:0.000013, physics loss:0.043811
+[epoch:38 iter:100] data loss:0.000120, PDE loss:0.000019, physics loss:0.026573
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:38, lr:0.009959, total loss:2.154810
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:38, MSE: 8.526207238901407e-05
+2026-09-17 19:39 - function:Train - INFO - [Test] MSE: 0.00010024, MAE: 0.006604, MAPE: 0.006966, RMSE: 0.010012
+[epoch:39 iter:50] data loss:0.000120, PDE loss:0.000015, physics loss:0.047452
+[epoch:39 iter:100] data loss:0.000103, PDE loss:0.000013, physics loss:0.033888
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:39, lr:0.009947, total loss:2.154800
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:39, MSE: 0.00010576012573437765
+[epoch:40 iter:50] data loss:0.000134, PDE loss:0.000013, physics loss:0.024317
+[epoch:40 iter:100] data loss:0.000097, PDE loss:0.000027, physics loss:0.037652
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:40, lr:0.009932, total loss:2.154810
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:40, MSE: 9.509667142992839e-05
+[epoch:41 iter:50] data loss:0.000138, PDE loss:0.000016, physics loss:0.031631
+[epoch:41 iter:100] data loss:0.000083, PDE loss:0.000012, physics loss:0.048137
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:41, lr:0.009917, total loss:2.154803
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:41, MSE: 8.223779877880588e-05
+2026-09-17 19:39 - function:Train - INFO - [Test] MSE: 0.00010185, MAE: 0.007115, MAPE: 0.007527, RMSE: 0.010092
+[epoch:42 iter:50] data loss:0.000092, PDE loss:0.000020, physics loss:0.039768
+[epoch:42 iter:100] data loss:0.000110, PDE loss:0.000018, physics loss:0.087181
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:42, lr:0.009899, total loss:2.154804
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:42, MSE: 9.265538392355666e-05
+[epoch:43 iter:50] data loss:0.000107, PDE loss:0.000016, physics loss:0.057880
+[epoch:43 iter:100] data loss:0.000085, PDE loss:0.000012, physics loss:0.023122
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:43, lr:0.009880, total loss:2.154803
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:43, MSE: 0.0001380479079671204
+[epoch:44 iter:50] data loss:0.000100, PDE loss:0.000015, physics loss:0.033989
+[epoch:44 iter:100] data loss:0.000083, PDE loss:0.000012, physics loss:0.049847
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:44, lr:0.009859, total loss:2.154805
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:44, MSE: 9.974174463422969e-05
+[epoch:45 iter:50] data loss:0.000098, PDE loss:0.000011, physics loss:0.035749
+[epoch:45 iter:100] data loss:0.000109, PDE loss:0.000010, physics loss:0.070004
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:45, lr:0.009837, total loss:2.154804
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:45, MSE: 0.00013564483379013836
+[epoch:46 iter:50] data loss:0.000098, PDE loss:0.000009, physics loss:0.038623
+[epoch:46 iter:100] data loss:0.000105, PDE loss:0.000012, physics loss:0.042218
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:46, lr:0.009813, total loss:2.154807
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:46, MSE: 0.00012279683141969144
+[epoch:47 iter:50] data loss:0.000086, PDE loss:0.000010, physics loss:0.047037
+[epoch:47 iter:100] data loss:0.000092, PDE loss:0.000008, physics loss:0.029355
+2026-09-17 19:39 - function:Train - INFO - [Train] epoch:47, lr:0.009787, total loss:2.154805
+2026-09-17 19:39 - function:Train - INFO - [Valid] epoch:47, MSE: 0.00014419462240766734
+[epoch:48 iter:50] data loss:0.000088, PDE loss:0.000008, physics loss:0.037080
+[epoch:48 iter:100] data loss:0.000118, PDE loss:0.000008, physics loss:0.027098
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:48, lr:0.009760, total loss:2.154807
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:48, MSE: 0.00010317808482795954
+[epoch:49 iter:50] data loss:0.000107, PDE loss:0.000007, physics loss:0.048713
+[epoch:49 iter:100] data loss:0.000109, PDE loss:0.000010, physics loss:0.038559
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:49, lr:0.009731, total loss:2.154798
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:49, MSE: 0.00010528021084610373
+[epoch:50 iter:50] data loss:0.000127, PDE loss:0.000012, physics loss:0.053256
+[epoch:50 iter:100] data loss:0.000114, PDE loss:0.000008, physics loss:0.026607
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:50, lr:0.009701, total loss:2.154799
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:50, MSE: 0.00010881040361709893
+[epoch:51 iter:50] data loss:0.000108, PDE loss:0.000009, physics loss:0.052149
+[epoch:51 iter:100] data loss:0.000109, PDE loss:0.000009, physics loss:0.043552
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:51, lr:0.009669, total loss:2.154805
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:51, MSE: 0.0001158056766144
+[epoch:52 iter:50] data loss:0.000115, PDE loss:0.000007, physics loss:0.037330
+[epoch:52 iter:100] data loss:0.000094, PDE loss:0.000011, physics loss:0.030328
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:52, lr:0.009636, total loss:2.154803
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:52, MSE: 0.00010924413800239563
+[epoch:53 iter:50] data loss:0.000107, PDE loss:0.000012, physics loss:0.027635
+[epoch:53 iter:100] data loss:0.000100, PDE loss:0.000009, physics loss:0.031387
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:53, lr:0.009601, total loss:2.154793
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:53, MSE: 9.459596913075075e-05
+[epoch:54 iter:50] data loss:0.000114, PDE loss:0.000009, physics loss:0.038238
+[epoch:54 iter:100] data loss:0.000093, PDE loss:0.000008, physics loss:0.047584
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:54, lr:0.009564, total loss:2.154800
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:54, MSE: 9.139264875557274e-05
+[epoch:55 iter:50] data loss:0.000091, PDE loss:0.000008, physics loss:0.037446
+[epoch:55 iter:100] data loss:0.000116, PDE loss:0.000007, physics loss:0.058388
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:55, lr:0.009526, total loss:2.154794
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:55, MSE: 0.00011734620784409344
+[epoch:56 iter:50] data loss:0.000120, PDE loss:0.000010, physics loss:0.038378
+[epoch:56 iter:100] data loss:0.000113, PDE loss:0.000007, physics loss:0.032149
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:56, lr:0.009486, total loss:2.154796
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:56, MSE: 0.00014312841813080013
+[epoch:57 iter:50] data loss:0.000092, PDE loss:0.000006, physics loss:0.031120
+[epoch:57 iter:100] data loss:0.000093, PDE loss:0.000006, physics loss:0.030720
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:57, lr:0.009445, total loss:2.154790
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:57, MSE: 7.6165801146999e-05
+2026-09-17 19:40 - function:Train - INFO - [Test] MSE: 0.00009127, MAE: 0.006763, MAPE: 0.007152, RMSE: 0.009554
+[epoch:58 iter:50] data loss:0.000091, PDE loss:0.000024, physics loss:0.055778
+[epoch:58 iter:100] data loss:0.000091, PDE loss:0.000008, physics loss:0.022613
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:58, lr:0.009403, total loss:2.154800
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:58, MSE: 7.430207915604115e-05
+2026-09-17 19:40 - function:Train - INFO - [Test] MSE: 0.00008719, MAE: 0.006613, MAPE: 0.006989, RMSE: 0.009338
+[epoch:59 iter:50] data loss:0.000127, PDE loss:0.000007, physics loss:0.037107
+[epoch:59 iter:100] data loss:0.000102, PDE loss:0.000008, physics loss:0.049335
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:59, lr:0.009359, total loss:2.154794
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:59, MSE: 8.12069047242403e-05
+[epoch:60 iter:50] data loss:0.000106, PDE loss:0.000009, physics loss:0.053574
+[epoch:60 iter:100] data loss:0.000075, PDE loss:0.000011, physics loss:0.037463
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:60, lr:0.009313, total loss:2.154790
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:60, MSE: 9.214082092512399e-05
+[epoch:61 iter:50] data loss:0.000127, PDE loss:0.000013, physics loss:0.155527
+[epoch:61 iter:100] data loss:0.000117, PDE loss:0.000008, physics loss:0.027300
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:61, lr:0.009266, total loss:2.154791
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:61, MSE: 8.39226195239462e-05
+[epoch:62 iter:50] data loss:0.000118, PDE loss:0.000015, physics loss:0.031111
+[epoch:62 iter:100] data loss:0.000105, PDE loss:0.000006, physics loss:0.033138
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:62, lr:0.009218, total loss:2.154807
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:62, MSE: 0.00010105440742336214
+[epoch:63 iter:50] data loss:0.000103, PDE loss:0.000006, physics loss:0.086421
+[epoch:63 iter:100] data loss:0.000108, PDE loss:0.000006, physics loss:0.024258
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:63, lr:0.009168, total loss:2.154788
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:63, MSE: 9.429971396457404e-05
+[epoch:64 iter:50] data loss:0.000097, PDE loss:0.000015, physics loss:0.023017
+[epoch:64 iter:100] data loss:0.000105, PDE loss:0.000005, physics loss:0.050690
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:64, lr:0.009117, total loss:2.154788
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:64, MSE: 7.822618499631062e-05
+[epoch:65 iter:50] data loss:0.000081, PDE loss:0.000012, physics loss:0.032504
+[epoch:65 iter:100] data loss:0.000101, PDE loss:0.000008, physics loss:0.034087
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:65, lr:0.009064, total loss:2.154790
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:65, MSE: 7.652604836039245e-05
+[epoch:66 iter:50] data loss:0.000086, PDE loss:0.000012, physics loss:0.032589
+[epoch:66 iter:100] data loss:0.000110, PDE loss:0.000004, physics loss:0.060738
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:66, lr:0.009010, total loss:2.154807
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:66, MSE: 0.00012054577382514253
+[epoch:67 iter:50] data loss:0.000087, PDE loss:0.000007, physics loss:0.042288
+[epoch:67 iter:100] data loss:0.000082, PDE loss:0.000005, physics loss:0.029282
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:67, lr:0.008955, total loss:2.154794
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:67, MSE: 9.371274063596502e-05
+[epoch:68 iter:50] data loss:0.000120, PDE loss:0.000009, physics loss:0.054602
+[epoch:68 iter:100] data loss:0.000096, PDE loss:0.000005, physics loss:0.041696
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:68, lr:0.008898, total loss:2.154789
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:68, MSE: 8.539109694538638e-05
+[epoch:69 iter:50] data loss:0.000151, PDE loss:0.000005, physics loss:0.059615
+[epoch:69 iter:100] data loss:0.000133, PDE loss:0.000007, physics loss:0.033701
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:69, lr:0.008841, total loss:2.154789
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:69, MSE: 7.677228859392926e-05
+[epoch:70 iter:50] data loss:0.000102, PDE loss:0.000005, physics loss:0.039505
+[epoch:70 iter:100] data loss:0.000094, PDE loss:0.000007, physics loss:0.036786
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:70, lr:0.008782, total loss:2.154793
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:70, MSE: 8.625428017694503e-05
+[epoch:71 iter:50] data loss:0.000085, PDE loss:0.000005, physics loss:0.032996
+[epoch:71 iter:100] data loss:0.000100, PDE loss:0.000005, physics loss:0.042016
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:71, lr:0.008721, total loss:2.154784
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:71, MSE: 0.00010449503315612674
+[epoch:72 iter:50] data loss:0.000093, PDE loss:0.000004, physics loss:0.030415
+[epoch:72 iter:100] data loss:0.000090, PDE loss:0.000005, physics loss:0.032254
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:72, lr:0.008660, total loss:2.154782
+2026-09-17 19:40 - function:Train - INFO - [Valid] epoch:72, MSE: 7.153899787226692e-05
+2026-09-17 19:40 - function:Train - INFO - [Test] MSE: 0.00009278, MAE: 0.007106, MAPE: 0.007510, RMSE: 0.009632
+[epoch:73 iter:50] data loss:0.000100, PDE loss:0.000006, physics loss:0.031628
+[epoch:73 iter:100] data loss:0.000098, PDE loss:0.000007, physics loss:0.048996
+2026-09-17 19:40 - function:Train - INFO - [Train] epoch:73, lr:0.008597, total loss:2.154790
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:73, MSE: 7.285981700988486e-05
+[epoch:74 iter:50] data loss:0.000106, PDE loss:0.000004, physics loss:0.052792
+[epoch:74 iter:100] data loss:0.000083, PDE loss:0.000004, physics loss:0.056079
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:74, lr:0.008533, total loss:2.154782
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:74, MSE: 8.439875091426075e-05
+[epoch:75 iter:50] data loss:0.000074, PDE loss:0.000006, physics loss:0.067599
+[epoch:75 iter:100] data loss:0.000134, PDE loss:0.000006, physics loss:0.037623
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:75, lr:0.008467, total loss:2.154785
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:75, MSE: 0.0001278625859413296
+[epoch:76 iter:50] data loss:0.000134, PDE loss:0.000006, physics loss:0.042672
+[epoch:76 iter:100] data loss:0.000087, PDE loss:0.000007, physics loss:0.037785
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:76, lr:0.008401, total loss:2.154799
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:76, MSE: 7.005479710642248e-05
+2026-09-17 19:41 - function:Train - INFO - [Test] MSE: 0.00009002, MAE: 0.006908, MAPE: 0.007299, RMSE: 0.009488
+[epoch:77 iter:50] data loss:0.000098, PDE loss:0.000004, physics loss:0.024420
+[epoch:77 iter:100] data loss:0.000133, PDE loss:0.000004, physics loss:0.037627
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:77, lr:0.008334, total loss:2.154781
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:77, MSE: 0.00011582878505578265
+[epoch:78 iter:50] data loss:0.000094, PDE loss:0.000004, physics loss:0.045351
+[epoch:78 iter:100] data loss:0.000085, PDE loss:0.000007, physics loss:0.020767
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:78, lr:0.008265, total loss:2.154785
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:78, MSE: 7.486223330488428e-05
+[epoch:79 iter:50] data loss:0.000107, PDE loss:0.000005, physics loss:0.034607
+[epoch:79 iter:100] data loss:0.000093, PDE loss:0.000003, physics loss:0.058376
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:79, lr:0.008195, total loss:2.154777
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:79, MSE: 6.732809561071917e-05
+2026-09-17 19:41 - function:Train - INFO - [Test] MSE: 0.00008682, MAE: 0.007049, MAPE: 0.007448, RMSE: 0.009318
+[epoch:80 iter:50] data loss:0.000114, PDE loss:0.000006, physics loss:0.029795
+[epoch:80 iter:100] data loss:0.000079, PDE loss:0.000005, physics loss:0.063852
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:80, lr:0.008125, total loss:2.154790
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:80, MSE: 8.252808038378134e-05
+[epoch:81 iter:50] data loss:0.000096, PDE loss:0.000003, physics loss:0.056069
+[epoch:81 iter:100] data loss:0.000079, PDE loss:0.000003, physics loss:0.032870
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:81, lr:0.008053, total loss:2.154775
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:81, MSE: 8.914653881220147e-05
+[epoch:82 iter:50] data loss:0.000066, PDE loss:0.000004, physics loss:0.040838
+[epoch:82 iter:100] data loss:0.000078, PDE loss:0.000003, physics loss:0.026560
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:82, lr:0.007980, total loss:2.154770
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:82, MSE: 9.624617814552039e-05
+[epoch:83 iter:50] data loss:0.000087, PDE loss:0.000003, physics loss:0.041051
+[epoch:83 iter:100] data loss:0.000080, PDE loss:0.000003, physics loss:0.060689
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:83, lr:0.007906, total loss:2.154779
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:83, MSE: 8.149837958626449e-05
+[epoch:84 iter:50] data loss:0.000081, PDE loss:0.000011, physics loss:0.059305
+[epoch:84 iter:100] data loss:0.000105, PDE loss:0.000005, physics loss:0.034879
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:84, lr:0.007832, total loss:2.154784
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:84, MSE: 0.0001335723791271448
+[epoch:85 iter:50] data loss:0.010306, PDE loss:0.002435, physics loss:0.043279
+[epoch:85 iter:100] data loss:0.001010, PDE loss:0.000053, physics loss:0.065957
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:85, lr:0.007756, total loss:2.281834
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:85, MSE: 0.0008817082270979881
+[epoch:86 iter:50] data loss:0.000730, PDE loss:0.000024, physics loss:0.035695
+[epoch:86 iter:100] data loss:0.000637, PDE loss:0.000017, physics loss:0.023489
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:86, lr:0.007680, total loss:2.155444
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:86, MSE: 0.0005674485582858324
+[epoch:87 iter:50] data loss:0.000610, PDE loss:0.000013, physics loss:0.033293
+[epoch:87 iter:100] data loss:0.000647, PDE loss:0.000012, physics loss:0.045307
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:87, lr:0.007602, total loss:2.155288
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:87, MSE: 0.0004317016573622823
+[epoch:88 iter:50] data loss:0.000524, PDE loss:0.000009, physics loss:0.050676
+[epoch:88 iter:100] data loss:0.000544, PDE loss:0.000008, physics loss:0.238029
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:88, lr:0.007524, total loss:2.155217
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:88, MSE: 0.00038321802276186645
+[epoch:89 iter:50] data loss:0.000453, PDE loss:0.000007, physics loss:0.028395
+[epoch:89 iter:100] data loss:0.000436, PDE loss:0.000007, physics loss:0.028499
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:89, lr:0.007445, total loss:2.155167
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:89, MSE: 0.00032890780130401254
+[epoch:90 iter:50] data loss:0.000481, PDE loss:0.000006, physics loss:0.022770
+[epoch:90 iter:100] data loss:0.000418, PDE loss:0.000005, physics loss:0.048697
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:90, lr:0.007365, total loss:2.155125
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:90, MSE: 0.0003166130918543786
+[epoch:91 iter:50] data loss:0.000414, PDE loss:0.000005, physics loss:0.041579
+[epoch:91 iter:100] data loss:0.000385, PDE loss:0.000005, physics loss:0.031118
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:91, lr:0.007284, total loss:2.155093
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:91, MSE: 0.000280447187833488
+[epoch:92 iter:50] data loss:0.000360, PDE loss:0.000004, physics loss:0.060665
+[epoch:92 iter:100] data loss:0.000389, PDE loss:0.000004, physics loss:0.037064
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:92, lr:0.007203, total loss:2.155070
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:92, MSE: 0.00025896201259456575
+[epoch:93 iter:50] data loss:0.000344, PDE loss:0.000003, physics loss:0.029507
+[epoch:93 iter:100] data loss:0.000362, PDE loss:0.000004, physics loss:0.034707
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:93, lr:0.007121, total loss:2.155045
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:93, MSE: 0.0002547887561377138
+[epoch:94 iter:50] data loss:0.000366, PDE loss:0.000003, physics loss:0.024098
+[epoch:94 iter:100] data loss:0.000404, PDE loss:0.000003, physics loss:0.047296
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:94, lr:0.007038, total loss:2.155026
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:94, MSE: 0.00023509188031312078
+[epoch:95 iter:50] data loss:0.000305, PDE loss:0.000003, physics loss:0.065194
+[epoch:95 iter:100] data loss:0.000333, PDE loss:0.000003, physics loss:0.053127
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:95, lr:0.006954, total loss:2.155009
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:95, MSE: 0.00022713837097398937
+[epoch:96 iter:50] data loss:0.000311, PDE loss:0.000003, physics loss:0.043092
+[epoch:96 iter:100] data loss:0.000286, PDE loss:0.000003, physics loss:0.033414
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:96, lr:0.006870, total loss:2.154994
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:96, MSE: 0.00021296444174367934
+[epoch:97 iter:50] data loss:0.000312, PDE loss:0.000003, physics loss:0.042909
+[epoch:97 iter:100] data loss:0.000279, PDE loss:0.000002, physics loss:0.031099
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:97, lr:0.006785, total loss:2.154981
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:97, MSE: 0.0002018227387452498
+[epoch:98 iter:50] data loss:0.000353, PDE loss:0.000003, physics loss:0.141827
+[epoch:98 iter:100] data loss:0.000245, PDE loss:0.000002, physics loss:0.093239
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:98, lr:0.006700, total loss:2.154970
+2026-09-17 19:41 - function:Train - INFO - [Valid] epoch:98, MSE: 0.00019708015315700322
+[epoch:99 iter:50] data loss:0.000319, PDE loss:0.000002, physics loss:0.029890
+[epoch:99 iter:100] data loss:0.000243, PDE loss:0.000002, physics loss:0.029429
+2026-09-17 19:41 - function:Train - INFO - [Train] epoch:99, lr:0.006614, total loss:2.154959
+2026-09-17 19:42 - function:Train - INFO - [Valid] epoch:99, MSE: 0.0001891509018605575
+[epoch:100 iter:50] data loss:0.000295, PDE loss:0.000002, physics loss:0.034564
+[epoch:100 iter:100] data loss:0.000249, PDE loss:0.000002, physics loss:0.035589
+2026-09-17 19:42 - function:Train - INFO - [Train] epoch:100, lr:0.006528, total loss:2.154947
+2026-09-17 19:42 - function:Train - INFO - [Valid] epoch:100, MSE: 0.00017982610734179616
+2026-09-17 19:42 - function:Train - INFO - early stop at epoch 100
+{
+  "status": "complete",
+  "MAE": 0.007049444131553173,
+  "MAPE_fraction": 0.007430012803524733,
+  "MAPE_percent": 0.7430012803524733,
+  "RMSE": 0.009317830094284893,
+  "MSE": 8.682195766596124e-05,
+  "test_samples": 14170,
+  "aggregation": "sample-weighted; SOH fraction; standard ground-truth denominator MAPE",
+  "zero_targets": 0,
+  "author_MAPE_fraction": 0.007447924930602312,
+  "best_epoch": 79,
+  "stopping_epoch": 100,
+  "best_validation_MSE": 6.732809561071917e-05,
+  "stop_reason": "original early_stop > 20",
+  "checkpoint_verified": true,
+  "maximum_prediction_difference": 0.0,
+  "training_loop_seconds": 240.54562779999105,
+  "total_runtime_seconds": 246.6493202999991,
+  "label_only_physics_verified": true,
+  "optimizer_update_verified": true,
+  "finished_utc": "2026-09-17T11:42:04.660816+00:00"
+}

@@ -1,0 +1,6 @@
+# Local reproduction environment and generated verification output
+.venv-reproduction/
+__pycache__/
+*.py[cod]
+environment_checks/
+results/smoke_tests/

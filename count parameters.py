@@ -28,16 +28,17 @@ def get_args():
 
     return parser.parse_args()
 
-args = get_args()
-pinn = PINN(args)
-print('pinn:')
-count_parameters(pinn.solution_u)
+if __name__ == "__main__":
+    args = get_args()
+    pinn = PINN(args)
+    print('pinn:')
+    count_parameters(pinn.solution_u)
 
-mlp = MLP()
-cnn = CNN()
-print('mlp:')
-count_parameters(mlp)
-print('cnn:')
-count_parameters(cnn)
+    mlp = MLP()
+    cnn = CNN()
+    print('mlp:')
+    count_parameters(mlp)
+    print('cnn:')
+    count_parameters(cnn)
 
 

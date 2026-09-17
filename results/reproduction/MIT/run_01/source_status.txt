@@ -1,0 +1,16 @@
+ M "count parameters.py"
+ M "data analysis/sample count.py"
+ M "plotter/Figure 2.py"
+ M "plotter/Figure 4a.py"
+ M "plotter/Figure 4b.py"
+ M "plotter/Figure 5.py"
+ M plotter/color.py
+?? .gitignore
+?? AGENTS.md
+?? ENVIRONMENT.md
+?? REPRODUCTION_NOTES.md
+?? docs/
+?? requirements-reproduction.txt
+?? results/reproduction/
+?? scripts/
+?? verify_environment.py

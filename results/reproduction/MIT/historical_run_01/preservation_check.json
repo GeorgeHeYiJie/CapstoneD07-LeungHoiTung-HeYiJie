@@ -1,0 +1,31 @@
+{
+  "all_26_protected_files_unchanged": true,
+  "sha256": {
+    "Model\\Model.py": "b146b179a7267a50bed231a99ad5b161b14f8c527b62c376bf286aa7995e0fca",
+    "main_MIT.py": "d15967027be2ad8f45382d30479a9f1e9eae4bd65688386a883258e67dae84d3",
+    "dataloader\\dataloader.py": "192169eed4e172934d39ba4773074abd37f147170c1996327d6fd0ad2a8790fc",
+    "utils\\util.py": "db7a7e31e785ab2a046bee2e2c20a595161e900f1dffe40c390a5084ff8dd9f2",
+    "scripts\\reproduce_mit_one.py": "d48cd82ab9810e4f888f821fe81e8a7a1ba334fd37aa5fdf08704785849f156b",
+    "results\\reproduction\\MIT\\run_01\\author_archive_comparison.json": "68299c0040427c0e3201142d7fbfff086390b1a192d8dabfbe8f0866249fbdfb",
+    "results\\reproduction\\MIT\\run_01\\best_checkpoint.pth": "3615c26b88863f01aa10e2842b00aac9537c511e82a0faf67807663c56cf7821",
+    "results\\reproduction\\MIT\\run_01\\console.log": "9706e8150b2ab69616b798c839010df9b18533d800f39699a176ccc3e32b2791",
+    "results\\reproduction\\MIT\\run_01\\dataset_sha256.json": "5389df0cbaafd0dbcdc3f5e83b59fe4e2e337ca8bcdabda87d314e13bab42756",
+    "results\\reproduction\\MIT\\run_01\\logging.txt": "c85e4a28292f1008eb603dab94ffd3ca741c67b3b5af0bd029248cdda427776e",
+    "results\\reproduction\\MIT\\run_01\\loss_history.csv": "8ce4163cab7b90776e3d386fd0ddc3f523bbaedbadf41eb0d150d06fb306d364",
+    "results\\reproduction\\MIT\\run_01\\loss_history.png": "435d2f15a8253a717c36fdbf76e53a9a80035350cbad30c50c1fcd63562b8245",
+    "results\\reproduction\\MIT\\run_01\\metrics.json": "98a40e1ebf5bc7d6fceb78ebe941b67a481a5ba0a09621f3f34a34f2c36d3165",
+    "results\\reproduction\\MIT\\run_01\\model.pth": "a7ae9e3ecd53aab21f7f75985fe7ec1b4815061cf0c54f2758e943c44b44dda7",
+    "results\\reproduction\\MIT\\run_01\\predicted_vs_true_SOH.png": "4c00f7d40c46a059d5ffb933341575919f7232962ae5d928b938f5c5e38d349f",
+    "results\\reproduction\\MIT\\run_01\\pred_label.npy": "33ccf5740036b41cb43938196239546cc4b1204027ec6e9d75ee9bf28dd79130",
+    "results\\reproduction\\MIT\\run_01\\preflight_import_report.json": "907877f3c1a91212ea61d4f5e71a8a9c09bd8afb682a59bef46f1c93f2f46c0c",
+    "results\\reproduction\\MIT\\run_01\\requirements-reproduction.txt": "25944e40e1bf4a1765da6089ef621a1505a6b9e59cae1eb1381c48d30c293db3",
+    "results\\reproduction\\MIT\\run_01\\rng_initial.pth": "0163ab5d46a6a0e6232dbe2abb665c05b1c25281b458692aa830066d9ec2751c",
+    "results\\reproduction\\MIT\\run_01\\runner_source.py": "d48cd82ab9810e4f888f821fe81e8a7a1ba334fd37aa5fdf08704785849f156b",
+    "results\\reproduction\\MIT\\run_01\\run_configuration.json": "2be8f81a75d679c98368a90d6c46bbfe84bb7490288dc22d657ef94673cf118b",
+    "results\\reproduction\\MIT\\run_01\\RUN_REPORT.md": "588f964fb06d4dddbf1db915bcae42790ab087d6a19d0bfc84685014fbe67eb1",
+    "results\\reproduction\\MIT\\run_01\\source_diff.patch": "ba64c51b0a930055bb04b7e7f24c76e7ea521e2baaabcf5869f5c90fddf2c954",
+    "results\\reproduction\\MIT\\run_01\\source_status.txt": "0277e549cfd143d52c4122314141849f09fe0be21f3b27150f83195750290e23",
+    "results\\reproduction\\MIT\\run_01\\test_history.json": "70e7706c7e9da66bf585b652c70ff03fdee7a541d602c57b9fc008e1fd50d780",
+    "results\\reproduction\\MIT\\run_01\\true_label.npy": "889b78c43930c6a108e4787799979e9b284544ff98ce824693dca26ea8ce92c3"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "MAE": 0.007049444131553173,
+  "MAPE_fraction": 0.007430012803524733,
+  "MAPE_percent": 0.7430012803524733,
+  "RMSE": 0.009317830094284893,
+  "MSE": 8.682195766596124e-05,
+  "test_samples": 14170,
+  "aggregation": "sample-weighted; SOH fraction; standard ground-truth denominator MAPE",
+  "zero_targets": 0,
+  "author_MAPE_fraction": 0.007447924930602312,
+  "best_epoch": 79,
+  "stopping_epoch": 100,
+  "best_validation_MSE": 6.732809561071917e-05,
+  "stop_reason": "original early_stop > 20",
+  "checkpoint_verified": true,
+  "maximum_prediction_difference": 0.0,
+  "training_loop_seconds": 240.54562779999105,
+  "total_runtime_seconds": 246.6493202999991,
+  "label_only_physics_verified": true,
+  "optimizer_update_verified": true,
+  "finished_utc": "2026-09-17T11:42:04.660816+00:00"
+}

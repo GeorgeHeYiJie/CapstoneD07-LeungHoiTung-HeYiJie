@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "MAE": 0.006564233917742968,
+  "MAPE_fraction": 0.006927548907697201,
+  "MAPE_percent": 0.6927548907697201,
+  "RMSE": 0.009097915824320171,
+  "MSE": 8.277207234641537e-05,
+  "test_samples": 14170,
+  "aggregation": "sample-weighted; SOH fraction; standard ground-truth denominator MAPE",
+  "zero_targets": 0,
+  "author_MAPE_fraction": 0.006934823468327522,
+  "best_epoch": 65,
+  "stopping_epoch": 86,
+  "best_validation_MSE": 6.853280501672998e-05,
+  "stop_reason": "original early_stop > 20",
+  "checkpoint_verified": true,
+  "maximum_prediction_difference": 0.0,
+  "training_loop_seconds": 207.8304874000023,
+  "total_runtime_seconds": 218.7631296999898,
+  "finished_utc": "2026-09-17T11:19:57.668972+00:00"
+}

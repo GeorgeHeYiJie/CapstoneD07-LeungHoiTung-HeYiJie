@@ -1,0 +1,288 @@
+{
+  "timestamp_utc": "2026-09-17T11:14:56.291971+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\oscar\\OneDrive\\\u6587\u4ef6\\ChatGPT\\FYP AI for Battery\\PINN4SOH\\.venv-reproduction\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "dependencies": [
+    {
+      "package": "torch",
+      "version": "2.14.0+cpu",
+      "status": "PASS"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "status": "PASS"
+    },
+    {
+      "package": "pandas",
+      "version": "2.3.3",
+      "status": "PASS"
+    },
+    {
+      "package": "scikit-learn",
+      "version": "1.9.1",
+      "status": "PASS"
+    },
+    {
+      "package": "matplotlib",
+      "version": "3.11.2",
+      "status": "PASS"
+    },
+    {
+      "package": "SciencePlots",
+      "version": "2.2.2",
+      "status": "PASS"
+    },
+    {
+      "package": "seaborn",
+      "version": "0.13.2",
+      "status": "PASS"
+    },
+    {
+      "package": "openpyxl",
+      "version": "3.1.5",
+      "status": "PASS"
+    },
+    {
+      "package": "PyAutoGUI",
+      "version": "0.9.54",
+      "status": "PASS"
+    },
+    {
+      "package": "keyboard",
+      "version": "0.13.5",
+      "status": "PASS"
+    }
+  ],
+  "modules": [
+    {
+      "file": "Model/Compare_Models.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "Model/Model.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "Model/__init__.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "count parameters.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "data analysis/__init__.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "data analysis/sample count.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "dataloader/__init__.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "dataloader/dataloader.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "main_HUST.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "main_MIT.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "main_TJU.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "main_XJTU.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "main_adaptation - fine-tuning.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "main_comparision.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "plotter/Figure 2.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "plotter/Figure 4a.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "plotter/Figure 4b.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "C:\\Users\\oscar\\OneDrive\\\u6587\u4ef6\\ChatGPT\\FYP AI for Battery\\PINN4SOH\\plotter\\Figure 4b.py:113: SyntaxWarning: invalid escape sequence '\\%'\n  ax.annotate('(\\%)', xy=(x_min, y_max), xytext=(-2, 3),\nC:\\Users\\oscar\\OneDrive\\\u6587\u4ef6\\ChatGPT\\FYP AI for Battery\\PINN4SOH\\plotter\\Figure 4b.py:142: SyntaxWarning: invalid escape sequence '\\p'\n  legend_labes = ['Ours', 'MLP', 'CNN', 'Mean', 'Mean $\\pm$ Std']\n"
+    },
+    {
+      "file": "plotter/Figure 5.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "plotter/__init__.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "plotter/color.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "results analysis/Comparision results.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "results analysis/FineTune results.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "results analysis/HUST results.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "results analysis/MIT results.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "results analysis/TJU results.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "results analysis/XJTU results.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "scripts/smoke_test.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "utils/__init__.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "utils/util.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "verify_environment.py",
+      "status": "PASS",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "pip_check": {
+    "returncode": 0,
+    "stdout": "No broken requirements found.\n",
+    "stderr": ""
+  },
+  "source_sha256": {
+    "Model/Model.py": "b146b179a7267a50bed231a99ad5b161b14f8c527b62c376bf286aa7995e0fca",
+    "Model/Compare_Models.py": "d2758711394285bce9a7f6722d3504fc1cfa067942fda059c5e67f2437bbb812",
+    "dataloader/dataloader.py": "192169eed4e172934d39ba4773074abd37f147170c1996327d6fd0ad2a8790fc",
+    "utils/util.py": "db7a7e31e785ab2a046bee2e2c20a595161e900f1dffe40c390a5084ff8dd9f2"
+  },
+  "scope": "Actual imports only; no training, plotting or dataset evaluation.",
+  "torch": {
+    "version": "2.14.0+cpu",
+    "cuda_build": null,
+    "cuda_available": false
+  }
+}

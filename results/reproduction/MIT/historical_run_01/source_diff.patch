@@ -1,0 +1,875 @@
+diff --git a/count parameters.py b/count parameters.py
+index d970626..939da9f 100644
+--- a/count parameters.py	
++++ b/count parameters.py	
+@@ -28,16 +28,17 @@ def get_args():
+ 
+     return parser.parse_args()
+ 
+-args = get_args()
+-pinn = PINN(args)
+-print('pinn:')
+-count_parameters(pinn.solution_u)
+-
+-mlp = MLP()
+-cnn = CNN()
+-print('mlp:')
+-count_parameters(mlp)
+-print('cnn:')
+-count_parameters(cnn)
++if __name__ == "__main__":
++    args = get_args()
++    pinn = PINN(args)
++    print('pinn:')
++    count_parameters(pinn.solution_u)
++
++    mlp = MLP()
++    cnn = CNN()
++    print('mlp:')
++    count_parameters(mlp)
++    print('cnn:')
++    count_parameters(cnn)
+ 
+ 
+diff --git a/data analysis/sample count.py b/data analysis/sample count.py
+index ddca96b..208801b 100644
+--- a/data analysis/sample count.py	
++++ b/data analysis/sample count.py	
+@@ -1,31 +1,32 @@
+ import pandas as pd
+ import os
+ 
+-hust = '../data/HUST data'
+-mit1 = '../data/MIT data/2017-05-12'
+-mit2 = '../data/MIT data/2017-06-30'
+-mit3 = '../data/MIT data/2018-04-12'
+-tju1 = '../data/TJU data/Dataset_1_NCA_battery'
+-tju2 = '../data/TJU data/Dataset_2_NCM_battery'
+-tju3 = '../data/TJU data/Dataset_3_NCM_NCA_battery'
+-xjtu = '../data/XJTU data'
+-roots = [hust, mit1, mit2, mit3, tju1, tju2, tju3, xjtu]
++if __name__ == "__main__":
++    hust = '../data/HUST data'
++    mit1 = '../data/MIT data/2017-05-12'
++    mit2 = '../data/MIT data/2017-06-30'
++    mit3 = '../data/MIT data/2018-04-12'
++    tju1 = '../data/TJU data/Dataset_1_NCA_battery'
++    tju2 = '../data/TJU data/Dataset_2_NCM_battery'
++    tju3 = '../data/TJU data/Dataset_3_NCM_NCA_battery'
++    xjtu = '../data/XJTU data'
++    roots = [hust, mit1, mit2, mit3, tju1, tju2, tju3, xjtu]
+ 
+-total_numbers = 0
+-battery_numbers = 0
+-for root in roots:
+-    sub_total = 0
+-    files = os.listdir(root)
+-    num = len(files)
+-    for i,f in enumerate(files):
+-        df = pd.read_csv(os.path.join(root,f))
+-        nums = df.shape[0]
+-        sub_total += nums
+-    print(f'data set {root} has {num} files, {sub_total} samples !')
+-    total_numbers += sub_total
+-    battery_numbers += num
+-print('total samples:',total_numbers)
+-print('total batteries:',battery_numbers)
++    total_numbers = 0
++    battery_numbers = 0
++    for root in roots:
++        sub_total = 0
++        files = os.listdir(root)
++        num = len(files)
++        for i,f in enumerate(files):
++            df = pd.read_csv(os.path.join(root,f))
++            nums = df.shape[0]
++            sub_total += nums
++        print(f'data set {root} has {num} files, {sub_total} samples !')
++        total_numbers += sub_total
++        battery_numbers += num
++    print('total samples:',total_numbers)
++    print('total batteries:',battery_numbers)
+ 
+ 
+ 
+diff --git a/plotter/Figure 2.py b/plotter/Figure 2.py
+index 502e6f9..09ebe8f 100644
+--- a/plotter/Figure 2.py	
++++ b/plotter/Figure 2.py	
+@@ -6,51 +6,52 @@ import scienceplots
+ plt.style.use(['science','nature'])
+ from matplotlib.backends.backend_pdf import PdfPages
+ 
+-root = '../data/XJTU data/'
+-# pdf = PdfPages('xjtu trajectory.pdf')
+-files = os.listdir(root)
+-fig = plt.figure(figsize=(4,2),dpi=200)
+-colors = [
+-'#80A6E2',
+-'#7BDFF2',
+-'#FBDD85',
+-'#F46F43',
+-'#403990',
+-'#CF3D3E'
+-]
+-markers = ['o','v','D','p','s','^']
+-legends = ['batch 1','batch 2','batch 3','batch 4','batch 5','batch 6']
+-batches = ['2C','3C','R2.5','R3','RW','satellite']
+-line_width = 1.0
+-for i in range(6):
+-    for f in files:
+-        if batches[i] in f:
+-            path = os.path.join(root,f)
+-            data = pd.read_csv(path)
+-            capacity = data['capacity'].values
+-            plt.plot(capacity[1:],color=colors[i],alpha=1,linewidth=line_width,
+-                     # linestyle=':',
+-                     marker=markers[i],markersize=2,markevery=50)
+-plt.xlabel('Cycle')
+-plt.ylabel('Capacity (Ah)')
+-custom_lines = [
+-    Line2D([0], [0], color=colors[0], linewidth=line_width,marker=markers[0],markersize=2.5),
+-    Line2D([0], [0], color=colors[1], linewidth=line_width,marker=markers[1],markersize=2.5),
+-    Line2D([0], [0], color=colors[2], linewidth=line_width,marker=markers[2],markersize=2.5),
+-    Line2D([0], [0], color=colors[3], linewidth=line_width,marker=markers[3],markersize=2.5),
+-    Line2D([0], [0], color=colors[4], linewidth=line_width,marker=markers[4],markersize=2.5),
+-    Line2D([0], [0], color=colors[5], linewidth=line_width,marker=markers[5],markersize=2.5)
+-]
++if __name__ == "__main__":
++    root = '../data/XJTU data/'
++    # pdf = PdfPages('xjtu trajectory.pdf')
++    files = os.listdir(root)
++    fig = plt.figure(figsize=(4,2),dpi=200)
++    colors = [
++    '#80A6E2',
++    '#7BDFF2',
++    '#FBDD85',
++    '#F46F43',
++    '#403990',
++    '#CF3D3E'
++    ]
++    markers = ['o','v','D','p','s','^']
++    legends = ['batch 1','batch 2','batch 3','batch 4','batch 5','batch 6']
++    batches = ['2C','3C','R2.5','R3','RW','satellite']
++    line_width = 1.0
++    for i in range(6):
++        for f in files:
++            if batches[i] in f:
++                path = os.path.join(root,f)
++                data = pd.read_csv(path)
++                capacity = data['capacity'].values
++                plt.plot(capacity[1:],color=colors[i],alpha=1,linewidth=line_width,
++                         # linestyle=':',
++                         marker=markers[i],markersize=2,markevery=50)
++    plt.xlabel('Cycle')
++    plt.ylabel('Capacity (Ah)')
++    custom_lines = [
++        Line2D([0], [0], color=colors[0], linewidth=line_width,marker=markers[0],markersize=2.5),
++        Line2D([0], [0], color=colors[1], linewidth=line_width,marker=markers[1],markersize=2.5),
++        Line2D([0], [0], color=colors[2], linewidth=line_width,marker=markers[2],markersize=2.5),
++        Line2D([0], [0], color=colors[3], linewidth=line_width,marker=markers[3],markersize=2.5),
++        Line2D([0], [0], color=colors[4], linewidth=line_width,marker=markers[4],markersize=2.5),
++        Line2D([0], [0], color=colors[5], linewidth=line_width,marker=markers[5],markersize=2.5)
++    ]
+ 
+-custom_legend = plt.legend(custom_lines, legends, loc='upper right',
+-                           bbox_to_anchor=(1.0, 1), frameon=False,
+-                           ncol=3, fontsize=6)
++    custom_legend = plt.legend(custom_lines, legends, loc='upper right',
++                               bbox_to_anchor=(1.0, 1), frameon=False,
++                               ncol=3, fontsize=6)
+ 
+ 
+-plt.ylim([1.55,2.05])
+-plt.tight_layout()
+-plt.show()
+-# pdf.savefig(fig)
+-# plt.savefig('xjtu trajectory.svg',format='svg')
+-# pdf.close()
++    plt.ylim([1.55,2.05])
++    plt.tight_layout()
++    plt.show()
++    # pdf.savefig(fig)
++    # plt.savefig('xjtu trajectory.svg',format='svg')
++    # pdf.close()
+ 
+diff --git a/plotter/Figure 4a.py b/plotter/Figure 4a.py
+index 49ece4f..5bcd90b 100644
+--- a/plotter/Figure 4a.py	
++++ b/plotter/Figure 4a.py	
+@@ -14,87 +14,88 @@ from matplotlib.backends.backend_pdf import PdfPages
+ # 画一个3行4列的图
+ # Plot a figure with 3 rows and 4 columns
+ # pdf = PdfPages(f'estimation results.pdf')
+-fig, axs = plt.subplots(3,4,figsize=(8,6),dpi=150)
+-count = 0
+-color_list = [
+-        '#74AED4',
+-        '#7BDFF2',
+-        '#FBDD85',
+-        '#F46F43',
+-        '#CF3D3E'
+-        ]
+-colors = plt.cm.colors.LinearSegmentedColormap.from_list(
+-    'custom_cmap', color_list, N=256
+-)
+-for data in ['XJTU','TJU','MIT','HUST']:
+-    if data == 'XJTU':
+-        batches = [0,1,2,3,4,5]
+-    elif data == 'TJU':
+-        batches = [0,1,2]
+-    else:
+-        batches = [0]
+-    for batch in batches:
+-        # 读取数据
+-        if data in ['HUST','MIT']:
+-            root = f'../results/Ours/{data} results/Experiment1/'
+-            title = f'{data} dataset'
++if __name__ == "__main__":
++    fig, axs = plt.subplots(3,4,figsize=(8,6),dpi=150)
++    count = 0
++    color_list = [
++            '#74AED4',
++            '#7BDFF2',
++            '#FBDD85',
++            '#F46F43',
++            '#CF3D3E'
++            ]
++    colors = plt.cm.colors.LinearSegmentedColormap.from_list(
++        'custom_cmap', color_list, N=256
++    )
++    for data in ['XJTU','TJU','MIT','HUST']:
++        if data == 'XJTU':
++            batches = [0,1,2,3,4,5]
++        elif data == 'TJU':
++            batches = [0,1,2]
+         else:
+-            root = f'../results/Ours/{data} results/{batch}-{batch}/Experiment1/'
+-            title = f'{data} batch {batch+1}'
+-        try:
+-            pred_label = np.load(root+'pred_label.npy')
+-            true_label = np.load(root+'true_label.npy')
+-        except:
+-            continue
+-        error = np.abs(pred_label-true_label)
+-        vmin, vmax = error.min(), error.max()
++            batches = [0]
++        for batch in batches:
++            # 读取数据
++            if data in ['HUST','MIT']:
++                root = f'../results/Ours/{data} results/Experiment1/'
++                title = f'{data} dataset'
++            else:
++                root = f'../results/Ours/{data} results/{batch}-{batch}/Experiment1/'
++                title = f'{data} batch {batch+1}'
++            try:
++                pred_label = np.load(root+'pred_label.npy')
++                true_label = np.load(root+'true_label.npy')
++            except:
++                continue
++            error = np.abs(pred_label-true_label)
++            vmin, vmax = error.min(), error.max()
+ 
+-        lims = {'HUST':[0.79,1.105],
+-                'MIT':[0.79,1.005],
+-                'XJTU':[0.79,1.005],
+-                'TJU':[0.69,0.97],
+-                }
+-        # plot
+-        #fig = plt.figure(figsize=(3,2.6),dpi=200)
+-        #ax = fig.add_subplot(111)
+-        col = count%4
+-        row = count//4
+-        print(data,batch,row,col)
+-        ax = axs[row,col]
+-        ax.scatter(true_label,pred_label,c=error, cmap=colors,s=3,alpha=0.7, vmin=0, vmax=0.1)
+-        ax.plot([0.65,1.15],[0.65,1.15],'--',c='#ff4d4e',alpha=1,linewidth=1)
+-        ax.set_aspect('equal')
+-        ax.set_xlabel('True SOH')
+-        ax.set_ylabel('Prediction')
++            lims = {'HUST':[0.79,1.105],
++                    'MIT':[0.79,1.005],
++                    'XJTU':[0.79,1.005],
++                    'TJU':[0.69,0.97],
++                    }
++            # plot
++            #fig = plt.figure(figsize=(3,2.6),dpi=200)
++            #ax = fig.add_subplot(111)
++            col = count%4
++            row = count//4
++            print(data,batch,row,col)
++            ax = axs[row,col]
++            ax.scatter(true_label,pred_label,c=error, cmap=colors,s=3,alpha=0.7, vmin=0, vmax=0.1)
++            ax.plot([0.65,1.15],[0.65,1.15],'--',c='#ff4d4e',alpha=1,linewidth=1)
++            ax.set_aspect('equal')
++            ax.set_xlabel('True SOH')
++            ax.set_ylabel('Prediction')
+ 
+-        ax.set_xticks([0.7,0.75,0.8,0.85,0.9,0.95,1.0,1.05,1.1])
+-        ax.set_yticks([0.7,0.75,0.8,0.85,0.9,0.95,1.0,1.05,1.1])
+-        ax.set_xlim(lims[data])
+-        ax.set_ylim(lims[data])
+-        #plt.suptitle(title)
+-        # 每个子图的标题 (set the title of each subplot)
+-        ax.set_title(title)
++            ax.set_xticks([0.7,0.75,0.8,0.85,0.9,0.95,1.0,1.05,1.1])
++            ax.set_yticks([0.7,0.75,0.8,0.85,0.9,0.95,1.0,1.05,1.1])
++            ax.set_xlim(lims[data])
++            ax.set_ylim(lims[data])
++            #plt.suptitle(title)
++            # 每个子图的标题 (set the title of each subplot)
++            ax.set_title(title)
+ 
+-        if count >=11:
+-            break
+-        count += 1
++            if count >=11:
++                break
++            count += 1
+ 
+-    if count >= 11:
+-        break
+-# 在最后一个子图上画colorbar (draw a colorbar on the last subplot)
+-fig.colorbar(plt.cm.ScalarMappable(cmap=colors,norm=plt.Normalize(vmin=0, vmax=0.1)),
+-             ax=axs[2,3],
+-             label='Absolute error',
++        if count >= 11:
++            break
++    # 在最后一个子图上画colorbar (draw a colorbar on the last subplot)
++    fig.colorbar(plt.cm.ScalarMappable(cmap=colors,norm=plt.Normalize(vmin=0, vmax=0.1)),
++                 ax=axs[2,3],
++                 label='Absolute error',
+ 
+-             # 指定colorbar的位置 (set the position of the colorbar)
+-            fraction=0.46, pad=0.4
+-             )
+-# 关闭左后一个子图的坐标轴 (turn off the axis of the last subplot)
+-axs[2,3].axis('off')
++                 # 指定colorbar的位置 (set the position of the colorbar)
++                fraction=0.46, pad=0.4
++                 )
++    # 关闭左后一个子图的坐标轴 (turn off the axis of the last subplot)
++    axs[2,3].axis('off')
+ 
+-#axs[2,3].set_visible(False)
+-plt.tight_layout()
+-# plt.savefig('estimation results.svg',format='svg')
+-# pdf.savefig(fig)
+-# pdf.close()
+-plt.show()
+\ No newline at end of file
++    #axs[2,3].set_visible(False)
++    plt.tight_layout()
++    # plt.savefig('estimation results.svg',format='svg')
++    # pdf.savefig(fig)
++    # pdf.close()
++    plt.show()
+\ No newline at end of file
+diff --git a/plotter/Figure 4b.py b/plotter/Figure 4b.py
+index 79f7d58..b987eaf 100644
+--- a/plotter/Figure 4b.py	
++++ b/plotter/Figure 4b.py	
+@@ -22,130 +22,131 @@ from matplotlib.lines import Line2D
+ 
+ 
+ # pdf = PdfPages(f'violin error.pdf')
+-fig, axs = plt.subplots(3,4,figsize=(2.3*4,1.8*3),dpi=200)
+-colors = ['#b8dff2','#abeadb','#ffb2b4']
+-count = 0
+-for data in ['XJTU','TJU','MIT','HUST']:
+-    if data == 'XJTU':
+-        batches = [0,1,2,3,4,5]
+-    elif data == 'TJU':
+-        batches = [0,1,2]
+-    else:
+-        batches = [0]
+-    for batch in batches:
+-        ############################
+-        df_list = []
+-        for model in ['Ours', 'MLP', 'CNN']:
+-
+-            df1 = pd.read_excel(f'../results analysis/processed results/{model}-{data}-results.xlsx',
+-                                engine='openpyxl',
+-                                sheet_name=f'battery_mean_{batch}')
+-
+-            df1['model'] = [model] * df1.shape[0]
+-            melted_df1 = pd.melt(df1, id_vars=['model'],
+-                                 value_vars=['MAE','MAPE','RMSE'],
+-                                 var_name='metric', value_name='error')
+-            df_list.append(melted_df1)
+-        if data in ['MIT', 'HUST']:
+-            title = data + ' dataset'
++if __name__ == "__main__":
++    fig, axs = plt.subplots(3,4,figsize=(2.3*4,1.8*3),dpi=200)
++    colors = ['#b8dff2','#abeadb','#ffb2b4']
++    count = 0
++    for data in ['XJTU','TJU','MIT','HUST']:
++        if data == 'XJTU':
++            batches = [0,1,2,3,4,5]
++        elif data == 'TJU':
++            batches = [0,1,2]
+         else:
+-            title = data + f' batch {batch+1}'
+-        merge_df_keys = ['Ours', 'MLP', 'CNN']
+-
+-        # 把三个DataFrame拼接起来
+-        # Concatenate three DataFrames
+-        df = pd.concat(df_list, axis=0)
+-        df = df.reset_index()
+-        df.drop('index', axis=1, inplace=True)
+-        df['metric'] = df['metric'].astype('category').cat.codes
+-
+-
+-        # 绘制小提琴图
+-        # Draw a violin plot
+-        col = count % 4
+-        row = count // 4
+-        print(data, batch, row, col)
+-        ax = axs[row, col]
+-        sns.violinplot(x='metric',y='error',hue='model',data=df,
+-                       scale='count',
+-                       inner='point',
+-                       dodge=True,
+-                       saturation=1,
+-                       palette=colors,
+-                       linewidth=0,
+-                       ax=ax)
+-
+-        # 在绘制小提琴图后，添加以下代码来计算并绘制均值线和均值加减标准差线
+-        # After drawing the violin plot, add the following code to calculate and draw the mean line and the mean plus or minus the standard deviation line
+-        for i, metric in enumerate(['MAE', 'MAPE', 'RMSE']):
++            batches = [0]
++        for batch in batches:
++            ############################
++            df_list = []
+             for model in ['Ours', 'MLP', 'CNN']:
+-                model_mean = df[(df['model'] == model) & (df['metric'] == i)]['error'].mean()  # 计算每个模型的均值 (mean)
+-                model_std = df[(df['model'] == model) & (df['metric'] == i)]['error'].std()  # 计算每个模型的标准差 (standard deviation)
+-                # 计算均值线和标准差线的横坐标位置 (x position of the standard deviation line and mean line )
+-                offset = 0.27
+-                x_pos = i + (model == 'CNN') * offset - (model == 'Ours') * offset
+-                # 绘制标准差线 (draw the standard deviation line)
+-                ax.plot([x_pos, x_pos], [model_mean - model_std, model_mean + model_std], color='black', linestyle='-',
+-                        linewidth=0.5)
+-                # 绘制均值线 (draw the mean line)
+-                ax.plot([x_pos - 0.1, x_pos + 0.1], [model_mean, model_mean], color='red', linestyle='-', linewidth=0.6)
+-
+-        # 设置x轴范围和标签位置 (set the x-axis range and label position)
+-        ax.set_xticklabels(['MAE', 'MAPE', 'RMSE'])
+-        ax.set_xlabel(None)
+-        # 设置y轴范围 (set the y-axis range)
+-
+-        # ax.set_ylim(0, 0.055)
+-
+-        # 在y轴顶上加上百分号 (add a percentage sign on the top of the y-axis)
+-        def percentage(x, pos):
+-            if x >= 0.2:
+-                return '{:.0f}%'.format(x * 100)
+-            else:
+-                return '{:.1f}%'.format(x * 100)
+-
+-
+-        ax.yaxis.set_major_formatter(mtick.FuncFormatter(percentage))
+-        # 在y轴顶端添加百分号文本标签 (add a percentage text at the top of the y-axis)
+-        x_min, x_max = ax.get_xlim()
+-        y_max = ax.get_ylim()[1]
+-        ax.annotate('(\%)', xy=(x_min, y_max), xytext=(-2, 3),
+-                    textcoords='offset points', ha='center', fontsize=8)
+-        ax.yaxis.set_major_locator(MaxNLocator(nbins=4))
+ 
+-        # 添加标题和标签 (add title and label)
+-        ax.set_title(title)
+-        ax.set_ylabel("Error")
+-
+-        # 关闭图例 (remove the legend)
+-        ax.get_legend().remove()
++                df1 = pd.read_excel(f'../results analysis/processed results/{model}-{data}-results.xlsx',
++                                    engine='openpyxl',
++                                    sheet_name=f'battery_mean_{batch}')
++
++                df1['model'] = [model] * df1.shape[0]
++                melted_df1 = pd.melt(df1, id_vars=['model'],
++                                     value_vars=['MAE','MAPE','RMSE'],
++                                     var_name='metric', value_name='error')
++                df_list.append(melted_df1)
++            if data in ['MIT', 'HUST']:
++                title = data + ' dataset'
++            else:
++                title = data + f' batch {batch+1}'
++            merge_df_keys = ['Ours', 'MLP', 'CNN']
++
++            # 把三个DataFrame拼接起来
++            # Concatenate three DataFrames
++            df = pd.concat(df_list, axis=0)
++            df = df.reset_index()
++            df.drop('index', axis=1, inplace=True)
++            df['metric'] = df['metric'].astype('category').cat.codes
++
++
++            # 绘制小提琴图
++            # Draw a violin plot
++            col = count % 4
++            row = count // 4
++            print(data, batch, row, col)
++            ax = axs[row, col]
++            sns.violinplot(x='metric',y='error',hue='model',data=df,
++                           scale='count',
++                           inner='point',
++                           dodge=True,
++                           saturation=1,
++                           palette=colors,
++                           linewidth=0,
++                           ax=ax)
++
++            # 在绘制小提琴图后，添加以下代码来计算并绘制均值线和均值加减标准差线
++            # After drawing the violin plot, add the following code to calculate and draw the mean line and the mean plus or minus the standard deviation line
++            for i, metric in enumerate(['MAE', 'MAPE', 'RMSE']):
++                for model in ['Ours', 'MLP', 'CNN']:
++                    model_mean = df[(df['model'] == model) & (df['metric'] == i)]['error'].mean()  # 计算每个模型的均值 (mean)
++                    model_std = df[(df['model'] == model) & (df['metric'] == i)]['error'].std()  # 计算每个模型的标准差 (standard deviation)
++                    # 计算均值线和标准差线的横坐标位置 (x position of the standard deviation line and mean line )
++                    offset = 0.27
++                    x_pos = i + (model == 'CNN') * offset - (model == 'Ours') * offset
++                    # 绘制标准差线 (draw the standard deviation line)
++                    ax.plot([x_pos, x_pos], [model_mean - model_std, model_mean + model_std], color='black', linestyle='-',
++                            linewidth=0.5)
++                    # 绘制均值线 (draw the mean line)
++                    ax.plot([x_pos - 0.1, x_pos + 0.1], [model_mean, model_mean], color='red', linestyle='-', linewidth=0.6)
++
++            # 设置x轴范围和标签位置 (set the x-axis range and label position)
++            ax.set_xticklabels(['MAE', 'MAPE', 'RMSE'])
++            ax.set_xlabel(None)
++            # 设置y轴范围 (set the y-axis range)
++
++            # ax.set_ylim(0, 0.055)
++
++            # 在y轴顶上加上百分号 (add a percentage sign on the top of the y-axis)
++            def percentage(x, pos):
++                if x >= 0.2:
++                    return '{:.0f}%'.format(x * 100)
++                else:
++                    return '{:.1f}%'.format(x * 100)
++
++
++            ax.yaxis.set_major_formatter(mtick.FuncFormatter(percentage))
++            # 在y轴顶端添加百分号文本标签 (add a percentage text at the top of the y-axis)
++            x_min, x_max = ax.get_xlim()
++            y_max = ax.get_ylim()[1]
++            ax.annotate('(\%)', xy=(x_min, y_max), xytext=(-2, 3),
++                        textcoords='offset points', ha='center', fontsize=8)
++            ax.yaxis.set_major_locator(MaxNLocator(nbins=4))
++
++            # 添加标题和标签 (add title and label)
++            ax.set_title(title)
++            ax.set_ylabel("Error")
++
++            # 关闭图例 (remove the legend)
++            ax.get_legend().remove()
++
++            if count >= 11:
++                break
++            count += 1
+ 
+         if count >= 11:
+             break
+-        count += 1
+-
+-    if count >= 11:
+-        break
+-# 添加图例 (add legend)
+-#axs[2, 3].set_visible(False)
+-# 关闭axs[2,3]的坐标轴 (remove the axis of axs[2,3])
+-axs[2, 3].axis('off')
+-boxs = []
+-for c in colors:
+-    box = plt.Rectangle((0, 0), 1, 1, fc=c)
+-    boxs.append(box)
+-mean_line = Line2D([0], [0], color='red', linestyle='-', linewidth=1)
+-std_line = Line2D([0, 0], [0, 1], color='black', linestyle='-', linewidth=1)
+-boxs.append(mean_line)
+-boxs.append(std_line)
+-legend_labes = ['Ours', 'MLP', 'CNN', 'Mean', 'Mean $\pm$ Std']
+-axs[2, 3].legend(handles=boxs,labels=legend_labes, loc=[0.2, 0],
+-                 handlelength=4,
+-                 handleheight=2.5,
+-                 fontsize=8)
+-
+-plt.tight_layout()
+-#plt.savefig('violin error.svg',format='svg')
+-#pdf.savefig()
+-#pdf.close()
+-plt.show()
++    # 添加图例 (add legend)
++    #axs[2, 3].set_visible(False)
++    # 关闭axs[2,3]的坐标轴 (remove the axis of axs[2,3])
++    axs[2, 3].axis('off')
++    boxs = []
++    for c in colors:
++        box = plt.Rectangle((0, 0), 1, 1, fc=c)
++        boxs.append(box)
++    mean_line = Line2D([0], [0], color='red', linestyle='-', linewidth=1)
++    std_line = Line2D([0, 0], [0, 1], color='black', linestyle='-', linewidth=1)
++    boxs.append(mean_line)
++    boxs.append(std_line)
++    legend_labes = ['Ours', 'MLP', 'CNN', 'Mean', 'Mean $\pm$ Std']
++    axs[2, 3].legend(handles=boxs,labels=legend_labes, loc=[0.2, 0],
++                     handlelength=4,
++                     handleheight=2.5,
++                     fontsize=8)
++
++    plt.tight_layout()
++    #plt.savefig('violin error.svg',format='svg')
++    #pdf.savefig()
++    #pdf.close()
++    plt.show()
+diff --git a/plotter/Figure 5.py b/plotter/Figure 5.py
+index dbb1b72..9a4c5a0 100644
+--- a/plotter/Figure 5.py	
++++ b/plotter/Figure 5.py	
+@@ -20,117 +20,118 @@ from matplotlib.lines import Line2D
+ #### 改变这两个参数，可以绘制不同的数据集的箱线图  ####
+ #### Change these two parameters to plot the boxplot of different datasets  ####
+ ###############################################
+-data = 'XJTU'
+-batch = 0
+-ylim = [0,0.1]
+-###############################################
+-total_dfs = []
+-ours_df = []
+-mlp_df = []
+-cnn_df = []
+-train_battery_num = [1,2,3,4]
+-total_df = []
+-for i in train_battery_num:
+-    df1 = pd.read_excel(f'../results analysis/processed results (small sample)/Ours-{data}_results (small sample {i}).xlsx',
+-                        engine='openpyxl',
+-                        nrows=10,
+-                        sheet_name=f'battery_mean_{batch}')
+-    df1['model'] = ['Ours'] * 10
+-    df1['train num'] = [i] * 10
+-    df2 = pd.read_excel(f'../results analysis/processed results (small sample)/MLP-{data}-results (small sample {i}).xlsx',
+-                        engine='openpyxl',
+-                        nrows=10,
+-                        sheet_name=f'battery_mean_{batch}')
+-    df2['model'] = ['MLP'] * 10
+-    df2['train num'] = [i] * 10
+-    df3 = pd.read_excel(f'../results analysis/processed results (small sample)/CNN-{data}-results (small sample {i}).xlsx',
+-                        engine='openpyxl',
+-                        nrows=10,
+-                        sheet_name=f'battery_mean_{batch}')
+-    df3['model'] = ['CNN'] * 10
+-    df3['train num'] = [i] * 10
+-    df = pd.concat([df1, df2, df3])
+-    total_df.append(df)
+-total_df = pd.concat(total_df)
+-print(total_df)
+-
+-if data in ['MIT', 'HUST']:
+-    title = data + ' dataset'
+-else:
+-    title = data + f' batch {batch+1}'
+-
+-#pdf = PdfPages('small {}.pdf'.format(data))
+-merge_df_keys = ['Ours', 'MLP', 'CNN']
+-colors = ['#8abcd1','#5cb3cc','#22a2c3','#0f95b0']
+-
+-# 计算均值和标准差 (calculate mean and standard deviation)
+-mean_values = total_df.groupby(['model', 'train num'])['RMSE'].mean().reset_index()
+-std_values = total_df.groupby(['model', 'train num'])['RMSE'].std().reset_index()
+-
+-fig, ax = plt.subplots(figsize=(4, 2.5),dpi=200)
+-sns.violinplot(x='model',y='RMSE',hue='train num',data=total_df,
+-               scale='count',
+-               inner='point',
+-               dodge=True,
+-               saturation=1,
+-               palette=colors,
+-               linewidth=0,
+-               ax=ax)
+-
+-
+-plt.xlabel(None)
+-# 坐标保留两位小数 (keep two decimal places of the coordinates)
+-ax.yaxis.set_major_formatter(plt.FormatStrFormatter('%.2f'))
+-plt.title(title)
+-
+-# 添加均值线和标准差线 (add mean line and standard deviation line)
+-for model in merge_df_keys:
+-    for train_num in train_battery_num:
+-        mean = mean_values[(mean_values['model'] == model) & (mean_values['train num'] == train_num)]['RMSE'].values[0]
+-        std = std_values[(std_values['model'] == model) & (std_values['train num'] == train_num)]['RMSE'].values[0]
+-
+-        # 根据模型和训练数量确定x坐标位置 (determine the x-coordinate position based on the model and the number of training)
+-        x_position = merge_df_keys.index(model) + (train_num - 1) * 0.2 - 0.3
+-
+-        ax.plot(
+-            [x_position-0.05, x_position+0.05],  # x坐标位置 (the x-coordinate position)
+-            [mean,mean],  # y坐标位置（均值） (y-coordinate position (mean))
+-            linestyle='-',
+-            linewidth=0.6,
+-            color='red',
+-            label=f'mean ± std ({model}, {train_num})'
+-        )
+-
+-        ax.plot(
+-            [x_position, x_position],  # x坐标位置（垂直线）(the x-coordinate position (vertical line))
+-            [mean - std, mean + std],  # y坐标位置（上下标准差线） (y-coordinate position (upper and lower standard deviation line))
+-            linestyle='-',
+-            linewidth=0.6,
+-            color='black'
+-        )
+-
+-
+-
+-
+-boxs = []
+-legends = []
+-for i in train_battery_num:
+-    boxs.append(plt.Rectangle((0, 0), 1, 1, fc=colors[i-1]))
+-    legends.append(f'{i} battery')
+-mean_line = Line2D([0], [0], color='red', linestyle='-', linewidth=1)
+-std_line = Line2D([0,0], [0,1], color='black', linestyle='-', linewidth=1)
+-boxs.append(mean_line)
+-boxs.append(std_line)
+-legends.append('mean')
+-legends.append('mean ± std')
+-plt.legend(boxs, legends,
+-           loc='upper left'
+-           #loc = [0.1,0.5]
+-           )
+-#pdf.savefig(fig)
+-#pdf.close()
+-#plt.savefig(f'small {data}.svg',format='svg')
+-plt.show()
+-print('done')
++if __name__ == "__main__":
++    data = 'XJTU'
++    batch = 0
++    ylim = [0,0.1]
++    ###############################################
++    total_dfs = []
++    ours_df = []
++    mlp_df = []
++    cnn_df = []
++    train_battery_num = [1,2,3,4]
++    total_df = []
++    for i in train_battery_num:
++        df1 = pd.read_excel(f'../results analysis/processed results (small sample)/Ours-{data}_results (small sample {i}).xlsx',
++                            engine='openpyxl',
++                            nrows=10,
++                            sheet_name=f'battery_mean_{batch}')
++        df1['model'] = ['Ours'] * 10
++        df1['train num'] = [i] * 10
++        df2 = pd.read_excel(f'../results analysis/processed results (small sample)/MLP-{data}-results (small sample {i}).xlsx',
++                            engine='openpyxl',
++                            nrows=10,
++                            sheet_name=f'battery_mean_{batch}')
++        df2['model'] = ['MLP'] * 10
++        df2['train num'] = [i] * 10
++        df3 = pd.read_excel(f'../results analysis/processed results (small sample)/CNN-{data}-results (small sample {i}).xlsx',
++                            engine='openpyxl',
++                            nrows=10,
++                            sheet_name=f'battery_mean_{batch}')
++        df3['model'] = ['CNN'] * 10
++        df3['train num'] = [i] * 10
++        df = pd.concat([df1, df2, df3])
++        total_df.append(df)
++    total_df = pd.concat(total_df)
++    print(total_df)
++
++    if data in ['MIT', 'HUST']:
++        title = data + ' dataset'
++    else:
++        title = data + f' batch {batch+1}'
++
++    #pdf = PdfPages('small {}.pdf'.format(data))
++    merge_df_keys = ['Ours', 'MLP', 'CNN']
++    colors = ['#8abcd1','#5cb3cc','#22a2c3','#0f95b0']
++
++    # 计算均值和标准差 (calculate mean and standard deviation)
++    mean_values = total_df.groupby(['model', 'train num'])['RMSE'].mean().reset_index()
++    std_values = total_df.groupby(['model', 'train num'])['RMSE'].std().reset_index()
++
++    fig, ax = plt.subplots(figsize=(4, 2.5),dpi=200)
++    sns.violinplot(x='model',y='RMSE',hue='train num',data=total_df,
++                   scale='count',
++                   inner='point',
++                   dodge=True,
++                   saturation=1,
++                   palette=colors,
++                   linewidth=0,
++                   ax=ax)
++
++
++    plt.xlabel(None)
++    # 坐标保留两位小数 (keep two decimal places of the coordinates)
++    ax.yaxis.set_major_formatter(plt.FormatStrFormatter('%.2f'))
++    plt.title(title)
++
++    # 添加均值线和标准差线 (add mean line and standard deviation line)
++    for model in merge_df_keys:
++        for train_num in train_battery_num:
++            mean = mean_values[(mean_values['model'] == model) & (mean_values['train num'] == train_num)]['RMSE'].values[0]
++            std = std_values[(std_values['model'] == model) & (std_values['train num'] == train_num)]['RMSE'].values[0]
++
++            # 根据模型和训练数量确定x坐标位置 (determine the x-coordinate position based on the model and the number of training)
++            x_position = merge_df_keys.index(model) + (train_num - 1) * 0.2 - 0.3
++
++            ax.plot(
++                [x_position-0.05, x_position+0.05],  # x坐标位置 (the x-coordinate position)
++                [mean,mean],  # y坐标位置（均值） (y-coordinate position (mean))
++                linestyle='-',
++                linewidth=0.6,
++                color='red',
++                label=f'mean ± std ({model}, {train_num})'
++            )
++
++            ax.plot(
++                [x_position, x_position],  # x坐标位置（垂直线）(the x-coordinate position (vertical line))
++                [mean - std, mean + std],  # y坐标位置（上下标准差线） (y-coordinate position (upper and lower standard deviation line))
++                linestyle='-',
++                linewidth=0.6,
++                color='black'
++            )
++
++
++
++
++    boxs = []
++    legends = []
++    for i in train_battery_num:
++        boxs.append(plt.Rectangle((0, 0), 1, 1, fc=colors[i-1]))
++        legends.append(f'{i} battery')
++    mean_line = Line2D([0], [0], color='red', linestyle='-', linewidth=1)
++    std_line = Line2D([0,0], [0,1], color='black', linestyle='-', linewidth=1)
++    boxs.append(mean_line)
++    boxs.append(std_line)
++    legends.append('mean')
++    legends.append('mean ± std')
++    plt.legend(boxs, legends,
++               loc='upper left'
++               #loc = [0.1,0.5]
++               )
++    #pdf.savefig(fig)
++    #pdf.close()
++    #plt.savefig(f'small {data}.svg',format='svg')
++    plt.show()
++    print('done')
+ 
+ 
+diff --git a/plotter/color.py b/plotter/color.py
+index 794b747..6f2fe7d 100644
+--- a/plotter/color.py
++++ b/plotter/color.py
+@@ -31,7 +31,8 @@ def hex_to_decimal(hex_color):
+     return (red_decimal_normalized, green_decimal_normalized, blue_decimal_normalized)
+ 
+ # 测试(test)
+-hex_color = "#F7C97E"
+-result = hex_to_decimal(hex_color)
+-print(result)
++if __name__ == "__main__":
++    hex_color = "#F7C97E"
++    result = hex_to_decimal(hex_color)
++    print(result)
+ 
