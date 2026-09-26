@@ -19,6 +19,11 @@ HUST, holding out filename group 10:
 
     python3 wu_matrix_wang_zhang.py --dataset HUST --held-out 10 --epochs 2
 
+Draw charts from finished result folders, without training again:
+
+    python3 wu_matrix_wang_zhang.py --plot-from results/wu_wang_zhang \\
+        --figures-dir results/wu_wang_zhang/figures
+
 What this file does
 -------------------
 1. Read MIT or HUST charge-feature tables from data/.
@@ -679,6 +684,235 @@ def battery_manifest(batteries: list[Battery]) -> list[dict]:
     ]
 
 
+def parse_training_log(log_path: str) -> list[dict]:
+    rows = []
+    if not os.path.isfile(log_path):
+        return rows
+    with open(log_path, encoding="utf-8") as handle:
+        for line in handle:
+            if not line.startswith("epoch "):
+                continue
+            fields = {}
+            head, rest = line.split(":", 1)
+            fields["epoch"] = int(head.replace("epoch", "").strip())
+            for part in rest.strip().split():
+                if "=" not in part:
+                    continue
+                key, value = part.split("=", 1)
+                fields[key] = float(value)
+            rows.append(fields)
+    return rows
+
+
+def _figure_pyplot():
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    return plt
+
+
+def save_result_figures(
+    figure_dir: str,
+    stem: str,
+    y_true: np.ndarray,
+    wang_pred: np.ndarray,
+    zhang_pred: np.ndarray,
+    metrics: dict,
+    history: list[dict],
+) -> list[str]:
+    """Write PNG charts for one finished test set. SOH stays a fraction."""
+    plt = _figure_pyplot()
+    os.makedirs(figure_dir, exist_ok=True)
+    y_true = np.asarray(y_true, dtype=np.float64).reshape(-1)
+    wang_pred = np.asarray(wang_pred, dtype=np.float64).reshape(-1)
+    zhang_pred = np.asarray(zhang_pred, dtype=np.float64).reshape(-1)
+    index = np.arange(y_true.shape[0])
+    title = (
+        f"{metrics.get('dataset', stem)} held-out {metrics.get('held_out_condition', '')} "
+        f"n={y_true.shape[0]}  SOH fraction"
+    )
+    if metrics.get("preliminary_smoke"):
+        title += "  (preliminary)"
+    saved = []
+
+    def finish(fig, name: str) -> None:
+        path = os.path.join(figure_dir, f"{stem}_{name}.png")
+        fig.tight_layout()
+        fig.savefig(path, dpi=140)
+        plt.close(fig)
+        saved.append(path)
+
+    fig, axes = plt.subplots(1, 2, figsize=(10, 4.4))
+    for axis, pred, name, color in (
+        (axes[0], wang_pred, "Wang", "#1f77b4"),
+        (axes[1], zhang_pred, "Zhang", "#ff7f0e"),
+    ):
+        axis.scatter(y_true, pred, s=14, alpha=0.75, c=color, edgecolors="none")
+        low = float(min(y_true.min(), pred.min()))
+        high = float(max(y_true.max(), pred.max()))
+        axis.plot([low, high], [low, high], color="black", linewidth=1)
+        axis.set_xlabel("True SOH")
+        axis.set_ylabel(f"{name} predicted SOH")
+        axis.set_title(name)
+        axis.grid(True, alpha=0.3)
+    fig.suptitle(title)
+    finish(fig, "true_vs_pred")
+
+    fig, axes = plt.subplots(2, 1, figsize=(10, 6.2), sharex=True)
+    axes[0].plot(index, y_true, color="black", linewidth=1.2, label="True")
+    axes[0].plot(index, wang_pred, color="#1f77b4", linewidth=1.0, label="Wang")
+    axes[0].set_ylabel("SOH")
+    axes[0].set_title("Wang")
+    axes[0].legend()
+    axes[0].grid(True, alpha=0.3)
+    axes[1].plot(index, y_true, color="black", linewidth=1.2, label="True")
+    axes[1].plot(index, zhang_pred, color="#ff7f0e", linewidth=1.0, label="Zhang")
+    axes[1].set_xlabel("Test pair index")
+    axes[1].set_ylabel("SOH")
+    axes[1].set_title("Zhang")
+    axes[1].legend()
+    axes[1].grid(True, alpha=0.3)
+    fig.suptitle(title)
+    finish(fig, "soh_curve")
+
+    fig, axes = plt.subplots(2, 1, figsize=(10, 6.2), sharex=True)
+    axes[0].plot(index, np.abs(wang_pred - y_true), color="#1f77b4", linewidth=1.0)
+    axes[0].set_ylabel("|error|")
+    axes[0].set_title("Wang absolute error")
+    axes[0].grid(True, alpha=0.3)
+    axes[1].plot(index, np.abs(zhang_pred - y_true), color="#ff7f0e", linewidth=1.0)
+    axes[1].set_xlabel("Test pair index")
+    axes[1].set_ylabel("|error|")
+    axes[1].set_title("Zhang absolute error")
+    axes[1].grid(True, alpha=0.3)
+    fig.suptitle(title)
+    finish(fig, "abs_error")
+
+    wang_row = metrics["test_wang"]
+    zhang_row = metrics["test_zhang"]
+    fig, axes = plt.subplots(1, 2, figsize=(9.2, 4.2))
+    scale_labels = ["MAE", "RMSE"]
+    xpos = np.arange(len(scale_labels))
+    axes[0].bar(xpos - 0.18, [wang_row["mae"], wang_row["rmse"]], width=0.36, label="Wang", color="#1f77b4")
+    axes[0].bar(xpos + 0.18, [zhang_row["mae"], zhang_row["rmse"]], width=0.36, label="Zhang", color="#ff7f0e")
+    axes[0].set_xticks(xpos, scale_labels)
+    axes[0].set_ylabel("SOH fraction")
+    axes[0].set_title("MAE and RMSE")
+    axes[0].legend()
+    axes[0].grid(True, axis="y", alpha=0.3)
+    axes[1].bar(
+        [0, 1],
+        [wang_row["mape_percent"], zhang_row["mape_percent"]],
+        color=["#1f77b4", "#ff7f0e"],
+    )
+    axes[1].set_xticks([0, 1], ["Wang", "Zhang"])
+    axes[1].set_ylabel("MAPE % of true SOH")
+    axes[1].set_title("MAPE")
+    axes[1].grid(True, axis="y", alpha=0.3)
+    fig.suptitle(title)
+    finish(fig, "metrics")
+
+    if history:
+        epochs = [row["epoch"] for row in history]
+        fig, axes = plt.subplots(1, 2, figsize=(10, 4.2))
+        axes[0].plot(epochs, [row["loss1"] for row in history], marker="o", label="loss1 data")
+        axes[0].plot(epochs, [row["loss2"] for row in history], marker="o", label="loss2 PDE")
+        axes[0].plot(epochs, [row["valid_wang_mse"] for row in history], marker="o", label="valid Wang MSE")
+        axes[0].set_xlabel("Epoch")
+        axes[0].set_title("Wang losses")
+        axes[0].legend()
+        axes[0].grid(True, alpha=0.3)
+        axes[1].plot(epochs, [row["zhang_intra"] for row in history], marker="o", label="intra")
+        axes[1].plot(epochs, [row["zhang_delta"] for row in history], marker="o", label="delta")
+        axes[1].set_xlabel("Epoch")
+        axes[1].set_title("Zhang losses")
+        axes[1].legend()
+        axes[1].grid(True, alpha=0.3)
+        fig.suptitle(title)
+        finish(fig, "training")
+    return saved
+
+
+def save_summary_figure(figure_dir: str, runs: list[dict]) -> str:
+    plt = _figure_pyplot()
+    os.makedirs(figure_dir, exist_ok=True)
+    labels = []
+    mae, rmse, mape = [], [], []
+    for run in runs:
+        for model, color_name in (("test_wang", "Wang"), ("test_zhang", "Zhang")):
+            labels.append(f"{run['dataset']}\n{color_name}")
+            row = run[model]
+            mae.append(row["mae"])
+            rmse.append(row["rmse"])
+            mape.append(row["mape_percent"])
+    xpos = np.arange(len(labels))
+    fig, axes = plt.subplots(1, 2, figsize=(10, 4.4))
+    axes[0].bar(xpos - 0.18, mae, width=0.36, label="MAE", color="#1f77b4")
+    axes[0].bar(xpos + 0.18, rmse, width=0.36, label="RMSE", color="#2ca02c")
+    axes[0].set_xticks(xpos, labels)
+    axes[0].set_ylabel("SOH fraction")
+    axes[0].set_title("MAE and RMSE")
+    axes[0].legend()
+    axes[0].grid(True, axis="y", alpha=0.3)
+    axes[1].bar(xpos, mape, color="#ff7f0e")
+    axes[1].set_xticks(xpos, labels)
+    axes[1].set_ylabel("MAPE % of true SOH")
+    axes[1].set_title("MAPE")
+    axes[1].grid(True, axis="y", alpha=0.3)
+    fig.suptitle("Preliminary smoke test. Not a paper reproduction.")
+    path = os.path.join(figure_dir, "summary_mae_rmse_mape.png")
+    fig.tight_layout()
+    fig.savefig(path, dpi=140)
+    plt.close(fig)
+    return path
+
+
+def plot_saved_runs(source: str, figures_dir: str | None) -> list[str]:
+    source = os.path.abspath(source)
+    if os.path.isfile(os.path.join(source, "test_predictions.npz")):
+        run_dirs = [source]
+    else:
+        run_dirs = []
+        for name in sorted(os.listdir(source)):
+            folder = os.path.join(source, name)
+            if os.path.isfile(os.path.join(folder, "test_predictions.npz")):
+                run_dirs.append(folder)
+    if not run_dirs:
+        raise SystemExit(f"No test_predictions.npz under {source}")
+    if figures_dir is None:
+        parent = source if len(run_dirs) > 1 else os.path.dirname(source)
+        figures_dir = os.path.join(parent, "figures")
+    figures_dir = os.path.abspath(figures_dir)
+    saved: list[str] = []
+    loaded = []
+    for folder in run_dirs:
+        with open(os.path.join(folder, "metrics.json"), encoding="utf-8") as handle:
+            metrics = json.load(handle)
+        pack = np.load(os.path.join(folder, "test_predictions.npz"))
+        stem = f"{metrics['dataset']}_{metrics['held_out_condition']}"
+        history = parse_training_log(os.path.join(folder, "log.txt"))
+        saved.extend(
+            save_result_figures(
+                figures_dir,
+                stem,
+                pack["y_true"],
+                pack["wang_pred"],
+                pack["zhang_pred"],
+                metrics,
+                history,
+            )
+        )
+        loaded.append(metrics)
+        print(f"figures for {stem} -> {figures_dir}", flush=True)
+    if len(loaded) > 1:
+        summary = save_summary_figure(figures_dir, loaded)
+        saved.append(summary)
+        print(f"summary -> {summary}", flush=True)
+    return saved
+
+
 def parse_args():
     parser = argparse.ArgumentParser(
         description=(
@@ -713,11 +947,24 @@ def parse_args():
     parser.add_argument("--seed", type=int, default=420)
     parser.add_argument("--save-dir", default=None)
     parser.add_argument("--device", default="cpu")
+    parser.add_argument(
+        "--plot-from",
+        default=None,
+        help="Result folder, or a parent of result folders. Draws charts and does not train.",
+    )
+    parser.add_argument(
+        "--figures-dir",
+        default=None,
+        help="Folder for PNG charts. With --plot-from, the default is <source>/figures.",
+    )
     return parser.parse_args()
 
 
 def main():
     args = parse_args()
+    if args.plot_from:
+        plot_saved_runs(args.plot_from, args.figures_dir)
+        return
     if args.held_out is None:
         args.held_out = "2018-04-12" if args.dataset == "MIT" else "10"
     if args.alpha is None:
@@ -807,6 +1054,7 @@ def main():
     best_epoch = -1
     stale = 0
     last_epoch = -1
+    history = []
     ckpt_path = os.path.join(save_dir, "best_wang_valid.pt")
     for epoch in range(args.epochs):
         lr_u = solution_lr(epoch, args)
@@ -818,6 +1066,17 @@ def main():
         valid = evaluate(solution_u, zhang, valid_table, train_b, args, device, rng)
         valid_mse = valid["wang"]["mse"]
         last_epoch = epoch
+        history.append(
+            {
+                "epoch": epoch,
+                "loss1": losses["loss1"],
+                "loss2": losses["loss2"],
+                "loss3": losses["loss3"],
+                "zhang_intra": losses["loss_intra"],
+                "zhang_delta": losses["loss_delta"],
+                "valid_wang_mse": valid_mse,
+            }
+        )
         emit(
             f"epoch {epoch}: lr_u={lr_u:.6g} loss1={losses['loss1']:.6g} "
             f"loss2={losses['loss2']:.6g} loss3={losses['loss3']:.6g} "
@@ -893,6 +1152,18 @@ def main():
     )
     if preliminary:
         emit("These numbers are a preliminary smoke test, not a paper reproduction.")
+    figure_dir = args.figures_dir or os.path.join(save_dir, "figures")
+    figure_paths = save_result_figures(
+        figure_dir,
+        f"{args.dataset}_{args.held_out}",
+        test["y_true"],
+        test["wang_pred"],
+        test["zhang_pred"],
+        report,
+        history,
+    )
+    for path in figure_paths:
+        emit(f"figure {path}")
 
 
 if __name__ == "__main__":
