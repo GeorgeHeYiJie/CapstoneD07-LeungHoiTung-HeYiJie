@@ -28,7 +28,6 @@ This is not the PINN split, and it is not a claim that the cell lists match Zhan
 * **HUST.** The condition is the number before the hyphen in the filename (`1` through `10`). That is the only condition label in these tables. One group is the test set. Zhang's HUST numbers use a BatteryML cell split that is not stored here.
 * Of the batteries that are not in the held-out condition, 20% are validation and the rest are training. The split uses `train_test_split(..., test_size=0.2, random_state=420)` on batteries, not on adjacent pairs.
 * Train, validation and test battery ids do not overlap. The held-out condition appears only in the test manifest.
-* A smoke run keeps only 3 training, 1 validation and 1 test battery. The cap rotates through conditions in sorted order, so the three training batteries are not all taken from the condition whose ids sort first. The uncapped membership is still written to the manifest.
 * Normalization to `[-1, 1]` is fit on the training batteries that this run actually uses, then applied to validation and test. SOH itself is not rescaled. A column with zero training range is set to 0.
 * Reference cells used at validation and test are training batteries only. The reported prediction is the mean over the first `n_refs` training batteries in sorted order. Zhang's methods text averages reference predictions; one of their figures uses the median. This code uses the mean.
 
@@ -84,19 +83,6 @@ The save directory must be new. The run writes `config.json`, `split_manifest.js
 SOH is a fraction of 1.1 Ah. MAE and RMSE use that fraction. MSE is its square. MAPE is `100 * mean(|y_true - y_pred| / |y_true|)`, with `y_true` in the denominator. Samples with `|y_true| < 1e-8` are omitted from MAPE only and counted in `mape_excluded`.
 
 `metrics.json` reports the sample-weighted test scores and the unweighted mean of the per-battery scores. Smoke runs set `"preliminary": true`.
-
-## Preliminary smoke runs
-
-These two runs only check that one fold executes. Each used 3 training batteries, 1 validation battery, 1 test battery, a window of 16 cycles, stride 10, and 2 epochs on CPU. The checkpoint is the best validation epoch. Validation MSE improved on epoch 2, so that epoch is also the last epoch. SOH is a fraction of 1.1 Ah. MAPE is a percentage of the ground truth. No target was near zero. The test battery is one cell, so the per-battery mean equals the sample-weighted score.
-
-The machine was Linux, Python 3.12.3, PyTorch 2.14.0+cu130 with CUDA available but `device=cpu`, NumPy 2.4.4, pandas 3.0.6, scikit-learn 1.9.1. That is not the Windows reproduction environment in `ENVIRONMENT.md`.
-
-| Run | Held-out test cell | Samples | MAE | MAPE (%) | RMSE | MSE |
-| --- | --- | ---: | ---: | ---: | ---: | ---: |
-| MIT | `2018-04-12_battery-1` | 91 | 0.123285 | 13.0487 | 0.156543 | 0.024506 |
-| HUST | `10-1` | 168 | 0.164755 | 16.4404 | 0.200474 | 0.040190 |
-
-MIT training cells were `2017-05-12_battery-10`, `2017-06-30_battery-1` and `2017-05-12_battery-11`. HUST training cells were `1-1`, `2-2` and `3-1`. The first saved period matrices had shapes `[4, 5, 17]` and `[1, 16, 17]` for MIT, and `[2, 8, 17]` and `[1, 16, 17]` for HUST: rows, period length, 17 inputs. Predictions were finite. These errors are not a comparison with the PINN baseline or with the papers.
 
 ## Limits
 

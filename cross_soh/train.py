@@ -520,9 +520,8 @@ def run_experiment(cfg: TrainConfig) -> dict:
                 "Leave-one-condition-out. Test batteries are the held-out MIT "
                 "date batch or HUST filename group. Of the remaining batteries, "
                 "20% are validation and 80% are training, split with "
-                "sklearn train_test_split random_state=420. Caps rotate "
-                "through conditions and are recorded separately from the "
-                "full membership."
+                "sklearn train_test_split random_state=420. Caps keep the "
+                "alphabetically first ids and are recorded separately."
             ),
             "normalization": scaler.to_dict(),
             "feature_order": [
