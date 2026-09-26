@@ -15,6 +15,7 @@ from cross_soh.data import (
     BatteryRecord,
     apply_scaler,
     build_windows_index,
+    cap_across_conditions,
     delete_3_sigma,
     fit_scaler,
     list_dataset,
@@ -149,6 +150,20 @@ def test_scaler_is_fit_on_training_batteries_only():
     test = BatteryRecord("b", "c2", "b.csv", np.array([0.0]), np.full((1, 16), 100.0), np.array([0.8]))
     apply_scaler([test], scaler)
     assert test.features_norm[0, 0] > 1.0
+
+
+def test_cap_rotates_through_training_conditions():
+    rows = []
+    for condition, count in [("2017-05-12", 4), ("2017-06-30", 4)]:
+        for index in range(count):
+            rows.append((f"{condition}_b{index}", condition, f"{condition}/{index}.csv"))
+    chosen = cap_across_conditions(rows, 3)
+    assert [item[1] for item in chosen] == ["2017-05-12", "2017-06-30", "2017-05-12"]
+    assert [item[0] for item in chosen] == [
+        "2017-05-12_b0",
+        "2017-06-30_b0",
+        "2017-05-12_b1",
+    ]
 
 
 def test_leave_one_condition_split_is_disjoint():

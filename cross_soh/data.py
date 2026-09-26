@@ -169,6 +169,28 @@ def condition_names(dataset: str) -> list[str]:
     return sorted({condition for _, condition, _ in files}, key=lambda value: int(value))
 
 
+def cap_across_conditions(rows: list[tuple[str, str, str]], limit: int | None) -> list[tuple[str, str, str]]:
+    """Keep up to ``limit`` batteries, rotating through sorted conditions.
+
+    Within one condition, ids are alphabetical. A cap of three on two MIT
+    training batches therefore takes batteries from both batches, instead of
+    only the batch whose ids sort first.
+    """
+    if limit is None:
+        return list(rows)
+    if limit < 1:
+        raise ValueError("battery caps must be positive")
+    buckets: dict[str, list[tuple[str, str, str]]] = {}
+    for row in sorted(rows, key=lambda item: item[0]):
+        buckets.setdefault(row[1], []).append(row)
+    chosen: list[tuple[str, str, str]] = []
+    while len(chosen) < limit and any(buckets.values()):
+        for condition in sorted(buckets):
+            if buckets[condition] and len(chosen) < limit:
+                chosen.append(buckets[condition].pop(0))
+    return chosen
+
+
 def split_batteries(
     files: list[tuple[str, str, str]],
     held_out_condition: str,
@@ -197,16 +219,9 @@ def split_batteries(
     val = sorted(val, key=lambda item: item[0])
     test = sorted(test, key=lambda item: item[0])
 
-    def cap(rows, limit):
-        if limit is None:
-            return rows
-        if limit < 1:
-            raise ValueError("battery caps must be positive")
-        return rows[:limit]
-
-    used_train = cap(train, max_train)
-    used_val = cap(val, max_val)
-    used_test = cap(test, max_test)
+    used_train = cap_across_conditions(train, max_train)
+    used_val = cap_across_conditions(val, max_val)
+    used_test = cap_across_conditions(test, max_test)
     if len(used_train) < 2:
         raise ValueError("training needs at least 2 batteries so a reference cell exists")
     return {
