@@ -1,0 +1,101 @@
+{
+  "comment": "To generate high-dimensional matrix based on Wu et al., 2023 from dataset. Then put the matrix into Wang et al., 2024 and Zhang et al., 2025 for further result",
+  "commit": "12ecc9555b3a32d8786fbe2374f9dfbeee958e60",
+  "python": "3.12.3",
+  "torch": "2.14.0+cu130",
+  "numpy": "2.4.4",
+  "pandas": "3.0.6",
+  "args": {
+    "dataset": "MIT",
+    "held_out": "2018-04-12",
+    "epochs": 2,
+    "early_stop": 20,
+    "batch_size": 64,
+    "max_train": 3,
+    "max_val": 1,
+    "max_test": 1,
+    "window": 16,
+    "stride": 5,
+    "k": 2,
+    "height": 8,
+    "width": 8,
+    "n_refs": 2,
+    "alpha": 0.5,
+    "beta": 0.01,
+    "lr_F": 0.001,
+    "alpha_mix": 0.5,
+    "lambda_delta": 1.0,
+    "warmup_epochs": 30,
+    "warmup_lr": 0.002,
+    "lr": 0.01,
+    "final_lr": 0.0002,
+    "zhang_lr": 0.001,
+    "seed": 420,
+    "save_dir": null,
+    "device": "cpu"
+  },
+  "nominal_capacity_ah": 1.1,
+  "soh": "fraction = capacity / 1.1 Ah",
+  "features": [
+    "voltage mean",
+    "voltage std",
+    "voltage kurtosis",
+    "voltage skewness",
+    "CC Q",
+    "CC charge time",
+    "voltage slope",
+    "voltage entropy",
+    "current mean",
+    "current std",
+    "current kurtosis",
+    "current skewness",
+    "CV Q",
+    "CV charge time",
+    "current slope",
+    "current entropy"
+  ],
+  "matrix": "cleaned raw features, causal window, top-k periods, bilinear resize",
+  "xt": "per-battery min-max of 16 features plus cycle index to [-1, 1]",
+  "checkpoint_rule": "lowest validation MSE of Wang solution_u",
+  "train_batteries": [
+    {
+      "battery_id": "2017-05-12_battery-10",
+      "condition": "2017-05-12",
+      "path": "data/MIT data/2017-05-12/2017-05-12_battery-10.csv",
+      "n_cycles": 952
+    },
+    {
+      "battery_id": "2017-06-30_battery-1",
+      "condition": "2017-06-30",
+      "path": "data/MIT data/2017-06-30/2017-06-30_battery-1.csv",
+      "n_cycles": 267
+    },
+    {
+      "battery_id": "2017-05-12_battery-11",
+      "condition": "2017-05-12",
+      "path": "data/MIT data/2017-05-12/2017-05-12_battery-11.csv",
+      "n_cycles": 822
+    }
+  ],
+  "valid_batteries": [
+    {
+      "battery_id": "2017-05-12_battery-1",
+      "condition": "2017-05-12",
+      "path": "data/MIT data/2017-05-12/2017-05-12_battery-1.csv",
+      "n_cycles": 1660
+    }
+  ],
+  "test_batteries": [
+    {
+      "battery_id": "2018-04-12_battery-1",
+      "condition": "2018-04-12",
+      "path": "data/MIT data/2018-04-12/2018-04-12_battery-1.csv",
+      "n_cycles": 909
+    }
+  ],
+  "n_pairs": {
+    "train": 410,
+    "valid": 332,
+    "test": 182
+  }
+}

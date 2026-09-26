@@ -1,0 +1,101 @@
+{
+  "comment": "To generate high-dimensional matrix based on Wu et al., 2023 from dataset. Then put the matrix into Wang et al., 2024 and Zhang et al., 2025 for further result",
+  "commit": "12ecc9555b3a32d8786fbe2374f9dfbeee958e60",
+  "python": "3.12.3",
+  "torch": "2.14.0+cu130",
+  "numpy": "2.4.4",
+  "pandas": "3.0.6",
+  "args": {
+    "dataset": "HUST",
+    "held_out": "10",
+    "epochs": 2,
+    "early_stop": 20,
+    "batch_size": 64,
+    "max_train": 3,
+    "max_val": 1,
+    "max_test": 1,
+    "window": 16,
+    "stride": 5,
+    "k": 2,
+    "height": 8,
+    "width": 8,
+    "n_refs": 2,
+    "alpha": 0.6,
+    "beta": 0.1,
+    "lr_F": 0.0005,
+    "alpha_mix": 0.5,
+    "lambda_delta": 1.0,
+    "warmup_epochs": 30,
+    "warmup_lr": 0.002,
+    "lr": 0.01,
+    "final_lr": 0.0002,
+    "zhang_lr": 0.001,
+    "seed": 420,
+    "save_dir": null,
+    "device": "cpu"
+  },
+  "nominal_capacity_ah": 1.1,
+  "soh": "fraction = capacity / 1.1 Ah",
+  "features": [
+    "voltage mean",
+    "voltage std",
+    "voltage kurtosis",
+    "voltage skewness",
+    "CC Q",
+    "CC charge time",
+    "voltage slope",
+    "voltage entropy",
+    "current mean",
+    "current std",
+    "current kurtosis",
+    "current skewness",
+    "CV Q",
+    "CV charge time",
+    "current slope",
+    "current entropy"
+  ],
+  "matrix": "cleaned raw features, causal window, top-k periods, bilinear resize",
+  "xt": "per-battery min-max of 16 features plus cycle index to [-1, 1]",
+  "checkpoint_rule": "lowest validation MSE of Wang solution_u",
+  "train_batteries": [
+    {
+      "battery_id": "1-1",
+      "condition": "1",
+      "path": "data/HUST data/1-1.csv",
+      "n_cycles": 1480
+    },
+    {
+      "battery_id": "2-2",
+      "condition": "2",
+      "path": "data/HUST data/2-2.csv",
+      "n_cycles": 2587
+    },
+    {
+      "battery_id": "3-1",
+      "condition": "3",
+      "path": "data/HUST data/3-1.csv",
+      "n_cycles": 1923
+    }
+  ],
+  "valid_batteries": [
+    {
+      "battery_id": "1-2",
+      "condition": "1",
+      "path": "data/HUST data/1-2.csv",
+      "n_cycles": 2672
+    }
+  ],
+  "test_batteries": [
+    {
+      "battery_id": "10-1",
+      "condition": "10",
+      "path": "data/HUST data/10-1.csv",
+      "n_cycles": 1679
+    }
+  ],
+  "n_pairs": {
+    "train": 1199,
+    "valid": 535,
+    "test": 336
+  }
+}

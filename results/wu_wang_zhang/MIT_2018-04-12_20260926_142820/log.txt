@@ -1,0 +1,14 @@
+device=cpu dataset=MIT held_out=2018-04-12
+Loading CSVs and applying the 3-sigma rule before the FFT.
+split sizes after cap: train 3, val 1, test 1 batteries
+Generating Wu period matrices for the selected adjacent pairs.
+example 2017-05-12_battery-10: cleaned cycles=952, window=16, periods at cycle 16=[16, 5], matrix shape=[2, 16, 8, 8]
+pairs: train 410, val 332, test 182. Each pair is two adjacent cleaned rows.
+epoch 0: lr_u=0.002 loss1=1.54469 loss2=0.101162 loss3=0.0100313 zhang_intra=771.284 zhang_delta=2563.65 valid_wang_mse=0.680816
+epoch 1: lr_u=0.002 loss1=0.780842 loss2=0.060742 loss3=0.006503 zhang_intra=182.589 zhang_delta=387.567 valid_wang_mse=0.373486
+saved /workspace/results/smoke_tests/wu_wang_zhang/MIT_2018-04-12_20260926_142820
+SOH is a fraction. MAPE is a percent of the ground-truth SOH. Metrics are sample-weighted on the test pairs.
+test wang: n=182 MAE=0.584366 MAPE%=61.4374 RMSE=0.645352 MSE=4.164798e-01
+test zhang: n=182 MAE=5.026066 MAPE%=531.9764 RMSE=6.109314 MSE=3.732371e+01
+checkpoint epoch 1 (best validation Wang MSE=3.734865e-01); last trained epoch 1.
+These numbers are a preliminary smoke test, not a paper reproduction.
