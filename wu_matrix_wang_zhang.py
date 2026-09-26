@@ -614,6 +614,7 @@ def predict_wang(solution_u: SolutionU, xt: torch.Tensor, matrix: torch.Tensor) 
     return solution_u(torch.cat([flat, xt], dim=1))
 
 
+@torch.no_grad()
 def collect_predictions(solution_u, zhang, table, pool, args, device, rng) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     solution_u.eval()
     zhang.eval()
