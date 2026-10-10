@@ -61,7 +61,7 @@ class DF():
             elif self.normalization_method == 'z-score':
                 f_df = (f_df - f_df.mean())/f_df.std()
 
-            df.iloc[:,:-1] = f_df
+            df.iloc[:,:-1] = f_df.astype(float)
 
         return df
 
