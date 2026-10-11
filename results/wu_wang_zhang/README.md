@@ -1,6 +1,6 @@
 # Wu matrix + Wang + Zhang：短测试结果
 
-这两次是 `wu_matrix_wang_zhang.py` 的短测试，用来确认程序能跑完。数字不是论文复现，也不能拿来和 PINN 基线或已发表结果比较。
+这两次是 `HighDimensionMatrix-PINN_Combination.py` 的短测试，用来确认程序能跑完。数字不是论文复现，也不能拿来和 PINN 基线或已发表结果比较。
 
 SOH 是分数：`容量 / 1.1 Ah`。MAPE 是相对真实 SOH 的百分比。指标按测试样本加权。检查点是验证集上 Wang `solution_u` 的 MSE 最低的那一轮；这两次里，最好的一轮都是最后一轮（epoch 1，从 0 数起）。没有出现 SOH 为 0 的样本。
 
@@ -56,8 +56,8 @@ SOH 是分数：`容量 / 1.1 Ah`。MAPE 是相对真实 SOH 的百分比。指�
 
 ![MAE、RMSE 和 MAPE](figures/summary_mae_rmse_mape.png)
 
-Zhang 的误差大，是因为周期矩阵仍用清洗后的原始特征尺度，而且只训练了 2 个 epoch。画图代码在仓库根目录的 `wu_matrix_wang_zhang.py` 里。重新出图：
+Zhang 的误差大，是因为周期矩阵仍用清洗后的原始特征尺度，而且只训练了 2 个 epoch。画图代码在仓库根目录的 `HighDimensionMatrix-PINN_Combination.py` 里。重新出图：
 
 ```bash
-python3 wu_matrix_wang_zhang.py --plot-from results/wu_wang_zhang --figures-dir results/wu_wang_zhang/figures
+python3 HighDimensionMatrix-PINN_Combination.py --plot-from results/wu_wang_zhang --figures-dir results/wu_wang_zhang/figures
 ```

@@ -4,7 +4,7 @@ One runnable file. It does not modify Model/Model.py, the dataloaders, or the CS
 
 Run from anywhere:
 
-    python3 wu_matrix_wang_zhang.py
+    python3 HighDimensionMatrix-PINN_Combination.py
 
 That default is a short MIT smoke test (2 epochs, a few batteries). It checks that
 the script runs. It does not reproduce a published accuracy number.
@@ -12,16 +12,16 @@ the script runs. It does not reproduce a published accuracy number.
 A longer MIT leave-one-batch run (still one process, not the 10-experiment loop
 in main_MIT.py):
 
-    python3 wu_matrix_wang_zhang.py --dataset MIT --held-out 2018-04-12 \\
+    python3 HighDimensionMatrix-PINN_Combination.py --dataset MIT --held-out 2018-04-12 \\
         --epochs 200 --max-train 0 --max-val 0 --max-test 0 --stride 1 --batch-size 512
 
 HUST, holding out filename group 10:
 
-    python3 wu_matrix_wang_zhang.py --dataset HUST --held-out 10 --epochs 2
+    python3 HighDimensionMatrix-PINN_Combination.py --dataset HUST --held-out 10 --epochs 2
 
 Draw charts from finished result folders, without training again:
 
-    python3 wu_matrix_wang_zhang.py --plot-from results/wu_wang_zhang \\
+    python3 HighDimensionMatrix-PINN_Combination.py --plot-from results/wu_wang_zhang \\
         --figures-dir results/wu_wang_zhang/figures
 
 What this file does
