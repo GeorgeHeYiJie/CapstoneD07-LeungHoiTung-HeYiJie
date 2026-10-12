@@ -1,0 +1,3 @@
+In this file, the result of model in file HighDimensionMatrix-PINN_Combination is shown. The data set is transformed into high dimension matrix based on the algorithm in (Wu et al.), 2023, 
+then supply to model in (Wang et al., 2024) and (Zhang et al.), 2025 individually to have the results as this file shows. 
+These can tell the contribution of the high dimension matrix in the models' prediction quality.
