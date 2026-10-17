@@ -1,0 +1,46 @@
+W-O: starting 200 epochs; train=42784, validation=13585, test=29083
+W-O epoch 1/200 valid_MSE=0.0021041984 best=0.0021041984@1 elapsed=2.7s
+W-O epoch 10/200 valid_MSE=0.00030068982 best=0.00030068982@10 elapsed=20.1s
+W-O epoch 20/200 valid_MSE=0.00013367701 best=0.00012857526@19 elapsed=39.3s
+W-O epoch 30/200 valid_MSE=0.00012358852 best=6.0644663e-05@26 elapsed=58.5s
+W-O epoch 40/200 valid_MSE=4.3962554e-05 best=3.805972e-05@36 elapsed=77.3s
+W-O epoch 50/200 valid_MSE=4.0995011e-05 best=2.9725841e-05@47 elapsed=96.2s
+W-O epoch 60/200 valid_MSE=7.339919e-05 best=2.7278262e-05@59 elapsed=115.2s
+W-O epoch 70/200 valid_MSE=6.0996022e-05 best=2.6179964e-05@62 elapsed=134.7s
+W-O epoch 80/200 valid_MSE=4.9182287e-05 best=2.4090922e-05@78 elapsed=154.7s
+W-O epoch 90/200 valid_MSE=4.6202608e-05 best=2.4090922e-05@78 elapsed=174.2s
+W-O epoch 100/200 valid_MSE=2.5772735e-05 best=2.3776358e-05@91 elapsed=192.5s
+W-O epoch 110/200 valid_MSE=6.1049764e-05 best=1.8468257e-05@105 elapsed=210.4s
+W-O epoch 120/200 valid_MSE=6.720705e-05 best=1.8184423e-05@113 elapsed=230.1s
+W-O epoch 130/200 valid_MSE=4.5459673e-05 best=1.8184423e-05@113 elapsed=248.0s
+W-O epoch 140/200 valid_MSE=1.9720614e-05 best=1.8184423e-05@113 elapsed=266.1s
+W-O epoch 150/200 valid_MSE=2.1561189e-05 best=1.8184423e-05@113 elapsed=283.9s
+W-O epoch 160/200 valid_MSE=2.6519805e-05 best=1.8184423e-05@113 elapsed=301.3s
+W-O epoch 170/200 valid_MSE=2.5171112e-05 best=1.8184423e-05@113 elapsed=319.1s
+W-O epoch 180/200 valid_MSE=2.6516921e-05 best=1.8184423e-05@113 elapsed=339.1s
+W-O epoch 190/200 valid_MSE=2.6838201e-05 best=1.8184423e-05@113 elapsed=358.2s
+W-O epoch 200/200 valid_MSE=2.511197e-05 best=1.8184423e-05@113 elapsed=376.7s
+W-O completed: {"arm": "W-O", "seed": 7, "MAE": 0.008368092492723368, "MAPE_percent": 0.9004462850772225, "RMSE": 0.010462630386874477, "MSE": 0.00010946663461234917, "n": 29083, "training_runtime_seconds": 358.3503161990084, "validation_runtime_seconds": 17.524997298489325, "inference_cold_seconds": 0.17760480009019375, "inference_warm_seconds": 0.17400280002038926, "total_arm_seconds": 377.24543540005106, "best_epoch": 113, "stopping_epoch": 200, "early_stopping": false, "best_validation_MSE": 1.8184423331218036e-05, "final_validation_MSE": 2.5111970221079324e-05, "parameters": 13662, "checkpoint_verified": true}
+W-H: starting 200 epochs; train=42784, validation=13585, test=29083
+W-H epoch 1/200 valid_MSE=0.0059390044 best=0.0059390044@1 elapsed=12.0s
+W-H epoch 10/200 valid_MSE=0.00044527429 best=0.00044527429@10 elapsed=42.3s
+W-H epoch 20/200 valid_MSE=0.00012612747 best=9.2913598e-05@19 elapsed=75.5s
+W-H epoch 30/200 valid_MSE=6.1349229e-05 best=6.1349229e-05@30 elapsed=108.6s
+W-H epoch 40/200 valid_MSE=4.4396164e-05 best=3.3033627e-05@39 elapsed=142.4s
+W-H epoch 50/200 valid_MSE=0.0014047619 best=3.3033627e-05@39 elapsed=175.5s
+W-H epoch 60/200 valid_MSE=0.0013904135 best=3.3033627e-05@39 elapsed=209.1s
+W-H epoch 70/200 valid_MSE=0.001380492 best=3.3033627e-05@39 elapsed=241.8s
+W-H epoch 80/200 valid_MSE=0.001372048 best=3.3033627e-05@39 elapsed=275.6s
+W-H epoch 90/200 valid_MSE=0.001436785 best=3.3033627e-05@39 elapsed=309.2s
+W-H epoch 100/200 valid_MSE=0.0013984707 best=3.3033627e-05@39 elapsed=342.8s
+W-H epoch 110/200 valid_MSE=0.0013950619 best=3.3033627e-05@39 elapsed=377.0s
+W-H epoch 120/200 valid_MSE=0.0013811071 best=3.3033627e-05@39 elapsed=411.0s
+W-H epoch 130/200 valid_MSE=0.0013859299 best=3.3033627e-05@39 elapsed=444.3s
+W-H epoch 140/200 valid_MSE=0.0013895564 best=3.3033627e-05@39 elapsed=477.1s
+W-H epoch 150/200 valid_MSE=0.001380692 best=3.3033627e-05@39 elapsed=510.2s
+W-H epoch 160/200 valid_MSE=0.0013692693 best=3.3033627e-05@39 elapsed=542.9s
+W-H epoch 170/200 valid_MSE=0.0013712639 best=3.3033627e-05@39 elapsed=576.0s
+W-H epoch 180/200 valid_MSE=0.00136152 best=3.3033627e-05@39 elapsed=608.6s
+W-H epoch 190/200 valid_MSE=0.0013624403 best=3.3033627e-05@39 elapsed=642.1s
+W-H epoch 200/200 valid_MSE=0.0013633843 best=3.3033627e-05@39 elapsed=675.2s
+W-H completed: {"arm": "W-H", "seed": 7, "MAE": 0.008850348379828147, "MAPE_percent": 0.9368656364225127, "RMSE": 0.011151236356332039, "MSE": 0.00012435007227478144, "n": 29083, "training_runtime_seconds": 644.3324030005606, "validation_runtime_seconds": 30.003438800224103, "inference_cold_seconds": 4.510208399966359, "inference_warm_seconds": 0.2955145000014454, "total_arm_seconds": 680.1932906999718, "best_epoch": 39, "stopping_epoch": 200, "early_stopping": false, "best_validation_MSE": 3.303362717579979e-05, "final_validation_MSE": 0.001363384333184017, "parameters": 136542, "checkpoint_verified": true}

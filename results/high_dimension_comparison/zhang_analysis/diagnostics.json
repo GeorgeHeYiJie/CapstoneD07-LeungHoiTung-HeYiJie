@@ -1,0 +1,9 @@
+{
+  "batteries_improved": 34,
+  "batteries_worsened": 2,
+  "early_batteries_worsened": 28,
+  "largest_excess_battery": "2018-04-12_battery-39",
+  "worst_matrix_MAE_battery": "2018-04-12_battery-39",
+  "matrix_batteries_over_5x_median_MAE": [],
+  "test_samples": 29083
+}

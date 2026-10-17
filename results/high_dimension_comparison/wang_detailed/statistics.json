@@ -1,0 +1,20 @@
+{
+  "total_samples": 29083,
+  "batteries": 36,
+  "improved": 21,
+  "worsened": 15,
+  "median_improvement": 3.4510696577459163,
+  "largest_contributor": "2018-04-12_battery-33",
+  "top1_positive_excess_share": 75.44967361522268,
+  "top3_positive_excess_share": 88.40032138396025,
+  "top1_net_excess_share": 141.14022233958923,
+  "length_spearman_improvement": 0.13925353925353928,
+  "length_spearman_delta": -0.16061776061776062,
+  "late_vs_early_delta_worse_count": 7,
+  "postwarmup_large_val_jump_epochs": [
+    61
+  ],
+  "data_spike_factor": 936.4721909549597,
+  "val_spike_factor": 5624.498712282848,
+  "best_to_final_val_ratio": 41.131623624785135
+}

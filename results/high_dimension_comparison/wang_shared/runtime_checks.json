@@ -1,0 +1,22 @@
+{
+  "W-O": {
+    "one_batch_loss": {
+      "total": 2.2558586597442627,
+      "data": 1.9773203134536743,
+      "pde": 0.5568030476570129,
+      "physics": 0.013680808246135712
+    },
+    "parameters_updated": true,
+    "checkpoint_exact": true
+  },
+  "W-H": {
+    "one_batch_loss": {
+      "total": 2.596811294555664,
+      "data": 2.56644344329834,
+      "pde": 0.06046980619430542,
+      "physics": 0.013308274559676647
+    },
+    "parameters_updated": true,
+    "checkpoint_exact": true
+  }
+}

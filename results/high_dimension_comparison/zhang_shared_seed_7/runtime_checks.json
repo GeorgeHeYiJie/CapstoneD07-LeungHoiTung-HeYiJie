@@ -1,0 +1,44 @@
+{
+  "Z-O": {
+    "one_batch_loss": {
+      "total": 1.173654556274414,
+      "intra": 1.1177477836608887,
+      "delta": 0.05590672791004181
+    },
+    "input_shape": [
+      512,
+      1,
+      16,
+      16,
+      1
+    ],
+    "target_shape": [
+      512,
+      1
+    ],
+    "parameters_updated": true,
+    "checkpoint_exact": true,
+    "validation_test_smoke_passed": true
+  },
+  "Z-H": {
+    "one_batch_loss": {
+      "total": 1.119186520576477,
+      "intra": 1.0347847938537598,
+      "delta": 0.08440172672271729
+    },
+    "input_shape": [
+      512,
+      2,
+      16,
+      8,
+      8
+    ],
+    "target_shape": [
+      512,
+      1
+    ],
+    "parameters_updated": true,
+    "checkpoint_exact": true,
+    "validation_test_smoke_passed": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "arm": "Z-H",
+  "seed": 42,
+  "MAE": 0.013343462488475268,
+  "MAPE_percent": 1.4224238527061732,
+  "RMSE": 0.017603578469382774,
+  "MSE": 0.0003098859749277168,
+  "n": 29083,
+  "training_runtime_seconds": 1405.7932013007812,
+  "validation_runtime_seconds": 248.30986679915804,
+  "inference_cold_seconds": 8.420381200034171,
+  "inference_warm_seconds": 2.5791149999713525,
+  "total_arm_seconds": 1667.4174964999547,
+  "best_epoch": 124,
+  "stopping_epoch": 200,
+  "early_stopping": false,
+  "best_validation_MSE": 6.02528438866568e-05,
+  "final_validation_MSE": 6.111812667203565e-05,
+  "parameters": 18529,
+  "checkpoint_verified": true
+}

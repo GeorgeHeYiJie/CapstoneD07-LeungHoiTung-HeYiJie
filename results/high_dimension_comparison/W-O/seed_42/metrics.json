@@ -1,0 +1,21 @@
+{
+  "arm": "W-O",
+  "seed": 42,
+  "MAE": 0.006401181370619382,
+  "MAPE_percent": 0.688277522637424,
+  "RMSE": 0.008022624477880182,
+  "MSE": 6.436250351308228e-05,
+  "n": 29083,
+  "training_runtime_seconds": 439.97836179926526,
+  "validation_runtime_seconds": 22.046857599518262,
+  "inference_cold_seconds": 0.24792879994492978,
+  "inference_warm_seconds": 0.2517924999119714,
+  "total_arm_seconds": 463.8086053999141,
+  "best_epoch": 111,
+  "stopping_epoch": 200,
+  "early_stopping": false,
+  "best_validation_MSE": 1.818815544800026e-05,
+  "final_validation_MSE": 2.3097391478018994e-05,
+  "parameters": 13662,
+  "checkpoint_verified": true
+}

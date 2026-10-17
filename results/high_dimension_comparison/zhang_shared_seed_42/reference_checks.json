@@ -1,0 +1,14 @@
+{
+  "valid": {
+    "references": 27170,
+    "clamped": 9144,
+    "training_only": true,
+    "hash": "c2d38e98995ed9a19f807811b1186bb055e40aff2e079181ad38397634c8b961"
+  },
+  "test": {
+    "references": 58166,
+    "clamped": 24640,
+    "training_only": true,
+    "hash": "49ad6699d8c8580555bdee9ad117f69a6528a85d406bbda4301a1e90d7374591"
+  }
+}

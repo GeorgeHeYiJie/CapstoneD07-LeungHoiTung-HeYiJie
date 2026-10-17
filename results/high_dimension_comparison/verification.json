@@ -1,0 +1,11 @@
+{
+  "pooled_metrics_sklearn_verified": true,
+  "per_battery_MSE_verified": true,
+  "same_labels_and_keys": true,
+  "unique_test_samples": 29083,
+  "epochs_each": 200,
+  "same_learning_rate_sequence": true,
+  "per_battery_plots": 36,
+  "zhang_experiments_run": false,
+  "tracked_changes": []
+}

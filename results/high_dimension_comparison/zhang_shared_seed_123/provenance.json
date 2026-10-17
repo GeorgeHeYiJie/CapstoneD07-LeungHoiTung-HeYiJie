@@ -1,0 +1,14 @@
+{
+  "source_commit": "e3f17c01246b8a345fc92bd2787257a8abd79b12",
+  "python": "3.12.14",
+  "torch": "2.14.0+cpu",
+  "numpy": "2.5.3",
+  "source_hashes": {
+    "C:\\Users\\oscar\\OneDrive\\文件\\ChatGPT\\FYP AI for Battery\\PINN4SOH\\scripts\\run_zhang_additional_seeds.py": "05b14903d06d3fe89e225eafa2678f987dc6a8d86c7ec41a708dcd9812047106",
+    "C:\\Users\\oscar\\OneDrive\\文件\\ChatGPT\\FYP AI for Battery\\PINN4SOH\\scripts\\high_dimension_comparison.py": "8ca2d91b51afe089de2171deec2b773e9a8eaa4d2ae48f7f916beb1c7bebfb7b",
+    "C:\\Users\\oscar\\OneDrive\\文件\\ChatGPT\\FYP AI for Battery\\PINN4SOH\\Model\\Model.py": "b146b179a7267a50bed231a99ad5b161b14f8c527b62c376bf286aa7995e0fca",
+    "C:\\Users\\oscar\\OneDrive\\文件\\ChatGPT\\FYP AI for Battery\\PINN4SOH\\HighDimensionMatrix-PINN_Combination.py": "0a8c3e555c7150437e6e3925108443180c26808eeac2c2307b275f33a7f98a6d"
+  },
+  "seed": 123,
+  "note": "Only training randomness changes; split 420 and evaluation references 20042/30042 remain frozen"
+}

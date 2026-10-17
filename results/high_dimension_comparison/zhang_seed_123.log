@@ -1,0 +1,46 @@
+Z-O: starting 200 epochs; train=42784, validation=13585, test=29083
+Z-O epoch 1/200 valid_MSE=0.023514011 best=0.023514011@1 elapsed=6.2s
+Z-O epoch 10/200 valid_MSE=0.00021693118 best=0.00021693118@10 elapsed=54.9s
+Z-O epoch 20/200 valid_MSE=9.4895815e-05 best=9.1122481e-05@19 elapsed=108.5s
+Z-O epoch 30/200 valid_MSE=8.2634769e-05 best=8.2634769e-05@30 elapsed=162.4s
+Z-O epoch 40/200 valid_MSE=7.7391333e-05 best=7.7310861e-05@37 elapsed=216.6s
+Z-O epoch 50/200 valid_MSE=7.7185813e-05 best=7.4133401e-05@47 elapsed=271.4s
+Z-O epoch 60/200 valid_MSE=7.7042743e-05 best=7.270619e-05@55 elapsed=329.4s
+Z-O epoch 70/200 valid_MSE=7.6990747e-05 best=7.270619e-05@55 elapsed=385.6s
+Z-O epoch 80/200 valid_MSE=7.5302855e-05 best=7.270619e-05@55 elapsed=441.2s
+Z-O epoch 90/200 valid_MSE=7.6387575e-05 best=7.270619e-05@55 elapsed=495.8s
+Z-O epoch 100/200 valid_MSE=9.0660209e-05 best=7.270619e-05@55 elapsed=552.1s
+Z-O epoch 110/200 valid_MSE=7.8726674e-05 best=7.270619e-05@55 elapsed=607.8s
+Z-O epoch 120/200 valid_MSE=7.6440291e-05 best=7.270619e-05@55 elapsed=662.8s
+Z-O epoch 130/200 valid_MSE=8.0701695e-05 best=7.270619e-05@55 elapsed=717.0s
+Z-O epoch 140/200 valid_MSE=7.5536786e-05 best=7.270619e-05@55 elapsed=772.0s
+Z-O epoch 150/200 valid_MSE=7.5968494e-05 best=7.270619e-05@55 elapsed=827.7s
+Z-O epoch 160/200 valid_MSE=7.7467167e-05 best=7.270619e-05@55 elapsed=885.5s
+Z-O epoch 170/200 valid_MSE=7.9215515e-05 best=7.270619e-05@55 elapsed=940.6s
+Z-O epoch 180/200 valid_MSE=7.5893144e-05 best=7.270619e-05@55 elapsed=995.2s
+Z-O epoch 190/200 valid_MSE=7.8482577e-05 best=7.270619e-05@55 elapsed=1052.4s
+Z-O epoch 200/200 valid_MSE=8.6370599e-05 best=7.270619e-05@55 elapsed=1107.7s
+Z-O completed: {"arm": "Z-O", "seed": 123, "MAE": 0.019362785676582943, "MAPE_percent": 2.0867988701807256, "RMSE": 0.02246250175800045, "MSE": 0.0005045639852281733, "n": 29083, "training_runtime_seconds": 915.4173609990394, "validation_runtime_seconds": 191.2702968007652, "inference_cold_seconds": 2.3339968000072986, "inference_warm_seconds": 2.030131799983792, "total_arm_seconds": 1113.1328342000488, "best_epoch": 55, "stopping_epoch": 200, "early_stopping": false, "best_validation_MSE": 7.270618954451579e-05, "final_validation_MSE": 8.637059949993353e-05, "parameters": 9313, "checkpoint_verified": true}
+Z-H: starting 200 epochs; train=42784, validation=13585, test=29083
+Z-H epoch 1/200 valid_MSE=0.019757863 best=0.019757863@1 elapsed=19.6s
+Z-H epoch 10/200 valid_MSE=0.00019950479 best=0.00019950479@10 elapsed=92.6s
+Z-H epoch 20/200 valid_MSE=0.00016530476 best=0.00010579162@19 elapsed=172.6s
+Z-H epoch 30/200 valid_MSE=8.413445e-05 best=8.0952923e-05@29 elapsed=256.8s
+Z-H epoch 40/200 valid_MSE=6.9578927e-05 best=6.9578927e-05@40 elapsed=353.0s
+Z-H epoch 50/200 valid_MSE=9.1122897e-05 best=6.9578927e-05@40 elapsed=423.2s
+Z-H epoch 60/200 valid_MSE=8.7838542e-05 best=6.6581198e-05@57 elapsed=485.2s
+Z-H epoch 70/200 valid_MSE=6.466584e-05 best=6.466584e-05@70 elapsed=546.0s
+Z-H epoch 80/200 valid_MSE=6.623134e-05 best=6.2412218e-05@73 elapsed=619.2s
+Z-H epoch 90/200 valid_MSE=6.3957419e-05 best=6.2412218e-05@73 elapsed=690.8s
+Z-H epoch 100/200 valid_MSE=0.00020019861 best=6.2412218e-05@73 elapsed=759.4s
+Z-H epoch 110/200 valid_MSE=7.2716797e-05 best=6.2412218e-05@73 elapsed=827.7s
+Z-H epoch 120/200 valid_MSE=7.8887627e-05 best=6.2412218e-05@73 elapsed=893.1s
+Z-H epoch 130/200 valid_MSE=8.4914632e-05 best=6.2412218e-05@73 elapsed=959.2s
+Z-H epoch 140/200 valid_MSE=7.4473737e-05 best=6.2412218e-05@73 elapsed=1025.3s
+Z-H epoch 150/200 valid_MSE=7.7770732e-05 best=6.2412218e-05@73 elapsed=1091.7s
+Z-H epoch 160/200 valid_MSE=7.5305317e-05 best=6.2412218e-05@73 elapsed=1158.0s
+Z-H epoch 170/200 valid_MSE=8.0346651e-05 best=6.2412218e-05@73 elapsed=1223.8s
+Z-H epoch 180/200 valid_MSE=7.3175519e-05 best=6.2412218e-05@73 elapsed=1289.3s
+Z-H epoch 190/200 valid_MSE=7.4748323e-05 best=6.2412218e-05@73 elapsed=1355.5s
+Z-H epoch 200/200 valid_MSE=7.1802977e-05 best=6.2412218e-05@73 elapsed=1421.8s
+Z-H completed: {"arm": "Z-H", "seed": 123, "MAE": 0.015428253242919751, "MAPE_percent": 1.6521825181991832, "RMSE": 0.018001453471044874, "MSE": 0.0003240523270701935, "n": 29083, "training_runtime_seconds": 1207.2108082001796, "validation_runtime_seconds": 213.7490338004427, "inference_cold_seconds": 7.2183559000259265, "inference_warm_seconds": 2.1158968000672758, "total_arm_seconds": 1432.3370170999551, "best_epoch": 73, "stopping_epoch": 200, "early_stopping": false, "best_validation_MSE": 6.241221837053246e-05, "final_validation_MSE": 7.180297659352484e-05, "parameters": 18529, "checkpoint_verified": true}

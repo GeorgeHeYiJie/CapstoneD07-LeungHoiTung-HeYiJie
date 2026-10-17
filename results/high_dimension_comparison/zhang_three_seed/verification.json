@@ -1,0 +1,10 @@
+{
+  "all_prior_prediction_hashes_unchanged": true,
+  "model_protocol_source_hashes_unchanged": true,
+  "wang_aggregate_values_unchanged": true,
+  "all_four_arms_have_three_seeds": true,
+  "zhang_per_battery_rows": 216,
+  "all_six_early_biases_positive": true,
+  "training_complete": true,
+  "additional_training_started": false
+}

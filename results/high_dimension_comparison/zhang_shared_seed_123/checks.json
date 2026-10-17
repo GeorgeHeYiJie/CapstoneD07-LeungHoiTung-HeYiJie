@@ -1,0 +1,6 @@
+{
+  "battery_disjoint": true,
+  "future_perturbation_invariant": true,
+  "test_label_input_invariant": true,
+  "shapes_verified": true
+}

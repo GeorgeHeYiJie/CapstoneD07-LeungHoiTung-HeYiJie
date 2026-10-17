@@ -1,0 +1,143 @@
+{
+  "arms": [
+    {
+      "arm": "W-O",
+      "parameters": 13662,
+      "diagnostic_updates": 9,
+      "warmup_batches": 1,
+      "timed_batches": 8,
+      "train_batch_seconds": [
+        0.019747499958612025,
+        0.015473000006750226,
+        0.014772300026379526,
+        0.01969630003441125,
+        0.018941299989819527,
+        0.015155700035393238,
+        0.0167966999579221,
+        0.01466919993981719
+      ],
+      "valid_batch_seconds": [
+        0.0020522000268101692,
+        0.001856599934399128,
+        0.002480600029230118,
+        0.0018849000334739685,
+        0.003851200104691088
+      ],
+      "preparation_seconds": 0.04256390000227839,
+      "projected_training_seconds": 331.1558881960809,
+      "projected_validation_seconds": 17.83598440233618,
+      "conservative_total_seconds": 436.2398407480214,
+      "last_diagnostic_loss": {
+        "total": 0.23491156101226807,
+        "data": 0.1565895974636078,
+        "pde": 0.15594282746315002,
+        "physics": 0.03505527228116989
+      }
+    },
+    {
+      "arm": "W-H",
+      "parameters": 136542,
+      "diagnostic_updates": 9,
+      "warmup_batches": 1,
+      "timed_batches": 8,
+      "train_batch_seconds": [
+        0.031819800031371415,
+        0.03231259994208813,
+        0.03830510005354881,
+        0.03492289991118014,
+        0.03351209999527782,
+        0.033729300019331276,
+        0.03890000004321337,
+        0.037698799977079034
+      ],
+      "valid_batch_seconds": [
+        0.07524089992512017,
+        0.07775129994843155,
+        0.07338519999757409,
+        0.0782294999808073,
+        0.07811010000295937
+      ],
+      "preparation_seconds": 1.2720354999182746,
+      "projected_training_seconds": 646.5239768475294,
+      "projected_validation_seconds": 422.18139594420785,
+      "conservative_total_seconds": 1335.8817159896716,
+      "last_diagnostic_loss": {
+        "total": 0.43353626132011414,
+        "data": 0.4010481536388397,
+        "pde": 0.0638904795050621,
+        "physics": 0.054286930710077286
+      }
+    },
+    {
+      "arm": "Z-O",
+      "parameters": 9313,
+      "diagnostic_updates": 9,
+      "warmup_batches": 1,
+      "timed_batches": 8,
+      "train_batch_seconds": [
+        0.03516480000689626,
+        0.03837059997022152,
+        0.04168610007036477,
+        0.04643079999368638,
+        0.03463479992933571,
+        0.039075199980288744,
+        0.03552290005609393,
+        0.04238170001190156
+      ],
+      "valid_batch_seconds": [
+        0.030183900031261146,
+        0.029516099952161312,
+        0.03432289999909699,
+        0.02552209992427379,
+        0.03165290004108101
+      ],
+      "preparation_seconds": 0.3222783000674099,
+      "projected_training_seconds": 732.4200241081417,
+      "projected_validation_seconds": 179.57646008580923,
+      "conservative_total_seconds": 1139.9956052424386,
+      "last_diagnostic_loss": {
+        "total": 0.40811672806739807,
+        "intra": 0.40181484818458557,
+        "delta": 0.006301867309957743
+      }
+    },
+    {
+      "arm": "Z-H",
+      "parameters": 18529,
+      "diagnostic_updates": 9,
+      "warmup_batches": 1,
+      "timed_batches": 8,
+      "train_batch_seconds": [
+        0.1279350999975577,
+        0.1360632999567315,
+        0.1347679999889806,
+        0.14362660003826022,
+        0.1399873000336811,
+        0.13852200005203485,
+        0.12448869994841516,
+        0.12590470002032816
+      ],
+      "valid_batch_seconds": [
+        0.1144148000748828,
+        0.0667088000336662,
+        0.09766129998024553,
+        0.06730959995184094,
+        0.0939047000138089
+      ],
+      "preparation_seconds": 0.9249900999711826,
+      "projected_training_seconds": 2370.128712588921,
+      "projected_validation_seconds": 581.6523601999506,
+      "conservative_total_seconds": 3689.72634098609,
+      "last_diagnostic_loss": {
+        "total": 0.22086328268051147,
+        "intra": 0.21042600274085999,
+        "delta": 0.01043727993965149
+      }
+    }
+  ],
+  "total_seconds": 6601.843502966221,
+  "complete": true,
+  "within_one_hour": false,
+  "method": "90th percentile timed batches times full split batches times 200 epochs; 25% margin; diagnostic models discarded",
+  "formal_training_started": false
+}

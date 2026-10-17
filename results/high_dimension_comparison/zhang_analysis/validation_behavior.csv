@@ -1,0 +1,3 @@
+arm,best_epoch,final_to_best_validation_ratio,postwarmup_jumps_over_5x,last20_validation_mean,last20_validation_std
+Z-O,72,1.1139324862702216,,7.654195553857436e-05,4.763665694368036e-06
+Z-H,124,1.0143608621529392,,7.045050560841977e-05,1.2469077151970224e-05

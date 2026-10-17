@@ -1,0 +1,39 @@
+{
+  "protocol": "HD-SOH-v1",
+  "arms": [
+    "Z-O",
+    "Z-H"
+  ],
+  "seed": 123,
+  "split_seed": 420,
+  "batch_size": 512,
+  "epochs": 200,
+  "early_stopping": false,
+  "threads": 8,
+  "checkpoint": "each arm own lowest validation MSE",
+  "normalization": "frozen train-only minmax",
+  "alpha_mix": 0.5,
+  "lambda_delta": 1.0,
+  "learning_rate": 0.001,
+  "scheduler": null,
+  "training_reference_seed": 10123,
+  "validation_reference_seed": 20042,
+  "test_reference_seed": 30042,
+  "evaluation_references": 2,
+  "shared_data_load_seconds": 1.4793902999954298,
+  "environment": {
+    "seed": 42,
+    "epochs": 200,
+    "batch_size": 512,
+    "threads": 8,
+    "python": "3.12.14",
+    "torch": "2.14.0+cpu",
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "source_commit": "e3f17c01246b8a345fc92bd2787257a8abd79b12",
+    "runner_sha256": "09ee1a3702580fda4ac8749c60253e0eff6a788b302699eb318dbb6ceec8ebca",
+    "note": "Diagnostic updates only. Four architectures and protocol fixed by existing analysis plan.",
+    "post_preflight_runner_sha256": "8ca2d91b51afe089de2171deec2b773e9a8eaa4d2ae48f7f916beb1c7bebfb7b",
+    "post_preflight_edit": "Docstring/CLI clarified as preflight-only; no model/data/numerical changes"
+  }
+}
