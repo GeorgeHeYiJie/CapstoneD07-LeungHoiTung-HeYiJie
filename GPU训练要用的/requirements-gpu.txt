@@ -1,0 +1,20 @@
+# Dependencies for HighDimensionMatrix-PINN_Combination.py on a rented GPU.
+# Do not install requirements-reproduction.txt in this folder. That file
+# pulls the CPU-only wheel (torch==2.14.0+cpu) and will leave the GPU idle.
+#
+# 1. Install a CUDA build of PyTorch that matches this machine's driver.
+#    Example for CUDA 12.4:
+#      pip install torch --index-url https://download.pytorch.org/whl/cu124
+#    Pick the index from https://pytorch.org/get-started/locally/
+# 2. Then install the packages below:
+#      pip install -r requirements-gpu.txt
+#
+# numpy, pandas and scikit-learn match the versions recorded for this
+# repository's compatibility environment. The torch build is intentionally
+# not pinned here, because a CUDA wheel differs by GPU and driver.
+# A different torch build can change floating-point results.
+
+numpy==2.5.3
+pandas==2.3.3
+scikit-learn==1.9.1
+matplotlib==3.11.2
