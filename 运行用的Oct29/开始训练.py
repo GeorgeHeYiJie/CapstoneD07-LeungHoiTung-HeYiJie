@@ -23,6 +23,11 @@ ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parent
 SCRIPT = ROOT / "HighDimensionMatrix-PINN_Combination.py"
 SOURCE = REPO / "HighDimensionMatrix-PINN_Combination.py"
+ADDED_ON_OCT28 = (
+    "DenoisingAlgorithm.py",
+    "New1HighDimensionMatrix-PINN_Combination.py",
+    "SHAP-ForExplainability.py",
+)
 MIT = ROOT / "data" / "MIT data"
 HUST = ROOT / "data" / "HUST data"
 WORK = ROOT / "运行输出"
@@ -59,6 +64,16 @@ def check_files() -> list[str]:
         py_compile.compile(str(SCRIPT), doraise=True)
         if SOURCE.is_file() and SCRIPT.read_bytes() != SOURCE.read_bytes():
             problems.append("训练脚本和仓库根目录的原文件不一致")
+
+    for name in ADDED_ON_OCT28:
+        copy = ROOT / name
+        original = REPO / name
+        if not copy.is_file():
+            problems.append(f"缺少 {name}")
+            continue
+        py_compile.compile(str(copy), doraise=True)
+        if original.is_file() and copy.read_bytes() != original.read_bytes():
+            problems.append(f"{name} 和仓库根目录的原文件不一致")
 
     mit_files = csv_files(MIT)
     if len(mit_files) != 125:
@@ -129,7 +144,7 @@ def main() -> int:
             print(f"- {problem}")
         return 1
 
-    print("文件检查通过: 训练脚本 1 个，MIT csv 125 个，HUST csv 77 个。")
+    print("文件检查通过: 训练脚本 1 个，10月28日加入的脚本 3 个，MIT csv 125 个，HUST csv 77 个。")
     print("脚本是仓库原文件的副本，公式没有改。")
     try:
         import torch

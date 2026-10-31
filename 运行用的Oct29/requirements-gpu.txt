@@ -1,4 +1,6 @@
-# Dependencies for HighDimensionMatrix-PINN_Combination.py on a rented GPU.
+# Dependencies for the training scripts in this folder on a rented GPU.
+# scipy is required by DenoisingAlgorithm.py.
+# shap is required by SHAP-ForExplainability.py and is not version-pinned.
 # Do not install requirements-reproduction.txt in this folder. That file
 # pulls the CPU-only wheel (torch==2.14.0+cpu) and will leave the GPU idle.
 #
@@ -18,3 +20,5 @@ numpy==2.5.3
 pandas==2.3.3
 scikit-learn==1.9.1
 matplotlib==3.11.2
+scipy==1.18.1
+shap
