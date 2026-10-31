@@ -8,5 +8,5 @@ results/smoke_tests/
 # Working directory created by 训练要用的/开始训练.py. Checkpoints and logs stay here.
 训练要用的/运行输出/
 
-# Working directory created by GPU训练要用的/开始训练.py. Checkpoints and logs stay here.
-GPU训练要用的/运行输出/
+# Working directory created by 运行用的Oct29/开始训练.py. Checkpoints and logs stay here.
+运行用的Oct29/运行输出/
