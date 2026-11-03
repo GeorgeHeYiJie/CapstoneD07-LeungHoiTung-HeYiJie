@@ -1,0 +1,11 @@
+{
+  "seconds": 15.69207579997601,
+  "shape": [
+    85577,
+    2,
+    16,
+    8,
+    8
+  ],
+  "source_function": "hd.matrices_from_window"
+}

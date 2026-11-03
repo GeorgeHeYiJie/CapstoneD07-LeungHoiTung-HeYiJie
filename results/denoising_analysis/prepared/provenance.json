@@ -1,0 +1,14 @@
+{
+  "commit": "8952464066c66844e624ae5c3d2142296e41b7ba",
+  "python": "3.12.14",
+  "torch": "2.14.0+cpu",
+  "numpy": "2.5.3",
+  "pandas": "2.3.3",
+  "source_hashes": {
+    "DenoisingAlgorithm.py": "bc2ff6e20f8197680377430fdfd258954ca4c956b1015c83bd685a815890d6da",
+    "HighDimensionMatrix-PINN_Combination.py": "0a8c3e555c7150437e6e3925108443180c26808eeac2c2307b275f33a7f98a6d",
+    "New1HighDimensionMatrix-PINN_Combination.py": "1bbeab2283bf3d3d78398b77d333ef73c58b090bfb24a777a18a8b8887bf080e"
+  },
+  "seed": 42,
+  "offline": true
+}

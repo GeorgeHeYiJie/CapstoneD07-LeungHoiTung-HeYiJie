@@ -1,0 +1,9 @@
+{
+  "initial_weights_exact": true,
+  "paired_configurations_exact": true,
+  "paired_test_ids_rows_labels_exact": true,
+  "metrics_recalculated": true,
+  "test_samples": 29083,
+  "batteries": 36,
+  "offline": true
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "test": "test2",
+    "condition": "denoised",
+    "predictor": "combined",
+    "seed": 42,
+    "MAE": 0.0352850237758354,
+    "MAPE_percent": 3.6979314982339426,
+    "RMSE": 0.06504625842057796,
+    "MSE": 0.004231015734516608,
+    "n": 29083,
+    "best_epoch": 118,
+    "stopping_epoch": 200,
+    "best_validation_MSE": 5.137772902492335e-05,
+    "final_validation_MSE": 7.828650097093078e-05,
+    "checkpoint": "combined_best.pt",
+    "checkpoint_verified": true,
+    "training_seconds": 19281.0454512015,
+    "validation_seconds": 91.7031218992779,
+    "test_inference_seconds": 1.3234373000450432,
+    "total_run_seconds": 19376.968816399924,
+    "offline": true
+  }
+]

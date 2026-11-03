@@ -1,0 +1,24 @@
+[
+  {
+    "test": "test2",
+    "condition": "original",
+    "predictor": "combined",
+    "seed": 42,
+    "MAE": 0.020358294938226534,
+    "MAPE_percent": 2.17256331326574,
+    "RMSE": 0.03403091984239815,
+    "MSE": 0.001158103505319728,
+    "n": 29083,
+    "best_epoch": 76,
+    "stopping_epoch": 200,
+    "best_validation_MSE": 3.34302182802649e-05,
+    "final_validation_MSE": 4.827396721776358e-05,
+    "checkpoint": "combined_best.pt",
+    "checkpoint_verified": true,
+    "training_seconds": 21254.142264300375,
+    "validation_seconds": 101.10309930029325,
+    "test_inference_seconds": 1.0586897999746725,
+    "total_run_seconds": 21359.334308299934,
+    "offline": true
+  }
+]

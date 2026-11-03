@@ -1,0 +1,26 @@
+[
+  {
+    "path": "results/denoising_analysis/prepared/original/test1_matrices.npy",
+    "bytes": 701046912,
+    "sha256": "16f25d8b71ba2293c92380348143dfac39888132715be895adc5280ae163867f",
+    "reason": "Rebuildable matrix cache; kept locally, excluded from Git"
+  },
+  {
+    "path": "results/denoising_analysis/prepared/original/test2_matrices.npy",
+    "bytes": 1051570304,
+    "sha256": "bbe4be670cff929bfe5ac441f0206071c5ec0de0a27cb497b6a00993c0b53d0f",
+    "reason": "Rebuildable matrix cache; kept locally, excluded from Git"
+  },
+  {
+    "path": "results/denoising_analysis/prepared/denoised/test1_matrices.npy",
+    "bytes": 701046912,
+    "sha256": "683843b9cddff6628d39bf23f38dec0c21cf2593ae6ce3d5a1d6de9562c22350",
+    "reason": "Rebuildable matrix cache; kept locally, excluded from Git"
+  },
+  {
+    "path": "results/denoising_analysis/prepared/denoised/test2_matrices.npy",
+    "bytes": 1051570304,
+    "sha256": "fbe1af1111bc46eed5e57e207d9f8eb2c823b2ff01586848fdf906cdcafe3c5e",
+    "reason": "Rebuildable matrix cache; kept locally, excluded from Git"
+  }
+]

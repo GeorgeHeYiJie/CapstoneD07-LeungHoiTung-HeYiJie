@@ -1,0 +1,3 @@
+test,condition,predictor,seed,training_seconds,validation_seconds,test_inference_seconds,total_run_seconds,best_epoch,stopping_epoch,checkpoint
+test2,original,combined,42,21254.142264300375,101.10309930029325,1.0586897999746725,21359.334308299934,76,200,combined_best.pt
+test2,denoised,combined,42,19281.0454512015,91.7031218992779,1.3234373000450432,19376.968816399924,118,200,combined_best.pt

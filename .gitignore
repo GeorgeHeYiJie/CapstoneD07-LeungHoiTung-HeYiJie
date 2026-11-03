@@ -10,3 +10,11 @@ results/smoke_tests/
 
 # Working directory created by 运行用的Oct29/开始训练.py. Checkpoints and logs stay here.
 运行用的Oct29/运行输出/
+
+# Local document-rendering drafts; deliverables live under results/.
+/tmp/
+# Rebuildable matrix caches (0.7-1.05 GB each); retain manifests and source arrays.
+/results/denoising_analysis/prepared/original/test1_matrices.npy
+/results/denoising_analysis/prepared/original/test2_matrices.npy
+/results/denoising_analysis/prepared/denoised/test1_matrices.npy
+/results/denoising_analysis/prepared/denoised/test2_matrices.npy

@@ -1,0 +1,5 @@
+# Preserve byte-level experiment provenance (CSV/source hashes include line endings).
+/results/denoising_analysis/** -text
+/scripts/run_denoising_analysis.py -text
+/scripts/analyze_denoising_results.py -text
+/scripts/denoising_batch.py -text
