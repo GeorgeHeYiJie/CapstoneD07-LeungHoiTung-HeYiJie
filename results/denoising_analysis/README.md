@@ -1,6 +1,6 @@
 # Offline denoising results — saved experiment bundle
 
-All four seed-42 conditions completed on 2026-10-29. Start with [ANALYSIS_SUMMARY.md](ANALYSIS_SUMMARY.md), [Test 1](test1/RESULT_ANALYSIS.md), and [Test 2](test2/RESULT_ANALYSIS.md). The Chinese parameter guide is [here](../../docs/PARAMETER_GUIDE_CN.md).
+All four seed-42 conditions completed on 2026-10-29. Start with [ANALYSIS_SUMMARY.md](ANALYSIS_SUMMARY.md), [Test 1](test1/RESULT_ANALYSIS.md), and [Test 2](test2/RESULT_ANALYSIS.md). The English parameter guide is [here](../../docs/PARAMETER_GUIDE.md).
 
 The experiment source was commit `8952464066c66844e624ae5c3d2142296e41b7ba`. Publication preparation first synchronized to shared commit `874a69f2bd45e07f796f39cb0167afe272d2417c`; the three root algorithm scripts were unchanged between these revisions. GPU files newly available under `运行用的Oct29/` were not used for these CPU results.
 
