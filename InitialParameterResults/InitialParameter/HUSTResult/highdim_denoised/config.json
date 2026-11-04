@@ -1,0 +1,535 @@
+{
+  "comment": "To generate high-dimensional matrix based on Wu et al., 2023 from dataset. Then put the matrix into Wang et al., 2024 and Zhang et al., 2025 for further result",
+  "commit": "874a69f2bd45e07f796f39cb0167afe272d2417c",
+  "python": "3.12.3",
+  "torch": "2.8.0+cu128",
+  "numpy": "2.3.2",
+  "pandas": "3.0.6",
+  "args": {
+    "dataset": "HUST",
+    "held_out": "10",
+    "max_train": 0,
+    "max_val": 0,
+    "max_test": 0,
+    "alpha": 0.6,
+    "beta": 0.1,
+    "lr_F": 0.0005,
+    "alpha_mix": 0.5,
+    "lambda_delta": 1.0,
+    "warmup_epochs": 30,
+    "warmup_lr": 0.002,
+    "lr": 0.01,
+    "final_lr": 0.0002,
+    "zhang_lr": 0.001,
+    "save_dir": "AllResults/InitialParameter/HUSTResult/highdim_denoised",
+    "device": "cuda",
+    "plot_from": null,
+    "figures_dir": null,
+    "epochs": 100,
+    "early_stop": 70,
+    "batch_size": 64,
+    "window": 16,
+    "stride": 5,
+    "k": 2,
+    "height": 8,
+    "width": 8,
+    "n_refs": 2,
+    "seed": 420
+  },
+  "nominal_capacity_ah": 1.1,
+  "soh": "fraction = capacity / 1.1 Ah",
+  "features": [
+    "voltage mean",
+    "voltage std",
+    "voltage kurtosis",
+    "voltage skewness",
+    "CC Q",
+    "CC charge time",
+    "voltage slope",
+    "voltage entropy",
+    "current mean",
+    "current std",
+    "current kurtosis",
+    "current skewness",
+    "CV Q",
+    "CV charge time",
+    "current slope",
+    "current entropy"
+  ],
+  "matrix": "cleaned raw features, causal window, top-k periods, bilinear resize",
+  "xt": "per-battery min-max of 16 features plus cycle index to [-1, 1]",
+  "checkpoint_rule": "lowest validation MSE of Wang solution_u",
+  "train_batteries": [
+    {
+      "battery_id": "3-2",
+      "condition": "3",
+      "path": "data/HUST data/3-2.csv",
+      "n_cycles": 2226
+    },
+    {
+      "battery_id": "9-6",
+      "condition": "9",
+      "path": "data/HUST data/9-6.csv",
+      "n_cycles": 1709
+    },
+    {
+      "battery_id": "9-2",
+      "condition": "9",
+      "path": "data/HUST data/9-2.csv",
+      "n_cycles": 2123
+    },
+    {
+      "battery_id": "1-4",
+      "condition": "1",
+      "path": "data/HUST data/1-4.csv",
+      "n_cycles": 1450
+    },
+    {
+      "battery_id": "5-2",
+      "condition": "5",
+      "path": "data/HUST data/5-2.csv",
+      "n_cycles": 1853
+    },
+    {
+      "battery_id": "4-5",
+      "condition": "4",
+      "path": "data/HUST data/4-5.csv",
+      "n_cycles": 1538
+    },
+    {
+      "battery_id": "3-5",
+      "condition": "3",
+      "path": "data/HUST data/3-5.csv",
+      "n_cycles": 2656
+    },
+    {
+      "battery_id": "6-3",
+      "condition": "6",
+      "path": "data/HUST data/6-3.csv",
+      "n_cycles": 1738
+    },
+    {
+      "battery_id": "6-4",
+      "condition": "6",
+      "path": "data/HUST data/6-4.csv",
+      "n_cycles": 1712
+    },
+    {
+      "battery_id": "3-4",
+      "condition": "3",
+      "path": "data/HUST data/3-4.csv",
+      "n_cycles": 1648
+    },
+    {
+      "battery_id": "3-1",
+      "condition": "3",
+      "path": "data/HUST data/3-1.csv",
+      "n_cycles": 1923
+    },
+    {
+      "battery_id": "3-3",
+      "condition": "3",
+      "path": "data/HUST data/3-3.csv",
+      "n_cycles": 1616
+    },
+    {
+      "battery_id": "8-6",
+      "condition": "8",
+      "path": "data/HUST data/8-6.csv",
+      "n_cycles": 2304
+    },
+    {
+      "battery_id": "8-1",
+      "condition": "8",
+      "path": "data/HUST data/8-1.csv",
+      "n_cycles": 1297
+    },
+    {
+      "battery_id": "7-7",
+      "condition": "7",
+      "path": "data/HUST data/7-7.csv",
+      "n_cycles": 1667
+    },
+    {
+      "battery_id": "6-5",
+      "condition": "6",
+      "path": "data/HUST data/6-5.csv",
+      "n_cycles": 2147
+    },
+    {
+      "battery_id": "1-8",
+      "condition": "1",
+      "path": "data/HUST data/1-8.csv",
+      "n_cycles": 2218
+    },
+    {
+      "battery_id": "5-4",
+      "condition": "5",
+      "path": "data/HUST data/5-4.csv",
+      "n_cycles": 1940
+    },
+    {
+      "battery_id": "8-2",
+      "condition": "8",
+      "path": "data/HUST data/8-2.csv",
+      "n_cycles": 2041
+    },
+    {
+      "battery_id": "2-5",
+      "condition": "2",
+      "path": "data/HUST data/2-5.csv",
+      "n_cycles": 1348
+    },
+    {
+      "battery_id": "2-3",
+      "condition": "2",
+      "path": "data/HUST data/2-3.csv",
+      "n_cycles": 1733
+    },
+    {
+      "battery_id": "6-8",
+      "condition": "6",
+      "path": "data/HUST data/6-8.csv",
+      "n_cycles": 2438
+    },
+    {
+      "battery_id": "8-7",
+      "condition": "8",
+      "path": "data/HUST data/8-7.csv",
+      "n_cycles": 1953
+    },
+    {
+      "battery_id": "4-6",
+      "condition": "4",
+      "path": "data/HUST data/4-6.csv",
+      "n_cycles": 1310
+    },
+    {
+      "battery_id": "7-6",
+      "condition": "7",
+      "path": "data/HUST data/7-6.csv",
+      "n_cycles": 1405
+    },
+    {
+      "battery_id": "7-4",
+      "condition": "7",
+      "path": "data/HUST data/7-4.csv",
+      "n_cycles": 1384
+    },
+    {
+      "battery_id": "7-3",
+      "condition": "7",
+      "path": "data/HUST data/7-3.csv",
+      "n_cycles": 1286
+    },
+    {
+      "battery_id": "1-3",
+      "condition": "1",
+      "path": "data/HUST data/1-3.csv",
+      "n_cycles": 1809
+    },
+    {
+      "battery_id": "7-1",
+      "condition": "7",
+      "path": "data/HUST data/7-1.csv",
+      "n_cycles": 1627
+    },
+    {
+      "battery_id": "8-8",
+      "condition": "8",
+      "path": "data/HUST data/8-8.csv",
+      "n_cycles": 1669
+    },
+    {
+      "battery_id": "6-6",
+      "condition": "6",
+      "path": "data/HUST data/6-6.csv",
+      "n_cycles": 2371
+    },
+    {
+      "battery_id": "9-5",
+      "condition": "9",
+      "path": "data/HUST data/9-5.csv",
+      "n_cycles": 2095
+    },
+    {
+      "battery_id": "2-6",
+      "condition": "2",
+      "path": "data/HUST data/2-6.csv",
+      "n_cycles": 1527
+    },
+    {
+      "battery_id": "1-6",
+      "condition": "1",
+      "path": "data/HUST data/1-6.csv",
+      "n_cycles": 1117
+    },
+    {
+      "battery_id": "5-7",
+      "condition": "5",
+      "path": "data/HUST data/5-7.csv",
+      "n_cycles": 1437
+    },
+    {
+      "battery_id": "4-7",
+      "condition": "4",
+      "path": "data/HUST data/4-7.csv",
+      "n_cycles": 2211
+    },
+    {
+      "battery_id": "2-7",
+      "condition": "2",
+      "path": "data/HUST data/2-7.csv",
+      "n_cycles": 2101
+    },
+    {
+      "battery_id": "1-1",
+      "condition": "1",
+      "path": "data/HUST data/1-1.csv",
+      "n_cycles": 1485
+    },
+    {
+      "battery_id": "3-7",
+      "condition": "3",
+      "path": "data/HUST data/3-7.csv",
+      "n_cycles": 2464
+    },
+    {
+      "battery_id": "1-5",
+      "condition": "1",
+      "path": "data/HUST data/1-5.csv",
+      "n_cycles": 1893
+    },
+    {
+      "battery_id": "4-2",
+      "condition": "4",
+      "path": "data/HUST data/4-2.csv",
+      "n_cycles": 1743
+    },
+    {
+      "battery_id": "5-5",
+      "condition": "5",
+      "path": "data/HUST data/5-5.csv",
+      "n_cycles": 1539
+    },
+    {
+      "battery_id": "3-6",
+      "condition": "3",
+      "path": "data/HUST data/3-6.csv",
+      "n_cycles": 2425
+    },
+    {
+      "battery_id": "6-1",
+      "condition": "6",
+      "path": "data/HUST data/6-1.csv",
+      "n_cycles": 1582
+    },
+    {
+      "battery_id": "2-8",
+      "condition": "2",
+      "path": "data/HUST data/2-8.csv",
+      "n_cycles": 1448
+    },
+    {
+      "battery_id": "4-1",
+      "condition": "4",
+      "path": "data/HUST data/4-1.csv",
+      "n_cycles": 2068
+    },
+    {
+      "battery_id": "2-2",
+      "condition": "2",
+      "path": "data/HUST data/2-2.csv",
+      "n_cycles": 2588
+    },
+    {
+      "battery_id": "2-4",
+      "condition": "2",
+      "path": "data/HUST data/2-4.csv",
+      "n_cycles": 1479
+    },
+    {
+      "battery_id": "4-4",
+      "condition": "4",
+      "path": "data/HUST data/4-4.csv",
+      "n_cycles": 1468
+    },
+    {
+      "battery_id": "8-5",
+      "condition": "8",
+      "path": "data/HUST data/8-5.csv",
+      "n_cycles": 1339
+    },
+    {
+      "battery_id": "7-2",
+      "condition": "7",
+      "path": "data/HUST data/7-2.csv",
+      "n_cycles": 1969
+    },
+    {
+      "battery_id": "5-1",
+      "condition": "5",
+      "path": "data/HUST data/5-1.csv",
+      "n_cycles": 2499
+    },
+    {
+      "battery_id": "9-3",
+      "condition": "9",
+      "path": "data/HUST data/9-3.csv",
+      "n_cycles": 1826
+    },
+    {
+      "battery_id": "1-7",
+      "condition": "1",
+      "path": "data/HUST data/1-7.csv",
+      "n_cycles": 1665
+    },
+    {
+      "battery_id": "7-5",
+      "condition": "7",
+      "path": "data/HUST data/7-5.csv",
+      "n_cycles": 1799
+    }
+  ],
+  "valid_batteries": [
+    {
+      "battery_id": "5-6",
+      "condition": "5",
+      "path": "data/HUST data/5-6.csv",
+      "n_cycles": 2456
+    },
+    {
+      "battery_id": "9-7",
+      "condition": "9",
+      "path": "data/HUST data/9-7.csv",
+      "n_cycles": 1999
+    },
+    {
+      "battery_id": "8-3",
+      "condition": "8",
+      "path": "data/HUST data/8-3.csv",
+      "n_cycles": 2221
+    },
+    {
+      "battery_id": "4-8",
+      "condition": "4",
+      "path": "data/HUST data/4-8.csv",
+      "n_cycles": 1682
+    },
+    {
+      "battery_id": "8-4",
+      "condition": "8",
+      "path": "data/HUST data/8-4.csv",
+      "n_cycles": 1862
+    },
+    {
+      "battery_id": "9-8",
+      "condition": "9",
+      "path": "data/HUST data/9-8.csv",
+      "n_cycles": 2259
+    },
+    {
+      "battery_id": "7-8",
+      "condition": "7",
+      "path": "data/HUST data/7-8.csv",
+      "n_cycles": 1900
+    },
+    {
+      "battery_id": "5-3",
+      "condition": "5",
+      "path": "data/HUST data/5-3.csv",
+      "n_cycles": 2642
+    },
+    {
+      "battery_id": "9-4",
+      "condition": "9",
+      "path": "data/HUST data/9-4.csv",
+      "n_cycles": 1918
+    },
+    {
+      "battery_id": "4-3",
+      "condition": "4",
+      "path": "data/HUST data/4-3.csv",
+      "n_cycles": 1135
+    },
+    {
+      "battery_id": "3-8",
+      "condition": "3",
+      "path": "data/HUST data/3-8.csv",
+      "n_cycles": 2302
+    },
+    {
+      "battery_id": "6-2",
+      "condition": "6",
+      "path": "data/HUST data/6-2.csv",
+      "n_cycles": 1897
+    },
+    {
+      "battery_id": "9-1",
+      "condition": "9",
+      "path": "data/HUST data/9-1.csv",
+      "n_cycles": 2028
+    },
+    {
+      "battery_id": "1-2",
+      "condition": "1",
+      "path": "data/HUST data/1-2.csv",
+      "n_cycles": 2672
+    }
+  ],
+  "test_batteries": [
+    {
+      "battery_id": "10-1",
+      "condition": "10",
+      "path": "data/HUST data/10-1.csv",
+      "n_cycles": 1689
+    },
+    {
+      "battery_id": "10-2",
+      "condition": "10",
+      "path": "data/HUST data/10-2.csv",
+      "n_cycles": 1681
+    },
+    {
+      "battery_id": "10-3",
+      "condition": "10",
+      "path": "data/HUST data/10-3.csv",
+      "n_cycles": 1760
+    },
+    {
+      "battery_id": "10-4",
+      "condition": "10",
+      "path": "data/HUST data/10-4.csv",
+      "n_cycles": 1771
+    },
+    {
+      "battery_id": "10-5",
+      "condition": "10",
+      "path": "data/HUST data/10-5.csv",
+      "n_cycles": 2015
+    },
+    {
+      "battery_id": "10-6",
+      "condition": "10",
+      "path": "data/HUST data/10-6.csv",
+      "n_cycles": 2281
+    },
+    {
+      "battery_id": "10-7",
+      "condition": "10",
+      "path": "data/HUST data/10-7.csv",
+      "n_cycles": 1751
+    },
+    {
+      "battery_id": "10-8",
+      "condition": "10",
+      "path": "data/HUST data/10-8.csv",
+      "n_cycles": 1383
+    }
+  ],
+  "n_pairs": {
+    "train": 19994,
+    "valid": 5799,
+    "test": 2866
+  }
+}

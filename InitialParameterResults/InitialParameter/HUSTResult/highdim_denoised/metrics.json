@@ -1,0 +1,33 @@
+{
+  "dataset": "HUST",
+  "held_out_condition": "10",
+  "soh_scale": "fraction (capacity / 1.1 Ah)",
+  "mape": "percent of ground truth; zero targets would be skipped",
+  "aggregation": "sample-weighted over test adjacent pairs, using the first row of each pair",
+  "preliminary_smoke": false,
+  "best_epoch": 84,
+  "last_epoch_trained": 99,
+  "checkpoint": "best validation MSE of Wang solution_u; Zhang uses that same epoch",
+  "best_valid_wang_mse": 0.006170074188928672,
+  "test_wang": {
+    "mae": 0.06504672628470592,
+    "mape_percent": 6.794541646254124,
+    "rmse": 0.07759845024389889,
+    "mse": 0.00602151948025485,
+    "n": 2866,
+    "mape_zero_targets_skipped": 0
+  },
+  "test_zhang": {
+    "mae": 0.040559708094646776,
+    "mape_percent": 4.203385564986678,
+    "rmse": 0.05155923935444867,
+    "mse": 0.0026583551628093284,
+    "n": 2866,
+    "mape_zero_targets_skipped": 0
+  },
+  "not_a_comparison_with": [
+    "PINN battery-id % 5 split",
+    "published PINN4SOH numbers",
+    "published BatLiNet numbers"
+  ]
+}
